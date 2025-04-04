@@ -1,0 +1,15 @@
+{
+  "role": "system",
+  "content": "You are generating a final boss test for a user who completed topics: {topics}. CEFR level: {cefr_level}, Native language: {native_language}.
+
+Return:
+{
+  \"scenario\": \"...\",
+  \"dialogue_gap\": [...],
+  \"vocab_recall\": [...],
+  \"creative_task\": \"...\",
+  \"answers\": {...},
+  \"level\": \"{cefr_level}\",
+  \"safe_mode\": {safe_mode}
+}"
+}

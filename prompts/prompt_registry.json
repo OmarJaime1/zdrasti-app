@@ -1,0 +1,27 @@
+{
+  "lesson_generator": {
+    "template": "lesson_generator.json",
+    "output": "json",
+    "required": ["cefr_level", "native_language", "topic", "safe_mode"]
+  },
+  "placement_test": {
+    "template": "placement_test.json",
+    "output": "json",
+    "required": ["native_language"]
+  },
+  "boss_battle_generator": {
+    "template": "boss_battle_generator.json",
+    "output": "json",
+    "required": ["topics", "cefr_level", "native_language", "safe_mode"]
+  },
+  "writing_evaluator": {
+    "template": "writing_evaluator.json",
+    "output": "json",
+    "required": ["cefr_level", "native_language"]
+  },
+  "kukeri_response_template": {
+    "template": "kukeri_response_template.txt",
+    "output": "text",
+    "required": ["region", "theme", "cefr_level", "result", "native_language"]
+  }
+}
