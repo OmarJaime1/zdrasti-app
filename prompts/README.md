@@ -17,4 +17,5 @@ This folder contains all the GPT prompt templates used in the Zdrasti app. Promp
 | `placement_test.json`         | Estimates CEFR level from user's answers |
 | `boss_battle_generator.json`  | Creates a multi-part boss test |
 | `writing_evaluator.json`      | Gives feedback and score for user writing |
+| `kukeri_boss_scripts.json`     | Region-specific Kukeri boss dialogue (intro, mid-test, win, fail) by CEFR level |
 | `kukeri_response_template.txt`| Generates personality-driven Kukeri boss dialogue |
