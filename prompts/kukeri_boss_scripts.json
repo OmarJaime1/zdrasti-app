@@ -1,0 +1,62 @@
+[
+  {
+    "level": "A1",
+    "name": "Kuker of Sofia",
+    "region": "Sofia",
+    "theme": "Beginnings / Basics",
+    "intro": "I’m the Kuker of Beginnings, guarding the capital’s gates. Let’s see if you’ve mastered the basics!",
+    "mid_test": "Sofia speaks clearly. Can you?",
+    "win": "You’ve proven yourself. The city welcomes you—hora awaits!",
+    "fail": "No worries, friend. The first steps are always the hardest."
+  },
+  {
+    "level": "A2",
+    "name": "Kuker of Plovdiv",
+    "region": "Plovdiv",
+    "theme": "Flow / Vibe",
+    "intro": "Plovdiv is calm but deep. Can your Bulgarian flow as freely as our rivers?",
+    "mid_test": "Let’s see your vibe in verbs.",
+    "win": "Nice! You’d fit right in on Kapana street!",
+    "fail": "Almost! Chill, try again soon."
+  },
+  {
+    "level": "B1",
+    "name": "Kuker of Varna",
+    "region": "Varna",
+    "theme": "Slang / Coast",
+    "intro": "The Black Sea whispers in slang. Can you speak like the coast?",
+    "mid_test": "Watch your tenses—like waves, they flow.",
+    "win": "You speak like the sea! Bold and clear.",
+    "fail": "You’ll return. The tide always comes back."
+  },
+  {
+    "level": "B2",
+    "name": "Kuker of Ruse",
+    "region": "Ruse",
+    "theme": "Scholarship / Grammar Bridge",
+    "intro": "Here we cross to knowledge. Ruse blends languages. Do you?",
+    "mid_test": "Prepositions will decide your fate!",
+    "win": "Brilliant. You’ve crossed the Danube of language.",
+    "fail": "So close. Ruse awaits your return."
+  },
+  {
+    "level": "C1",
+    "name": "Kuker of Veliko Tarnovo",
+    "region": "Veliko Tarnovo",
+    "theme": "History / Rhetoric",
+    "intro": "Once kings ruled here. Now it’s your turn to speak with precision.",
+    "mid_test": "Can your phrases carry weight like these walls?",
+    "win": "Impressive. You’d speak well in any court.",
+    "fail": "Even history grants second chances."
+  },
+  {
+    "level": "C2",
+    "name": "Kuker of the Rhodope Mountains",
+    "region": "Rhodope Mountains",
+    "theme": "Wisdom / Nature",
+    "intro": "You’ve climbed high. Rhodope echoes only truth. Can you hold a fluent conversation with the land?",
+    "mid_test": "Accuracy is now your burden. Speak with soul.",
+    "win": "You’ve earned the right to be called fluent.",
+    "fail": "The mountain does not judge. Come back stronger."
+  }
+]
