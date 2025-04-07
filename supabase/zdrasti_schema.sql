@@ -71,6 +71,5 @@ create table if not exists user_settings (
     reminder_frequency text default 'every_3_days',
     reminder_window text default '08:00–10:00',
     kuker_notifications boolean default true,
-    safe_mode boolean default false,
     updated_at timestamptz default now()
 );
