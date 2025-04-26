@@ -11,8 +11,10 @@ create table if not exists users (
     streak int default 0,
     donation_status text,
     last_certificate_link text,
+    last_writing_attempt timestamptz, 
     created_at timestamptz default now()
 );
+
 
 -- USER SETTINGS table
 create table if not exists user_settings (
@@ -27,6 +29,7 @@ create table if not exists user_settings (
 create table if not exists lessons (
     id uuid primary key default gen_random_uuid(),
     user_id uuid references users(id) on delete cascade,
+    lesson_id text not null,
     level text,
     completed boolean default false,
     score int,
@@ -72,4 +75,13 @@ create table if not exists user_settings (
     reminder_window text default '08:00–10:00',
     kuker_notifications boolean default true,
     updated_at timestamptz default now()
+);
+
+--Boss Battle table
+CREATE TABLE boss_results (
+  user_id UUID REFERENCES users(id),
+  boss_id TEXT NOT NULL,
+  passed BOOLEAN NOT NULL DEFAULT false,
+  xp_awarded BOOLEAN NOT NULL DEFAULT false,
+  PRIMARY KEY (user_id, boss_id)
 );

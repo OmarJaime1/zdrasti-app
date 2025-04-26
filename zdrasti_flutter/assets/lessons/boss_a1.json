@@ -1,0 +1,238 @@
+{
+  "boss_id": "boss_a1",
+  "level": "A1",
+  "region": "Sofia",
+  "name": "Kuker of Sofia",
+  "theme": "Beginnings / Basics",
+  "intro_script": "I’m the Kuker of Beginnings, guarding the capital’s gates. Let’s see if you’ve mastered the basics!",
+  "sections": [
+    {
+      "id": "vocabulary",
+      "title": "Vocabulary Challenge",
+      "kuker_script": "Sofia speaks clearly. Do you understand her words?",
+      "type": "random_vocabulary_test",
+      "instructions": "Translate the following 10 Bulgarian words into your native language.",
+      "number_of_items": 10,
+      "pass_score": 8
+    },
+    {
+      "id": "grammar",
+      "title": "Grammar Challenge",
+      "kuker_script": "Let’s see your grip on the building blocks. Grammar is the city’s foundation.",
+      "type": "fill_in_the_blank_quiz",
+      "scenario": {
+        "en": "You're talking to a friend about daily routines, where you live, and your plans for tomorrow.",
+        "es": "Estás hablando con un amigo sobre rutinas diarias, dónde vives y tus planes para mañana.",
+        "tr": "Bir arkadaşınla günlük rutinlerinden, nerede yaşadığından ve yarınki planlarından bahsediyorsun."
+      },
+      "questions": [
+        { "question": "Аз ______ в София.", "answer": "живея" },
+        { "question": "Тя ______ кафе сутрин.", "answer": "пие" },
+        { "question": "Утре аз ______ на пазар.", "answer": "ще отида" },
+        { "question": "В стаята ______ стол.", "answer": "има" },
+        { "question": "Той не ______ телевизия.", "answer": "гледа" }
+      ],
+      "pass_score": 4
+    },
+    {
+      "id": "listening",
+      "title": "Listening Challenge",
+      "kuker_script": "Listen well—Sofia’s trams speak fast and true.",
+      "type": "audio_transcription",
+      "instructions": "Listen to 3 short sentences and type exactly what you hear in Bulgarian.",
+      "verification_type": "exact_match",
+      "audio_prompts": [
+        {
+          "id": "a1_listen_01",
+          "text": "Казвам се Мария.",
+          "answer": "Казвам се Мария."
+        },
+        {
+          "id": "a1_listen_02",
+          "text": "Днес вали и е студено.",
+          "answer": "Днес вали и е студено."
+        },
+        {
+          "id": "a1_listen_03",
+          "text": "Отивам на работа в осем часа.",
+          "answer": "Отивам на работа в осем часа."
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading Challenge",
+      "kuker_script": "Even stone walls carry meaning. Can you read the signs?",
+      "type": "short_paragraph_comprehension",
+      "paragraph": "Казвам се Анна. Живея в София и работя в ресторант. Всяка сутрин пия кафе и чета книга. Днес е неделя и няма работа.",
+      "questions": [
+        { "question": "Как се казва?", "answer": "Анна" },
+        { "question": "Къде живее?", "answer": "София" },
+        { "question": "Къде работи?", "answer": "ресторант" },
+        { "question": "Какво прави сутрин?", "answer": "пие кафе" },
+        { "question": "Какъв ден е днес?", "answer": "неделя" }
+      ],
+      "pass_score": 4
+    },
+    {
+      "id": "fitr_battle",
+      "title": "Kuker Roleplay",
+      "kuker_script": "Speak like you walk these streets. The Kuker listens.",
+      "type": "fitr",
+      "use_random_variant": true,
+      "minimum_score_percent": 80,
+      "variants": [
+        {
+          "ref_id": "fitr_a1_boss_v1",
+          "scenario": {
+            "en": "You meet the Kuker of Sofia near Serdika station. He stops you as the tram rolls by and asks you to prove you’re ready to enter the capital.",
+            "es": "Te encuentras con el Kuker de Sofía cerca de la estación Serdika. Te detiene mientras pasa el tranvía y te pide que pruebes que estás listo para entrar a la capital.",
+            "tr": "Sofya’nın Serdika istasyonu yakınında Kuker ile karşılaşıyorsun. Tramvay geçerken seni durduruyor ve başkente girmeye hazır olup olmadığını kanıtlamanı istiyor."
+          },
+          "dialogue_with_blanks": [
+            "Кукер: Здравей! На ______________ се казваш?",
+            "Вие: ______________ се казвам Ана.",
+            "Кукер: Добре дошла. Откъде ______________?",
+            "Вие: Аз ______________ от Турция.",
+            "Кукер: София е бърза. Говориш ли ______________?",
+            "Вие: Малко. ______________ уча всеки ден.",
+            "Кукер: Трамваят закъсня. В колко часа ставаш?",
+            "Вие: Ставам в ______________ часа.",
+            "Кукер: И после, към Витошка?",
+            "Вие: ______________ кафе и отивам на работа.",
+            "Кукер: А вечер?",
+            "Вие: Гледам телевизия и ______________ си.",
+            "Кукер: Последен въпрос — какво значи ‘приятно ми е’?"
+          ],
+          "answers": [
+            { "correct": ["как"] },
+            { "correct": ["Аз"] },
+            { "correct": ["си", "идваш"] },
+            { "correct": ["съм"] },
+            { "correct": ["български"] },
+            { "correct": ["уча", "аз уча"] },
+            { "correct": ["седем", "осем", "девет"] },
+            { "correct": ["Пия"] },
+            { "correct": ["лягам"] },
+            { "correct": ["приятно ми е", "nice to meet you", "memnun oldum", "mucho gusto"] }
+          ]
+        },
+        {
+          "ref_id": "fitr_a1_boss_v2",
+          "scenario": {
+            "en": "You are ordering coffee near a busy tram stop in Sofia. The Kuker appears behind you and challenges your conversation skills—right in the middle of your order!",
+            "es": "Estás pidiendo café cerca de una parada de tranvía en Sofía. ¡El Kuker aparece detrás de ti y pone a prueba tu búlgaro en medio de tu pedido!",
+            "tr": "Sofya’daki bir tramvay durağında kahve siparişi veriyorsun. Kuker aniden arkanda belirir ve siparişin ortasında Bulgarcana meydan okur!"
+          },
+          "dialogue_with_blanks": [
+            "Бариста: Здравейте! Какво ще ______________?",
+            "Вие: Едно кафе, ______________.",
+            "Кукер: Без мен ли поръчваш? Как се казваш?",
+            "Вие: ______________ се казвам Алекс.",
+            "Кукер: Откъде си, Алекс?",
+            "Вие: Аз ______________ от Испания.",
+            "Кукер: Испания! Вие ставате рано, нали?",
+            "Вие: Ставам в ______________ часа всеки ден.",
+            "Кукер: Какво правиш после?",
+            "Вие: ______________ обяд и почивам малко.",
+            "Кукер: Говориш ли още български?",
+            "Вие: ______________, но уча всеки ден.",
+            "Кукер: Добре. Как се казва улицата тук, знаеш ли?"
+          ],
+          "answers": [
+            { "correct": ["поръчате"] },
+            { "correct": ["моля"] },
+            { "correct": ["Аз"] },
+            { "correct": ["съм"] },
+            { "correct": ["съм"] },
+            { "correct": ["осем", "девет", "седем"] },
+            { "correct": ["Ям"] },
+            { "correct": ["Не много", "Не", "Малко"] },
+            { "correct": ["Витоша", "Витошка", "булевард Витоша"] }
+          ]
+        },
+        {
+          "ref_id": "fitr_a1_boss_v3",
+          "scenario": {
+            "en": "You’re walking toward NDK in Sofia during rush hour. The Kuker steps out from a newsstand and walks beside you. He asks you questions to see if you belong here.",
+            "es": "Vas caminando hacia el NDK en Sofía durante la hora pico. El Kuker sale de un quiosco de periódicos y camina contigo. Te hace preguntas para ver si perteneces aquí.",
+            "tr": "Sofya'da yoğun saatte NDK'ya doğru yürürken Kuker bir gazete standından çıkar ve seninle yürümeye başlar. Buraya ait olup olmadığını görmek için sorular sorar."
+          },
+          "dialogue_with_blanks": [
+            "Кукер: Закъсняваш! В колко часа ______________ обикновено?",
+            "Вие: В 7. ______________, пия кафе и излизам.",
+            "Кукер: Работиш ли тук, в центъра?",
+            "Вие: Да, ______________ на булевард Витоша.",
+            "Кукер: Колко дни работиш?",
+            "Вие: ______________ дни в седмицата.",
+            "Кукер: Ясно. Говориш добре. Кой ден е днес?",
+            "Вие: ______________ е сряда.",
+            "Кукер: А какво правиш след работа?",
+            "Вие: ______________ с приятели или гледам телевизия.",
+            "Кукер: И какво ядеш вечер?",
+            "Вие: Ям ______________ и супа.",
+            "Кукер: Добре. Последно — как казваме 'see you' в София?"
+          ],
+          "answers": [
+            { "correct": ["ставаш"] },
+            { "correct": ["Ставам"] },
+            { "correct": ["работя"] },
+            { "correct": ["Пет", "Шест"] },
+            { "correct": ["Днес"] },
+            { "correct": ["Излизам"] },
+            { "correct": ["салата", "хляб", "баница"] },
+            { "correct": ["Довиждане", "Чао"] }
+          ]
+        }
+      ]
+    },
+	{
+	  "id": "writing_evaluation",
+	  "title": "Writing Challenge",
+	  "kuker_script": "Words shape cities too. Show Sofia your thoughts in writing.",
+	  "type": "text_input",
+	  "chatGPT_prompt_file": "boss_a1_chatgpt_writing_evaluation.txt",
+	  "user_prompt": {
+		"en": "Write at least 3 sentences in Bulgarian to introduce yourself and describe your daily routine. Use vocabulary and grammar from the lessons you've completed.",
+		"es": "Escribe al menos 3 oraciones en búlgaro para presentarte y describir tu rutina diaria. Usa el vocabulario y la gramática de las lecciones que completaste.",
+		"tr": "Kendini tanıtmak ve günlük rutininizi açıklamak için Bulgarca en az 3 cümle yazın. Öğrendiğiniz kelime ve dil bilgilerini kullanın."
+	  },
+	  "evaluation_criteria": {
+		"en": [
+		  "At least 3 full Bulgarian sentences",
+		  "Include personal information (name, country, daily routine)",
+		  "Correct word order (Subject + Verb + Object)",
+		  "Present tense verbs are mostly correct",
+		  "Readable spelling and punctuation",
+		  "Only Bulgarian should be used"
+		],
+		"es": [
+		  "Al menos 3 oraciones completas en búlgaro",
+		  "Incluye información personal (nombre, país, rutina diaria)",
+		  "Orden correcto de palabras (Sujeto + Verbo + Objeto)",
+		  "Uso correcto del tiempo presente en la mayoría de los verbos",
+		  "Ortografía y puntuación legibles",
+		  "Solo debe usarse el idioma búlgaro"
+		],
+		"tr": [
+		  "Bulgarca en az 3 tam cümle yazın",
+		  "Kişisel bilgiler içermelidir (isim, ülke, günlük rutin)",
+		  "Doğru sözcük sırası kullanılmalıdır (Özne + Fiil + Nesne)",
+		  "Geniş zaman fiil çekimleri çoğunlukla doğru olmalıdır",
+		  "Yazım ve noktalama okunabilir olmalıdır",
+		  "Sadece Bulgarca kullanılmalıdır"
+		]
+	  }
+	}
+  ],
+  "final_script": {
+    "pass": "You’ve proven yourself. The city welcomes you—hora awaits!",
+    "fail_writting": "No worries, friend. The first steps are always the hardest.",
+    "fail_quiz": "The city watches from afar. Return when you feel ready."
+  },
+  "logic": {
+    "required_sections_to_pass": 5,
+    "allow_token_use_only_if_all_others_passed": true,
+    "fitr_variants_rotate_per_attempt": true
+  }
+}

@@ -1,0 +1,7729 @@
+{
+	"lessons": [
+		{
+			"lesson_id": "a1_00",
+			"cefr_level": "A1",
+			"title": {
+			  "en": "The Bulgarian Alphabet",
+			  "es": "El alfabeto búlgaro",
+			  "tr": "Bulgar alfabesi"
+			},
+			"overview": {
+			  "en": "Bulgarian uses the Cyrillic alphabet, which has 30 letters. Some look familiar but sound different. Learning the alphabet is your first step toward reading menus, signs, and messages.",
+			  "es": "El búlgaro usa el alfabeto cirílico, que tiene 30 letras. Algunas se parecen al alfabeto latino, pero suenan diferente. Aprender el alfabeto es el primer paso para leer menús, señales y mensajes.",
+			  "tr": "Bulgarca, 30 harften oluşan Kiril alfabesini kullanır. Bazı harfler Latin harflerine benzer, ancak farklı sesler çıkarır. Alfabe öğrenmek, menüleri, tabelaları ve mesajları okuyabilmek için ilk adımdır."
+			},
+			"alphabet_notes": {
+			  "en": "Bulgarian has no Q, W, or X. The letters Ъ and Щ have unique sounds. Й and Ь are modifiers, not full vowels.",
+			  "es": "El búlgaro no tiene las letras Q, W o X. Ъ y Щ tienen sonidos únicos. Й y Ь son modificadores, no vocales completas.",
+			  "tr": "Bulgar alfabesinde Q, W veya X harfleri yoktur. Ъ ve Щ harfleri özel seslere sahiptir. Й ve Ь harfleri tam ses değil, yumuşatıcıdır."
+			},
+			"cultural_tip": {
+			  "region": "National",
+			  "text": {
+				"en": "Bulgaria is the birthplace of the Cyrillic alphabet, created by Saints Cyril and Methodius in the 9th century. May 24th is celebrated as the Day of Bulgarian Education and Culture.",
+				"es": "Bulgaria es la cuna del alfabeto cirílico, creado por los santos Cirilo y Metodio en el siglo IX. El 24 de mayo se celebra el Día de la Educación y Cultura Búlgaras.",
+				"tr": "Kiril alfabesi Bulgaristan’da doğmuştur. 9. yüzyılda Aziz Kiril ve Metodiy tarafından oluşturulmuştur. 24 Mayıs, Bulgar Eğitim ve Kültür Günü olarak kutlanır."
+			  }
+			},
+			"alphabet_table": [
+			  {
+				"letter": "А а",
+				"pronunciation": {
+				  "en": "\"a\" like in 'car'",
+				  "es": "\"a\" como en 'casa'",
+				  "tr": "\"a\" sesi, 'araba' gibi"
+				},
+				"example": "аз",
+				"translation": {
+				  "en": "I",
+				  "es": "yo",
+				  "tr": "ben"
+				}
+			  },
+			  {
+				"letter": "Б б",
+				"pronunciation": {
+				  "en": "\"b\" like in 'boy'",
+				  "es": "\"b\" como en 'bebé'",
+				  "tr": "\"b\" sesi, 'bebek' gibi"
+				},
+				"example": "банан",
+				"translation": {
+				  "en": "banana",
+				  "es": "plátano",
+				  "tr": "muz"
+				}
+			  },
+			  {
+				"letter": "В в",
+				"pronunciation": {
+				  "en": "\"v\" like in 'vet'",
+				  "es": "\"v\" como en 'vino'",
+				  "tr": "\"v\" sesi, 'vazo' gibi"
+				},
+				"example": "вода",
+				"translation": {
+				  "en": "water",
+				  "es": "agua",
+				  "tr": "su"
+				}
+			  },
+			  {
+				"letter": "Г г",
+				"pronunciation": {
+				  "en": "\"g\" like in 'go'",
+				  "es": "\"g\" como en 'gato'",
+				  "tr": "\"g\" sesi, 'gitmek' gibi"
+				},
+				"example": "град",
+				"translation": {
+				  "en": "city",
+				  "es": "ciudad",
+				  "tr": "şehir"
+				}
+			  },
+			  {
+				"letter": "Д д",
+				"pronunciation": {
+				  "en": "\"d\" like in 'dog'",
+				  "es": "\"d\" como en 'día'",
+				  "tr": "\"d\" sesi, 'dünya' gibi"
+				},
+				"example": "ден",
+				"translation": {
+				  "en": "day",
+				  "es": "día",
+				  "tr": "gün"
+				}
+			  },
+			  {
+				"letter": "Е е",
+				"pronunciation": {
+				  "en": "\"e\" like in 'pet'",
+				  "es": "\"e\" como en 'mesa'",
+				  "tr": "\"e\" sesi, 'elma' gibi"
+				},
+				"example": "едно",
+				"translation": {
+				  "en": "one",
+				  "es": "uno",
+				  "tr": "bir"
+				}
+			  },
+			  {
+				"letter": "Ж ж",
+				"pronunciation": {
+				  "en": "\"zh\" like in 'measure'",
+				  "es": "sonido suave como 'j' en francés",
+				  "tr": "\"j\" sesi, 'japon' gibi"
+				},
+				"example": "жена",
+				"translation": {
+				  "en": "woman",
+				  "es": "mujer",
+				  "tr": "kadın"
+				}
+			  },
+			  {
+				"letter": "З з",
+				"pronunciation": {
+				  "en": "\"z\" like in 'zoo'",
+				  "es": "\"z\" como en 'zorro'",
+				  "tr": "\"z\" sesi, 'zebra' gibi"
+				},
+				"example": "зъб",
+				"translation": {
+				  "en": "tooth",
+				  "es": "diente",
+				  "tr": "diş"
+				}
+			  },
+			  {
+				"letter": "И и",
+				"pronunciation": {
+				  "en": "\"ee\" like in 'machine'",
+				  "es": "\"i\" como en 'vino'",
+				  "tr": "\"i\" sesi, 'ip' gibi"
+				},
+				"example": "име",
+				"translation": {
+				  "en": "name",
+				  "es": "nombre",
+				  "tr": "isim"
+				}
+			  },
+			  {
+				"letter": "Й й",
+				"pronunciation": {
+				  "en": "\"y\" like in 'yes'",
+				  "es": "\"y\" como en 'yo'",
+				  "tr": "\"y\" sesi, 'yol' gibi"
+				},
+				"example": "йога",
+				"translation": {
+				  "en": "yoga",
+				  "es": "yoga",
+				  "tr": "yoga"
+				}
+			  },
+			  {
+				"letter": "К к",
+				"pronunciation": {
+				  "en": "\"k\" like in 'kit'",
+				  "es": "\"k\" como en 'kilo'",
+				  "tr": "\"k\" sesi, 'kitap' gibi"
+				},
+				"example": "котка",
+				"translation": {
+				  "en": "cat",
+				  "es": "gato",
+				  "tr": "kedi"
+				}
+			  },
+			  {
+				"letter": "Л л",
+				"pronunciation": {
+				  "en": "\"l\" like in 'lamp'",
+				  "es": "\"l\" como en 'luz'",
+				  "tr": "\"l\" sesi, 'lamba' gibi"
+				},
+				"example": "лято",
+				"translation": {
+				  "en": "summer",
+				  "es": "verano",
+				  "tr": "yaz"
+				}
+			  },
+			  {
+				"letter": "М м",
+				"pronunciation": {
+				  "en": "\"m\" like in 'man'",
+				  "es": "\"m\" como en 'mano'",
+				  "tr": "\"m\" sesi, 'masa' gibi"
+				},
+				"example": "мама",
+				"translation": {
+				  "en": "mom",
+				  "es": "mamá",
+				  "tr": "anne"
+				}
+			  },
+			  {
+				"letter": "Н н",
+				"pronunciation": {
+				  "en": "\"n\" like in 'net'",
+				  "es": "\"n\" como en 'nube'",
+				  "tr": "\"n\" sesi, 'nefes' gibi"
+				},
+				"example": "нос",
+				"translation": {
+				  "en": "nose",
+				  "es": "nariz",
+				  "tr": "burun"
+				}
+			  },
+			  {
+				"letter": "О о",
+				"pronunciation": {
+				  "en": "\"o\" like in 'hot'",
+				  "es": "\"o\" como en 'hola'",
+				  "tr": "\"o\" sesi, 'okul' gibi"
+				},
+				"example": "обичам",
+				"translation": {
+				  "en": "I love",
+				  "es": "amo",
+				  "tr": "seviyorum"
+				}
+			  },
+			  {
+				"letter": "П п",
+				"pronunciation": {
+				  "en": "\"p\" like in 'pen'",
+				  "es": "\"p\" como en 'paz'",
+				  "tr": "\"p\" sesi, 'para' gibi"
+				},
+				"example": "пари",
+				"translation": {
+				  "en": "money",
+				  "es": "dinero",
+				  "tr": "para"
+				}
+			  },
+			  {
+				"letter": "Р р",
+				"pronunciation": {
+				  "en": "rolled \"r\"",
+				  "es": "\"rr\" vibrante",
+				  "tr": "titrek \"r\" sesi"
+				},
+				"example": "река",
+				"translation": {
+				  "en": "river",
+				  "es": "río",
+				  "tr": "nehir"
+				}
+			  },
+			  {
+				"letter": "С с",
+				"pronunciation": {
+				  "en": "\"s\" like in 'sun'",
+				  "es": "\"s\" como en 'sol'",
+				  "tr": "\"s\" sesi, 'su' gibi"
+				},
+				"example": "супа",
+				"translation": {
+				  "en": "soup",
+				  "es": "sopa",
+				  "tr": "çorba"
+				}
+			  },
+			  {
+				"letter": "Т т",
+				"pronunciation": {
+				  "en": "\"t\" like in 'top'",
+				  "es": "\"t\" como en 'taza'",
+				  "tr": "\"t\" sesi, 'top' gibi"
+				},
+				"example": "телефон",
+				"translation": {
+				  "en": "telephone",
+				  "es": "teléfono",
+				  "tr": "telefon"
+				}
+			  },
+			  {
+				"letter": "У у",
+				"pronunciation": {
+				  "en": "\"oo\" like in 'boot'",
+				  "es": "\"u\" como en 'luz'",
+				  "tr": "\"u\" sesi, 'uyku' gibi"
+				},
+				"example": "ученик",
+				"translation": {
+				  "en": "student",
+				  "es": "estudiante",
+				  "tr": "öğrenci"
+				}
+			  },
+			  {
+				"letter": "Ф ф",
+				"pronunciation": {
+				  "en": "\"f\" like in 'fun'",
+				  "es": "\"f\" como en 'familia'",
+				  "tr": "\"f\" sesi, 'film' gibi"
+				},
+				"example": "филм",
+				"translation": {
+				  "en": "film",
+				  "es": "película",
+				  "tr": "film"
+				}
+			  },
+			  {
+				"letter": "Х х",
+				"pronunciation": {
+				  "en": "\"kh\" like in 'loch'",
+				  "es": "sonido fuerte de 'j'",
+				  "tr": "boğazdan gelen \"h\" sesi"
+				},
+				"example": "хляб",
+				"translation": {
+				  "en": "bread",
+				  "es": "pan",
+				  "tr": "ekmek"
+				}
+			  },
+			  {
+				"letter": "Ц ц",
+				"pronunciation": {
+				  "en": "\"ts\" like in 'cats'",
+				  "es": "\"ts\" como en 'pizza'",
+				  "tr": "\"ts\" sesi"
+				},
+				"example": "цвете",
+				"translation": {
+				  "en": "flower",
+				  "es": "flor",
+				  "tr": "çiçek"
+				}
+			  },
+			  {
+				"letter": "Ч ч",
+				"pronunciation": {
+				  "en": "\"ch\" like in 'chat'",
+				  "es": "\"ch\" como en 'chico'",
+				  "tr": "\"ç\" sesi"
+				},
+				"example": "чай",
+				"translation": {
+				  "en": "tea",
+				  "es": "té",
+				  "tr": "çay"
+				}
+			  },
+			  {
+				"letter": "Ш ш",
+				"pronunciation": {
+				  "en": "\"sh\" like in 'ship'",
+				  "es": "\"sh\" como en 'shampoo'",
+				  "tr": "\"ş\" sesi"
+				},
+				"example": "шоколад",
+				"translation": {
+				  "en": "chocolate",
+				  "es": "chocolate",
+				  "tr": "çikolata"
+				}
+			  },
+			  {
+				"letter": "Щ щ",
+				"pronunciation": {
+				  "en": "\"sht\" blend",
+				  "es": "mezcla de \"sht\"",
+				  "tr": "\"şç\" birleşimi"
+				},
+				"example": "щастие",
+				"translation": {
+				  "en": "happiness",
+				  "es": "felicidad",
+				  "tr": "mutluluk"
+				}
+			  },
+			  {
+				"letter": "Ъ ъ",
+				"pronunciation": {
+				  "en": "hard \"uh\" sound",
+				  "es": "sonido \"uh\" fuerte",
+				  "tr": "kalın \"ı\" sesi"
+				},
+				"example": "мъж",
+				"translation": {
+				  "en": "man",
+				  "es": "hombre",
+				  "tr": "adam"
+				}
+			  },
+			  {
+				"letter": "Ь ь",
+				"pronunciation": {
+				  "en": "soft sign",
+				  "es": "signo suave",
+				  "tr": "yumuşatma işareti"
+				},
+				"example": "",
+				"translation": {
+				  "en": "",
+				  "es": "",
+				  "tr": ""
+				}
+			  },
+			  {
+				"letter": "Ю ю",
+				"pronunciation": {
+				  "en": "\"yu\" like in 'universe'",
+				  "es": "\"yu\" como en 'yugo'",
+				  "tr": "\"yu\" sesi"
+				},
+				"example": "юни",
+				"translation": {
+				  "en": "June",
+				  "es": "junio",
+				  "tr": "haziran"
+				}
+			  },
+			  {
+				"letter": "Я я",
+				"pronunciation": {
+				  "en": "\"ya\" like in 'yard'",
+				  "es": "\"ya\" como en 'ya'",
+				  "tr": "\"ya\" sesi"
+				},
+				"example": "ям",
+				"translation": {
+				  "en": "I eat",
+				  "es": "yo como",
+				  "tr": "yerim"
+				}
+			  }
+			]
+		  },
+	  {
+		"lesson_id": "a1_01",
+		"cefr_level": "A1",
+		"phase": "start",
+		"title": {
+		  "en": "Greetings and Introductions",
+		  "es": "Saludos y Presentaciones",
+		  "tr": "Selamlaşmalar ve Tanışmalar"
+		},
+		"vocabulary": [
+		  {
+			"bg": "здравей",
+			"translation": {
+			  "en": "hello (informal)",
+			  "es": "hola (informal)",
+			  "tr": "merhaba (resmî olmayan)"
+			}
+		  },
+		  {
+			"bg": "здравейте",
+			"translation": {
+			  "en": "hello (formal/plural)",
+			  "es": "hola (formal/plural)",
+			  "tr": "merhaba (resmî/çoğul)"
+			}
+		  },
+		  {
+			"bg": "довиждане",
+			"translation": {
+			  "en": "goodbye",
+			  "es": "adiós",
+			  "tr": "hoşça kal"
+			}
+		  },
+		  {
+			"bg": "как си?",
+			"translation": {
+			  "en": "how are you? (informal)",
+			  "es": "¿cómo estás? (informal)",
+			  "tr": "nasılsın? (resmî olmayan)"
+			}
+		  },
+		  {
+			"bg": "как сте?",
+			"translation": {
+			  "en": "how are you? (formal/plural)",
+			  "es": "¿cómo está usted? / ¿cómo están?",
+			  "tr": "nasılsınız? (resmî/çoğul)"
+			}
+		  },
+		  {
+			"bg": "аз съм",
+			"translation": {
+			  "en": "I am",
+			  "es": "yo soy/estoy",
+			  "tr": "ben ...’im"
+			}
+		  },
+		  {
+			"bg": "ти си",
+			"translation": {
+			  "en": "you are (informal)",
+			  "es": "tú eres/estás",
+			  "tr": "sen ...’sin"
+			}
+		  },
+		  {
+			"bg": "той е",
+			"translation": {
+			  "en": "he is",
+			  "es": "él es/está",
+			  "tr": "o (erkek) ...’dir"
+			}
+		  },
+		  {
+			"bg": "тя е",
+			"translation": {
+			  "en": "she is",
+			  "es": "ella es/está",
+			  "tr": "o (kadın) ...’dir"
+			}
+		  },
+		  {
+			"bg": "приятно ми е",
+			"translation": {
+			  "en": "nice to meet you",
+			  "es": "encantado/a de conocerte",
+			  "tr": "tanıştığıma memnun oldum"
+			}
+		  },
+		  {
+			"bg": "казвам се",
+			"translation": {
+			  "en": "my name is / I am called",
+			  "es": "me llamo",
+			  "tr": "adım ..."
+			}
+		  },
+		  {
+			"bg": "как се казваш?",
+			"translation": {
+			  "en": "what’s your name? (informal)",
+			  "es": "¿cómo te llamas? (informal)",
+			  "tr": "adın ne? (resmî olmayan)"
+			}
+		  },
+		  {
+			"bg": "как се казвате?",
+			"translation": {
+			  "en": "what’s your name? (formal)",
+			  "es": "¿cómo se llama usted?",
+			  "tr": "adınız ne? (resmî)"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Subject Pronouns and the Verb 'съм' (to be)",
+			"es": "Pronombres personales y el verbo 'съм' (ser/estar)",
+			"tr": "Şahıs zamirleri ve 'съм' fiili (olmak)"
+		  },
+		  "explanation": {
+			"en": "In Bulgarian, the verb 'съм' means 'to be'. It is used to introduce yourself and others. Here is how it is conjugated:",
+			"es": "En búlgaro, el verbo 'съм' significa 'ser/estar'. Se usa para presentarse uno mismo y a otros. Aquí está su conjugación:",
+			"tr": "Bulgarcada 'съм' fiili 'olmak' anlamına gelir. Kendini ve başkalarını tanıtmak için kullanılır. İşte çekimi:"
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Pronoun",
+				"Verb 'to be'"
+			  ],
+			  "es": [
+				"Pronombre",
+				"Verbo 'ser/estar'"
+			  ],
+			  "tr": [
+				"Zamir",
+				"'olmak' fiili"
+			  ]
+			},
+			"rows": [
+			  [
+				"аз (I)",
+				"съм"
+			  ],
+			  [
+				"ти (you - informal)",
+				"си"
+			  ],
+			  [
+				"той (he)",
+				"е"
+			  ],
+			  [
+				"тя (she)",
+				"е"
+			  ],
+			  [
+				"то (it)",
+				"е"
+			  ],
+			  [
+				"ние (we)",
+				"сме"
+			  ],
+			  [
+				"вие (you - formal/plural)",
+				"сте"
+			  ],
+			  [
+				"те (they)",
+				"са"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Аз съм Анна.",
+			  "translation": {
+				"en": "I am Anna.",
+				"es": "Yo soy Anna.",
+				"tr": "Ben Anna'yım."
+			  }
+			},
+			{
+			  "bg": "Ти си Мария.",
+			  "translation": {
+				"en": "You are Maria.",
+				"es": "Tú eres María.",
+				"tr": "Sen Maria’sın."
+			  }
+			},
+			{
+			  "bg": "Той е Иван.",
+			  "translation": {
+				"en": "He is Ivan.",
+				"es": "Él es Iván.",
+				"tr": "O Ivan’dır."
+			  }
+			},
+			{
+			  "bg": "Ние сме студенти.",
+			  "translation": {
+				"en": "We are students.",
+				"es": "Somos estudiantes.",
+				"tr": "Biz öğrenciyiz."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "In spoken Bulgarian, subject pronouns are often dropped because the verb ending shows who is speaking.",
+			"es": "En búlgaro hablado, los pronombres personales a menudo se omiten porque la conjugación del verbo indica el sujeto.",
+			"tr": "Konuşma dilinde şahıs zamirleri genellikle atlanır çünkü fiil çekimi zaten kişiyi gösterir."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "In Bulgaria, formal greetings like 'Здравейте' are expected when meeting strangers or older people. Informal 'Здравей' is used among friends or peers.",
+			"es": "En Bulgaria, los saludos formales como 'Здравейте' se esperan al conocer a desconocidos o personas mayores. 'Здравей' se usa entre amigos o iguales.",
+			"tr": "Bulgaristan'da, 'Здравейте' gibi resmî selamlaşmalar yabancılarla veya yaşlılarla kullanılır. 'Здравей' ise arkadaşlar arasında kullanılır."
+		  }
+		},
+		"slang": {
+			"region": "Sofia",
+			"text": {
+				"en": "In Sofia, people often say 'айляк' to describe chill, stress-free living.",
+				"es": "En Sofía, la gente dice 'айляк' para describir una vida relajada y sin estrés.",
+				"tr": "Sofya’da insanlar rahat yaşam tarzı için 'айляк' kelimesini kullanır."
+			}
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What is the formal way to say hello in Bulgarian?",
+			  "es": "¿Cuál es la forma formal de decir hola en búlgaro?",
+			  "tr": "Bulgarcada 'merhaba' demenin resmî yolu nedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "здравей",
+			  "здравейте",
+			  "довиждане"
+			],
+			"answer": "здравейте",
+			"explanation": {
+			  "en": "'Здравейте' is used formally or when addressing multiple people.",
+			  "es": "'Здравейте' se usa de forma formal o con varias personas.",
+			  "tr": "'Здравейте' resmî veya birden fazla kişiye hitap ederken kullanılır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which of these means 'I am'?",
+			  "es": "¿Cuál de estos significa 'yo soy'?",
+			  "tr": "Bunlardan hangisi 'ben ...’im' demektir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "си",
+			  "е",
+			  "съм"
+			],
+			"answer": "съм",
+			"explanation": {
+			  "en": "'съм' is the form of 'to be' for 'I'.",
+			  "es": "'съм' es la forma del verbo 'ser/estar' para 'yo'.",
+			  "tr": "'съм', 'ben' için 'olmak' fiilidir."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "Здравейте! Аз съм Елена. Как се казвате? – Казвам се Джон. Приятно ми е! – Приятно ми е и на мен!",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What is the woman's name?",
+				"es": "¿Cómo se llama la mujer?",
+				"tr": "Kadının adı ne?"
+			  },
+			  "type": "multiple_choice",
+			  "options": [
+				"Мария",
+				"Елена",
+				"Анна"
+			  ],
+			  "answer": "Елена",
+			  "explanation": {
+				"en": "She says: 'Аз съм Елена.'",
+				"es": "Ella dice: 'Аз съм Елена.'",
+				"tr": "O, 'Аз съм Елена.' diyor."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are meeting someone for the first time. Your name is Ivan. Practice greeting and introducing yourself.",
+			"es": "Estás conociendo a alguien por primera vez. Te llamas Iván. Practica saludar y presentarte.",
+			"tr": "Birisiyle ilk kez tanışıyorsun. Adın Ivan. Selamlaş ve kendini tanıt."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: ____________",
+			"Лице B: Здравейте!",
+			"Лице A: Как се казвате?",
+			"Лице B: ____________",
+			"Лице A: Приятно ми е!"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Здравейте"
+			  ]
+			},
+			{
+			  "correct": [
+				"Казвам се Иван"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_02",
+		"cefr_level": "A1",
+		"phase": "start",
+		"title": {
+		  "en": "Countries and Nationalities",
+		  "es": "Países y Nacionalidades",
+		  "tr": "Ülkeler ve Uyruklar"
+		},
+		"vocabulary": [
+		  {
+			"bg": "държава",
+			"translation": {
+			  "en": "country",
+			  "es": "país",
+			  "tr": "ülke"
+			}
+		  },
+		  {
+			"bg": "националност",
+			"translation": {
+			  "en": "nationality",
+			  "es": "nacionalidad",
+			  "tr": "milliyet"
+			}
+		  },
+		  {
+			"bg": "език",
+			"translation": {
+			  "en": "language",
+			  "es": "idioma",
+			  "tr": "dil"
+			}
+		  },
+		  {
+			"bg": "България",
+			"translation": {
+			  "en": "Bulgaria",
+			  "es": "Bulgaria",
+			  "tr": "Bulgaristan"
+			}
+		  },
+		  {
+			"bg": "българин",
+			"translation": {
+			  "en": "Bulgarian (man)",
+			  "es": "búlgaro",
+			  "tr": "Bulgar (erkek)"
+			}
+		  },
+		  {
+			"bg": "българка",
+			"translation": {
+			  "en": "Bulgarian (woman)",
+			  "es": "búlgara",
+			  "tr": "Bulgar (kadın)"
+			}
+		  },
+		  {
+			"bg": "Англия",
+			"translation": {
+			  "en": "England",
+			  "es": "Inglaterra",
+			  "tr": "İngiltere"
+			}
+		  },
+		  {
+			"bg": "англичанин",
+			"translation": {
+			  "en": "Englishman",
+			  "es": "inglés",
+			  "tr": "İngiliz (erkek)"
+			}
+		  },
+		  {
+			"bg": "англичанка",
+			"translation": {
+			  "en": "Englishwoman",
+			  "es": "inglesa",
+			  "tr": "İngiliz (kadın)"
+			}
+		  },
+		  {
+			"bg": "Мексико",
+			"translation": {
+			  "en": "Mexico",
+			  "es": "México",
+			  "tr": "Meksika"
+			}
+		  },
+		  {
+			"bg": "мексиканец",
+			"translation": {
+			  "en": "Mexican man",
+			  "es": "mexicano",
+			  "tr": "Meksikalı (erkek)"
+			}
+		  },
+		  {
+			"bg": "мексиканка",
+			"translation": {
+			  "en": "Mexican woman",
+			  "es": "mexicana",
+			  "tr": "Meksikalı (kadın)"
+			}
+		  },
+		  {
+			"bg": "Турция",
+			"translation": {
+			  "en": "Turkey",
+			  "es": "Turquía",
+			  "tr": "Türkiye"
+			}
+		  },
+		  {
+			"bg": "турчин",
+			"translation": {
+			  "en": "Turkish man",
+			  "es": "turco",
+			  "tr": "Türk (erkek)"
+			}
+		  },
+		  {
+			"bg": "туркиня",
+			"translation": {
+			  "en": "Turkish woman",
+			  "es": "turca",
+			  "tr": "Türk (kadın)"
+			}
+		  },
+		  {
+			"bg": "говоря",
+			"translation": {
+			  "en": "I speak",
+			  "es": "yo hablo",
+			  "tr": "konuşuyorum"
+			}
+		  },
+		  {
+			"bg": "откъде си?",
+			"translation": {
+			  "en": "where are you from? (informal)",
+			  "es": "¿de dónde eres?",
+			  "tr": "nerelisin?"
+			}
+		  },
+		  {
+			"bg": "откъде сте?",
+			"translation": {
+			  "en": "where are you from? (formal)",
+			  "es": "¿de dónde es usted?",
+			  "tr": "nerelisiniz?"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Gender in Nationalities and Adjectives",
+			"es": "Género en Nacionalidades y Adjetivos",
+			"tr": "Uyruklar ve Sıfatlarda Cinsiyet"
+		  },
+		  "explanation": {
+			"en": "In Bulgarian, nationalities change based on the gender of the person. Usually, the masculine form ends in -ин/-ец and the feminine form in -ка. Learn to match the form to the speaker.",
+			"es": "En búlgaro, las nacionalidades cambian según el género. Generalmente, el masculino termina en -ин/-ец y el femenino en -ка. Hay que adaptar la forma al hablante.",
+			"tr": "Bulgarcada uyruklar kişinin cinsiyetine göre değişir. Erkek formu genelde -ин/-ец ile, kadın formu ise -ка ile biter. Kime aitse ona göre kullanılmalıdır."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Country",
+				"Man",
+				"Woman"
+			  ],
+			  "es": [
+				"País",
+				"Hombre",
+				"Mujer"
+			  ],
+			  "tr": [
+				"Ülke",
+				"Erkek",
+				"Kadın"
+			  ]
+			},
+			"rows": [
+			  [
+				"България",
+				"българин",
+				"българка"
+			  ],
+			  [
+				"Англия",
+				"англичанин",
+				"англичанка"
+			  ],
+			  [
+				"Мексико",
+				"мексиканец",
+				"мексиканка"
+			  ],
+			  [
+				"Турция",
+				"турчин",
+				"туркиня"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Аз съм българка.",
+			  "translation": {
+				"en": "I am Bulgarian (woman).",
+				"es": "Soy búlgara.",
+				"tr": "Ben Bulgarım (kadın)."
+			  }
+			},
+			{
+			  "bg": "Той е англичанин.",
+			  "translation": {
+				"en": "He is English.",
+				"es": "Él es inglés.",
+				"tr": "O İngiliz."
+			  }
+			},
+			{
+			  "bg": "Тя е мексиканка.",
+			  "translation": {
+				"en": "She is Mexican.",
+				"es": "Ella es mexicana.",
+				"tr": "O Meksikalı."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Always adjust the adjective for gender. Bulgarians will notice incorrect gender usage immediately.",
+			"es": "Siempre ajusta el adjetivo al género. Los búlgaros notan errores de género fácilmente.",
+			"tr": "Sıfatları mutlaka cinsiyete göre ayarla. Bulgarlar cinsiyet hatasını hemen fark eder."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Bulgarians often ask where you are from right after greetings. It’s a way to start a friendly conversation.",
+			"es": "Los búlgaros suelen preguntar de dónde eres justo después de saludar. Es una forma de iniciar una conversación amigable.",
+			"tr": "Bulgarlar genellikle selamlaştıktan sonra 'nerelisin?' diye sorar. Bu samimi bir sohbet başlatmanın yoludur."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "In casual talk, locals sometimes call foreigners 'чужденец' (man) or 'чужденка' (woman). It’s not rude, but informal.",
+			"es": "En lenguaje coloquial, a veces los locales dicen 'чужденец' (hombre) o 'чужденка' (mujer) para referirse a extranjeros. No es ofensivo, pero sí informal.",
+			"tr": "Günlük konuşmada yerel halk yabancılar için 'чужденец' (erkek) veya 'чужденка' (kadın) diyebilir. Bu kaba değil ama resmî de değil."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "Which of these is the feminine form of 'англичанин'?",
+			  "es": "¿Cuál es la forma femenina de 'англичанин'?",
+			  "tr": "'англичанин' kelimesinin dişi hali hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "англичанка",
+			  "англичанец",
+			  "английка"
+			],
+			"answer": "англичанка",
+			"explanation": {
+			  "en": "'англичанка' is the correct feminine form.",
+			  "es": "'англичанка' es la forma femenina correcta.",
+			  "tr": "'англичанка' doğru kadın formudur."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'откъде сте?' mean?",
+			  "es": "¿Qué significa 'откъде сте?'",
+			  "tr": "'откъде сте?' ne demektir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "How are you?",
+			  "Where are you from? (formal)",
+			  "Do you speak English?"
+			],
+			"answer": "Where are you from? (formal)",
+			"explanation": {
+			  "en": "'откъде сте?' is used formally to ask someone’s origin.",
+			  "es": "'откъде сте?' se usa de forma formal para preguntar el origen.",
+			  "tr": "'откъде сте?' resmî olarak birinin nereli olduğunu sormaktır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Choose the correct masculine form for a person from Turkey.",
+			  "es": "Elige la forma masculina correcta para una persona de Turquía.",
+			  "tr": "Türkiye'den bir erkek için doğru formu seçin."
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "туркиня",
+			  "турчин",
+			  "турец"
+			],
+			"answer": "турчин",
+			"explanation": {
+			  "en": "'турчин' is the masculine form.",
+			  "es": "'турчин' es la forma masculina.",
+			  "tr": "'турчин' erkek formudur."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Здравей, откъде си? – Аз съм от Мексико. А ти? – Аз съм от България. – Мексиканец ли си? – Да, мексиканец съм.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "Where is the first person from?",
+				"es": "¿De dónde es la primera persona?",
+				"tr": "İlk kişi nereli?"
+			  },
+			  "type": "multiple_choice",
+			  "options": [
+				"Turkey",
+				"Mexico",
+				"Bulgaria"
+			  ],
+			  "answer": "Mexico",
+			  "explanation": {
+				"en": "They say 'Аз съм от Мексико.'",
+				"es": "Dice 'Аз съм от Мексико.'",
+				"tr": "'Аз съм от Мексико.' diyor."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are meeting someone new and talking about where you're from. You are from Turkey.",
+			"es": "Estás conociendo a alguien nuevo y hablas de dónde eres. Eres de Turquía.",
+			"tr": "Yeni biriyle tanışıyorsun ve nereli olduğundan bahsediyorsun. Türkiye'densin."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Здравей, откъде си?",
+			"Лице B: ____________",
+			"Лице A: Турчин ли си?",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Аз съм от Турция"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, турчин съм"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_03",
+		"cefr_level": "A1",
+		"phase": "start",
+		"title": {
+		  "en": "Numbers and the Alphabet",
+		  "es": "Números y el Alfabeto",
+		  "tr": "Sayılar ve Alfabe"
+		},
+		"vocabulary": [
+		  {
+			"bg": "нула",
+			"translation": {
+			  "en": "zero",
+			  "es": "cero",
+			  "tr": "sıfır"
+			}
+		  },
+		  {
+			"bg": "едно",
+			"translation": {
+			  "en": "one",
+			  "es": "uno",
+			  "tr": "bir"
+			}
+		  },
+		  {
+			"bg": "две",
+			"translation": {
+			  "en": "two",
+			  "es": "dos",
+			  "tr": "iki"
+			}
+		  },
+		  {
+			"bg": "три",
+			"translation": {
+			  "en": "three",
+			  "es": "tres",
+			  "tr": "üç"
+			}
+		  },
+		  {
+			"bg": "четири",
+			"translation": {
+			  "en": "four",
+			  "es": "cuatro",
+			  "tr": "dört"
+			}
+		  },
+		  {
+			"bg": "пет",
+			"translation": {
+			  "en": "five",
+			  "es": "cinco",
+			  "tr": "beş"
+			}
+		  },
+		  {
+			"bg": "шест",
+			"translation": {
+			  "en": "six",
+			  "es": "seis",
+			  "tr": "altı"
+			}
+		  },
+		  {
+			"bg": "седем",
+			"translation": {
+			  "en": "seven",
+			  "es": "siete",
+			  "tr": "yedi"
+			}
+		  },
+		  {
+			"bg": "осем",
+			"translation": {
+			  "en": "eight",
+			  "es": "ocho",
+			  "tr": "sekiz"
+			}
+		  },
+		  {
+			"bg": "девет",
+			"translation": {
+			  "en": "nine",
+			  "es": "nueve",
+			  "tr": "dokuz"
+			}
+		  },
+		  {
+			"bg": "десет",
+			"translation": {
+			  "en": "ten",
+			  "es": "diez",
+			  "tr": "on"
+			}
+		  },
+		  {
+			"bg": "двадесет",
+			"translation": {
+			  "en": "twenty",
+			  "es": "veinte",
+			  "tr": "yirmi"
+			}
+		  },
+		  {
+			"bg": "тридесет",
+			"translation": {
+			  "en": "thirty",
+			  "es": "treinta",
+			  "tr": "otuz"
+			}
+		  },
+		  {
+			"bg": "четиридесет",
+			"translation": {
+			  "en": "forty",
+			  "es": "cuarenta",
+			  "tr": "kırk"
+			}
+		  },
+		  {
+			"bg": "петдесет",
+			"translation": {
+			  "en": "fifty",
+			  "es": "cincuenta",
+			  "tr": "elli"
+			}
+		  },
+		  {
+			"bg": "шестдесет",
+			"translation": {
+			  "en": "sixty",
+			  "es": "sesenta",
+			  "tr": "altmış"
+			}
+		  },
+		  {
+			"bg": "седемдесет",
+			"translation": {
+			  "en": "seventy",
+			  "es": "setenta",
+			  "tr": "yetmiş"
+			}
+		  },
+		  {
+			"bg": "осемдесет",
+			"translation": {
+			  "en": "eighty",
+			  "es": "ochenta",
+			  "tr": "seksen"
+			}
+		  },
+		  {
+			"bg": "деветдесет",
+			"translation": {
+			  "en": "ninety",
+			  "es": "noventa",
+			  "tr": "doksan"
+			}
+		  },
+		  {
+			"bg": "сто",
+			"translation": {
+			  "en": "hundred",
+			  "es": "cien",
+			  "tr": "yüz"
+			}
+		  },
+		  {
+			"bg": "телефонен номер",
+			"translation": {
+			  "en": "phone number",
+			  "es": "número de teléfono",
+			  "tr": "telefon numarası"
+			}
+		  },
+		  {
+			"bg": "азбука",
+			"translation": {
+			  "en": "alphabet",
+			  "es": "alfabeto",
+			  "tr": "alfabe"
+			}
+		  },
+		  {
+			"bg": "буква",
+			"translation": {
+			  "en": "letter",
+			  "es": "letra",
+			  "tr": "harf"
+			}
+		  },
+		  {
+			"bg": "как се пише?",
+			"translation": {
+			  "en": "how do you spell?",
+			  "es": "¿cómo se escribe?",
+			  "tr": "nasıl yazılır?"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Saying Numbers and Spelling Names",
+			"es": "Decir Números y Deletrear Nombres",
+			"tr": "Sayıları Söylemek ve İsimleri Hecelemek"
+		  },
+		  "explanation": {
+			"en": "When saying a phone number in Bulgarian, you say the numbers one by one. For example, 0895 becomes: нула, осем, девет, пет. The word 'и' means 'and' and is often used before the last digit or group.",
+			"es": "Cuando dices un número de teléfono en búlgaro, se dice número por número. Por ejemplo: 0895 se convierte en: нула, осем, девет, пет. La palabra 'и' significa 'y' y se usa antes del último número o grupo.",
+			"tr": "Bulgarcada telefon numarası söylerken rakamlar tek tek söylenir. Örneğin: 0895 → нула, осем, девет, пет. 'и' kelimesi 've' demektir ve son gruptan önce kullanılır."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Number",
+				"Bulgarian (Word)"
+			  ],
+			  "es": [
+				"Número",
+				"Búlgaro (Palabra)"
+			  ],
+			  "tr": [
+				"Sayı",
+				"Bulgarca (Yazı ile)"
+			  ]
+			},
+			"rows": [
+			  [
+				"10",
+				"десет"
+			  ],
+			  [
+				"20",
+				"двадесет"
+			  ],
+			  [
+				"30",
+				"тридесет"
+			  ],
+			  [
+				"40",
+				"четиридесет"
+			  ],
+			  [
+				"50",
+				"петдесет"
+			  ],
+			  [
+				"60",
+				"шестдесет"
+			  ],
+			  [
+				"70",
+				"седемдесет"
+			  ],
+			  [
+				"80",
+				"осемдесет"
+			  ],
+			  [
+				"90",
+				"деветдесет"
+			  ],
+			  [
+				"100",
+				"сто"
+			  ],
+			  [
+				"24",
+				"двадесет и четири"
+			  ],
+			  [
+				"46",
+				"четиридесет и шест"
+			  ],
+			  [
+				"79",
+				"седемдесет и девет"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Телефонният ми номер е нула, осем, девет, пет.",
+			  "translation": {
+				"en": "My phone number is 0895.",
+				"es": "Mi número es 0895.",
+				"tr": "Telefon numaram 0895."
+			  }
+			},
+			{
+			  "bg": "Как се пише името ти?",
+			  "translation": {
+				"en": "How do you spell your name?",
+				"es": "¿Cómo se escribe tu nombre?",
+				"tr": "İsmin nasıl yazılır?"
+			  }
+			},
+			{
+			  "bg": "Името ми се пише: Е - Л - Е - Н - А.",
+			  "translation": {
+				"en": "My name is spelled: E - L - E - N - A.",
+				"es": "Mi nombre se escribe: E - L - E - N - A.",
+				"tr": "İsmim şöyle yazılır: E - L - E - N - A."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Bulgarians sometimes group numbers into chunks when speaking them quickly, especially phone numbers.",
+			"es": "Los búlgaros a veces agrupan los números cuando los dicen rápido, especialmente los números de teléfono.",
+			"tr": "Bulgarlar özellikle telefon numaralarını hızlı söylerken rakamları gruplar halinde söyler."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "In Bulgaria, it's common to say your phone number slowly and clearly, especially to strangers or in official settings like banks.",
+			"es": "En Bulgaria es común decir tu número de teléfono despacio y claramente, especialmente con desconocidos o en situaciones formales como en el banco.",
+			"tr": "Bulgaristan'da telefon numarası özellikle yabancılarla ya da resmi yerlerde (örneğin bankada) yavaş ve net şekilde söylenir."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Young people sometimes skip 'нула' (zero) and say 'о' like the English letter when giving phone numbers.",
+			"es": "Los jóvenes a veces dicen 'о' (como la letra en inglés) en lugar de 'нула' (cero) al dar su número.",
+			"tr": "Gençler bazen telefon numarası verirken 'нула' (sıfır) yerine İngilizce 'o' harfi gibi 'о' der."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'пет' mean?",
+			  "es": "¿Qué significa 'пет'?",
+			  "tr": "'пет' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Four",
+			  "Five",
+			  "Six"
+			],
+			"answer": "Five",
+			"explanation": {
+			  "en": "'пет' means five in Bulgarian.",
+			  "es": "'пет' significa cinco en búlgaro.",
+			  "tr": "'пет' Bulgarcada beş demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which number is 'осем'?",
+			  "es": "¿Qué número es 'осем'?",
+			  "tr": "'осем' hangi sayı?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "6",
+			  "7",
+			  "8"
+			],
+			"answer": "8",
+			"explanation": {
+			  "en": "'осем' is eight.",
+			  "es": "'осем' es ocho.",
+			  "tr": "'осем' sekiz demektir."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Какъв е телефонният ви номер? – Нула, осем, девет, пет. – Благодаря!",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What is the first digit of the phone number?",
+				"es": "¿Cuál es el primer número del teléfono?",
+				"tr": "Telefon numarasının ilk rakamı nedir?"
+			  },
+			  "type": "multiple_choice",
+			  "options": [
+				"едно",
+				"нула",
+				"осем"
+			  ],
+			  "answer": "нула",
+			  "explanation": {
+				"en": "The person starts with 'Нула' which means zero.",
+				"es": "La persona dice 'Нула', que significa cero.",
+				"tr": "Kişi 'Нула' (sıfır) diyerek başlıyor."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are at a mobile shop. The clerk asks for your phone number and how to spell your name. Your number is 0895 and your name is Elena.",
+			"es": "Estás en una tienda de móviles. El dependiente te pide tu número de teléfono y cómo se escribe tu nombre. Tu número es 0895 y te llamas Elena.",
+			"tr": "Bir telefon mağazasındasın. Çalışan senden telefon numaranı ve ismini harf harf söylemeni istiyor. Numaran 0895 ve adın Elena."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Какъв е телефонният ви номер?",
+			"Лице B: ____________",
+			"Лице A: Как се пише името ви?",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Нула, осем, девет, пет"
+			  ]
+			},
+			{
+			  "correct": [
+				"Е - Л - Е - Н - А"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_04",
+		"cefr_level": "A1",
+		"phase": "start",
+		"title": {
+		  "en": "Days, Months, and Time",
+		  "es": "Días, Meses y Hora",
+		  "tr": "Günler, Aylar ve Saat"
+		},
+		"vocabulary": [
+		  {
+			"bg": "понеделник",
+			"translation": {
+			  "en": "Monday",
+			  "es": "lunes",
+			  "tr": "pazartesi"
+			}
+		  },
+		  {
+			"bg": "вторник",
+			"translation": {
+			  "en": "Tuesday",
+			  "es": "martes",
+			  "tr": "salı"
+			}
+		  },
+		  {
+			"bg": "сряда",
+			"translation": {
+			  "en": "Wednesday",
+			  "es": "miércoles",
+			  "tr": "çarşamba"
+			}
+		  },
+		  {
+			"bg": "четвъртък",
+			"translation": {
+			  "en": "Thursday",
+			  "es": "jueves",
+			  "tr": "perşembe"
+			}
+		  },
+		  {
+			"bg": "петък",
+			"translation": {
+			  "en": "Friday",
+			  "es": "viernes",
+			  "tr": "cuma"
+			}
+		  },
+		  {
+			"bg": "събота",
+			"translation": {
+			  "en": "Saturday",
+			  "es": "sábado",
+			  "tr": "cumartesi"
+			}
+		  },
+		  {
+			"bg": "неделя",
+			"translation": {
+			  "en": "Sunday",
+			  "es": "domingo",
+			  "tr": "pazar"
+			}
+		  },
+		  {
+			"bg": "януари",
+			"translation": {
+			  "en": "January",
+			  "es": "enero",
+			  "tr": "ocak"
+			}
+		  },
+		  {
+			"bg": "февруари",
+			"translation": {
+			  "en": "February",
+			  "es": "febrero",
+			  "tr": "şubat"
+			}
+		  },
+		  {
+			"bg": "март",
+			"translation": {
+			  "en": "March",
+			  "es": "marzo",
+			  "tr": "mart"
+			}
+		  },
+		  {
+			"bg": "април",
+			"translation": {
+			  "en": "April",
+			  "es": "abril",
+			  "tr": "nisan"
+			}
+		  },
+		  {
+			"bg": "май",
+			"translation": {
+			  "en": "May",
+			  "es": "mayo",
+			  "tr": "mayıs"
+			}
+		  },
+		  {
+			"bg": "юни",
+			"translation": {
+			  "en": "June",
+			  "es": "junio",
+			  "tr": "haziran"
+			}
+		  },
+		  {
+			"bg": "юли",
+			"translation": {
+			  "en": "July",
+			  "es": "julio",
+			  "tr": "temmuz"
+			}
+		  },
+		  {
+			"bg": "август",
+			"translation": {
+			  "en": "August",
+			  "es": "agosto",
+			  "tr": "ağustos"
+			}
+		  },
+		  {
+			"bg": "септември",
+			"translation": {
+			  "en": "September",
+			  "es": "septiembre",
+			  "tr": "eylül"
+			}
+		  },
+		  {
+			"bg": "октомври",
+			"translation": {
+			  "en": "October",
+			  "es": "octubre",
+			  "tr": "ekim"
+			}
+		  },
+		  {
+			"bg": "ноември",
+			"translation": {
+			  "en": "November",
+			  "es": "noviembre",
+			  "tr": "kasım"
+			}
+		  },
+		  {
+			"bg": "декември",
+			"translation": {
+			  "en": "December",
+			  "es": "diciembre",
+			  "tr": "aralık"
+			}
+		  },
+		  {
+			"bg": "час",
+			"translation": {
+			  "en": "hour / o’clock",
+			  "es": "hora",
+			  "tr": "saat"
+			}
+		  },
+		  {
+			"bg": "минута",
+			"translation": {
+			  "en": "minute",
+			  "es": "minuto",
+			  "tr": "dakika"
+			}
+		  },
+		  {
+			"bg": "в колко часа?",
+			"translation": {
+			  "en": "at what time?",
+			  "es": "¿a qué hora?",
+			  "tr": "saat kaçta?"
+			}
+		  },
+		  {
+			"bg": "в три часа",
+			"translation": {
+			  "en": "at 3 o’clock",
+			  "es": "a las 3",
+			  "tr": "saat üçte"
+			}
+		  },
+		  {
+			"bg": "сега",
+			"translation": {
+			  "en": "now",
+			  "es": "ahora",
+			  "tr": "şimdi"
+			}
+		  },
+		  {
+			"bg": "рано",
+			"translation": {
+			  "en": "early",
+			  "es": "temprano",
+			  "tr": "erken"
+			}
+		  },
+		  {
+			"bg": "късно",
+			"translation": {
+			  "en": "late",
+			  "es": "tarde",
+			  "tr": "geç"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Telling Time and Using 'в' + Time Expression",
+			"es": "Decir la Hora y Usar 'в' + Expresión de Tiempo",
+			"tr": "Saat Söylemek ve 'в' + Zaman İfadesi Kullanmak"
+		  },
+		  "explanation": {
+			"en": "In Bulgarian, we say the time using 'в' + number + 'часа'. For example: 'в три часа' = at 3 o’clock. The word 'в' (pronounced 'v') means 'at'. You can use it with times, days, and months.",
+			"es": "En búlgaro se dice la hora usando 'в' + número + 'часа'. Por ejemplo: 'в три часа' = a las 3. La palabra 'в' significa 'en / a'. Se usa con horas, días y meses.",
+			"tr": "Bulgarcada saat söylerken 'в' + sayı + 'часа' kullanılır. Örneğin: 'в три часа' = saat üçte. 'в' kelimesi '...de/-da' anlamına gelir ve zaman ifadeleriyle kullanılır."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Time Expression",
+				"Example"
+			  ],
+			  "es": [
+				"Expresión de Tiempo",
+				"Ejemplo"
+			  ],
+			  "tr": [
+				"Zaman İfadesi",
+				"Örnek"
+			  ]
+			},
+			"rows": [
+			  [
+				"в 3 часа",
+				"В три часа имам среща."
+			  ],
+			  [
+				"в понеделник",
+				"В понеделник съм на работа."
+			  ],
+			  [
+				"в март",
+				"В март е студено."
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Класът започва в девет часа.",
+			  "translation": {
+				"en": "The class starts at 9 o’clock.",
+				"es": "La clase empieza a las 9.",
+				"tr": "Ders saat dokuzda başlıyor."
+			  }
+			},
+			{
+			  "bg": "Имам среща в петък.",
+			  "translation": {
+				"en": "I have a meeting on Friday.",
+				"es": "Tengo una reunión el viernes.",
+				"tr": "Cuma günü bir toplantım var."
+			  }
+			},
+			{
+			  "bg": "Почивам през август.",
+			  "translation": {
+				"en": "I rest in August.",
+				"es": "Descanso en agosto.",
+				"tr": "Ağustos'ta dinlenirim."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Always remember to use 'в' with times, days, and months. For example: 'в понеделник', 'в три часа'.",
+			"es": "En búlgaro siempre se usa 'в' con horas, días y meses. Por ejemplo: 'в понеделник', 'в три часа'.",
+			"tr": "Bulgarcada saat, gün ve aylarla her zaman 'в' kullanılır. Örneğin: 'в понеделник', 'в три часа'."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "In Bulgaria, being a few minutes late is acceptable in social situations, but punctuality is expected at work and appointments.",
+			"es": "En Bulgaria, llegar unos minutos tarde está bien en situaciones sociales, pero se espera puntualidad en el trabajo y citas.",
+			"tr": "Bulgaristan'da sosyal ortamlarda birkaç dakika geç kalmak kabul edilir ama işte ve randevularda dakiklik beklenir."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Instead of saying the full day, some people just shorten it: 'пон' for Monday, 'вто' for Tuesday, especially in text messages.",
+			"es": "En vez de decir el día completo, algunas personas lo acortan: 'пон' para lunes, 'вто' para martes, especialmente en mensajes.",
+			"tr": "Bazı kişiler günleri kısaltır: pazartesi yerine 'пон', salı yerine 'вто' derler – özellikle mesajlarda."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What day is 'сряда'?",
+			  "es": "¿Qué día es 'сряда'?",
+			  "tr": "'сряда' hangi gün?"
+			},
+			"type": "multiple_choice",
+			"options": {
+			  "en": [
+				"Monday",
+				"Wednesday",
+				"Saturday"
+			  ],
+			  "es": [
+				"lunes",
+				"miércoles",
+				"sábado"
+			  ],
+			  "tr": [
+				"pazartesi",
+				"çarşamba",
+				"cumartesi"
+			  ]
+			},
+			"answer": {
+			  "en": "Wednesday",
+			  "es": "miércoles",
+			  "tr": "çarşamba"
+			},
+			"explanation": {
+			  "en": "'сряда' means Wednesday.",
+			  "es": "'сряда' significa miércoles.",
+			  "tr": "'сряда' çarşamba demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which phrase means 'at 5 o’clock'?",
+			  "es": "¿Cuál frase significa 'a las 5'?",
+			  "tr": "'Saat beşte' hangi ifadedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "в пет часа",
+			  "в петък",
+			  "пет минути"
+			],
+			"answer": "в пет часа",
+			"explanation": {
+			  "en": "'в пет часа' means 'at five o’clock'.",
+			  "es": "'в пет часа' significa 'a las cinco'.",
+			  "tr": "'в пет часа' saat beş demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which month is 'юли'?",
+			  "es": "¿Qué mes es 'юли'?",
+			  "tr": "'юли' hangi aydır?"
+			},
+			"type": "multiple_choice",
+			"options": {
+			  "en": [
+				"June",
+				"July",
+				"August"
+			  ],
+			  "es": [
+				"junio",
+				"julio",
+				"agosto"
+			  ],
+			  "tr": [
+				"haziran",
+				"temmuz",
+				"ağustos"
+			  ]
+			},
+			"answer": {
+			  "en": "July",
+			  "es": "julio",
+			  "tr": "temmuz"
+			},
+			"explanation": {
+			  "en": "'юли' is July.",
+			  "es": "'юли' es julio.",
+			  "tr": "'юли' temmuzdur."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Кога е срещата? – В сряда, в два часа. – Добре, ще дойда навреме.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "When is the meeting?",
+				"es": "¿Cuándo es la reunión?",
+				"tr": "Toplantı ne zaman?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Wednesday at 2",
+				  "Monday at 5",
+				  "Friday at 3"
+				],
+				"es": [
+				  "miércoles a las 2",
+				  "lunes a las 5",
+				  "viernes a las 3"
+				],
+				"tr": [
+				  "çarşamba saat 2'de",
+				  "pazartesi saat 5'te",
+				  "cuma saat 3'te"
+				]
+			  },
+			  "answer": {
+				"en": "Wednesday at 2",
+				"es": "miércoles a las 2",
+				"tr": "çarşamba saat 2'de"
+			  },
+			  "explanation": {
+				"en": "They say: 'В сряда, в два часа.'",
+				"es": "Dicen: 'В сряда, в два часа.'",
+				"tr": "'В сряда, в два часа.' diyorlar."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are making plans with a friend. The meeting is on Thursday at 6 o’clock.",
+			"es": "Estás haciendo planes con un amigo. La reunión es el jueves a las 6.",
+			"tr": "Bir arkadaşınla plan yapıyorsun. Buluşma perşembe günü saat altıda."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Кога е срещата?",
+			"Лице B: ____________",
+			"Лице A: В колко часа?",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"В четвъртък"
+			  ]
+			},
+			{
+			  "correct": [
+				"В шест часа"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_05",
+		"cefr_level": "A1",
+		"phase": "start",
+		"title": {
+		  "en": "Family and Basic Possessions",
+		  "es": "La Familia y Posesiones Básicas",
+		  "tr": "Aile ve Temel Eşyalar"
+		},
+		"vocabulary": [
+		  {
+			"bg": "семейство",
+			"translation": {
+			  "en": "family",
+			  "es": "familia",
+			  "tr": "aile"
+			}
+		  },
+		  {
+			"bg": "баща",
+			"translation": {
+			  "en": "father",
+			  "es": "padre",
+			  "tr": "baba"
+			}
+		  },
+		  {
+			"bg": "майка",
+			"translation": {
+			  "en": "mother",
+			  "es": "madre",
+			  "tr": "anne"
+			}
+		  },
+		  {
+			"bg": "брат",
+			"translation": {
+			  "en": "brother",
+			  "es": "hermano",
+			  "tr": "erkek kardeş"
+			}
+		  },
+		  {
+			"bg": "сестра",
+			"translation": {
+			  "en": "sister",
+			  "es": "hermana",
+			  "tr": "kız kardeş"
+			}
+		  },
+		  {
+			"bg": "дете",
+			"translation": {
+			  "en": "child",
+			  "es": "niño/niña",
+			  "tr": "çocuk"
+			}
+		  },
+		  {
+			"bg": "родители",
+			"translation": {
+			  "en": "parents",
+			  "es": "padres",
+			  "tr": "ebeveynler"
+			}
+		  },
+		  {
+			"bg": "дядо",
+			"translation": {
+			  "en": "grandfather",
+			  "es": "abuelo",
+			  "tr": "dede"
+			}
+		  },
+		  {
+			"bg": "баба",
+			"translation": {
+			  "en": "grandmother",
+			  "es": "abuela",
+			  "tr": "büyükanne"
+			}
+		  },
+		  {
+			"bg": "телефон",
+			"translation": {
+			  "en": "phone",
+			  "es": "teléfono",
+			  "tr": "telefon"
+			}
+		  },
+		  {
+			"bg": "раница",
+			"translation": {
+			  "en": "backpack",
+			  "es": "mochila",
+			  "tr": "sırt çantası"
+			}
+		  },
+		  {
+			"bg": "ключ",
+			"translation": {
+			  "en": "key",
+			  "es": "llave",
+			  "tr": "anahtar"
+			}
+		  },
+		  {
+			"bg": "книга",
+			"translation": {
+			  "en": "book",
+			  "es": "libro",
+			  "tr": "kitap"
+			}
+		  },
+		  {
+			"bg": "очила",
+			"translation": {
+			  "en": "glasses",
+			  "es": "gafas",
+			  "tr": "gözlük"
+			}
+		  },
+		  {
+			"bg": "молив",
+			"translation": {
+			  "en": "pencil",
+			  "es": "lápiz",
+			  "tr": "kalem"
+			}
+		  },
+		  {
+			"bg": "моят",
+			"translation": {
+			  "en": "my (masculine)",
+			  "es": "mi (masculino)",
+			  "tr": "benim (eril)"
+			}
+		  },
+		  {
+			"bg": "моята",
+			"translation": {
+			  "en": "my (feminine)",
+			  "es": "mi (femenino)",
+			  "tr": "benim (dişil)"
+			}
+		  },
+		  {
+			"bg": "моето",
+			"translation": {
+			  "en": "my (neuter)",
+			  "es": "mi (neutro)",
+			  "tr": "benim (nötr)"
+			}
+		  },
+		  {
+			"bg": "моите",
+			"translation": {
+			  "en": "my (plural)",
+			  "es": "mis",
+			  "tr": "benim (çoğul)"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Possessive Pronouns and Gender Agreement",
+			"es": "Pronombres Posesivos y Concordancia de Género",
+			"tr": "İyelik Zamirleri ve Cinsiyet Uyumu"
+		  },
+		  "explanation": {
+			"en": "In Bulgarian, possessive pronouns like 'my' change depending on the gender and number of the noun. For example: 'моят баща' (my father), 'моята майка' (my mother), 'моето дете' (my child), 'моите родители' (my parents).",
+			"es": "En búlgaro, los pronombres posesivos como 'mi' cambian según el género y número del sustantivo. Ej: 'моят баща' (mi padre), 'моята майка' (mi madre), 'моето дете' (mi hijo), 'моите родители' (mis padres).",
+			"tr": "Bulgarcada 'benim' gibi iyelik zamirleri, ismin cinsiyetine ve tekil/çoğul olmasına göre değişir. Örn: 'моят баща' (benim babam), 'моята майка' (benim annem), 'моето дете' (benim çocuğum), 'моите родители' (benim ebeveynlerim)."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Gender/Number",
+				"Form",
+				"Example"
+			  ],
+			  "es": [
+				"Género/Número",
+				"Forma",
+				"Ejemplo"
+			  ],
+			  "tr": [
+				"Cinsiyet/Çoğul",
+				"Şekli",
+				"Örnek"
+			  ]
+			},
+			"rows": [
+			  [
+				"Masculine",
+				"моят",
+				"моят телефон"
+			  ],
+			  [
+				"Feminine",
+				"моята",
+				"моята раница"
+			  ],
+			  [
+				"Neuter",
+				"моето",
+				"моето дете"
+			  ],
+			  [
+				"Plural",
+				"моите",
+				"моите ключове"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Моята майка е учителка.",
+			  "translation": {
+				"en": "My mother is a teacher.",
+				"es": "Mi madre es profesora.",
+				"tr": "Annem öğretmen."
+			  }
+			},
+			{
+			  "bg": "Това е моят брат.",
+			  "translation": {
+				"en": "This is my brother.",
+				"es": "Este es mi hermano.",
+				"tr": "Bu benim erkek kardeşim."
+			  }
+			},
+			{
+			  "bg": "Къде са моите очила?",
+			  "translation": {
+				"en": "Where are my glasses?",
+				"es": "¿Dónde están mis gafas?",
+				"tr": "Gözlüğüm nerede?"
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Always match the possessive to the noun's gender and number — this is key in Bulgarian grammar.",
+			"es": "Siempre haz coincidir el posesivo con el género y número del sustantivo — esto es esencial en búlgaro.",
+			"tr": "İyelik zamirini ismin cinsiyetine ve sayısına göre uyarlamak Bulgarcada çok önemlidir."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "In Bulgaria, families are often close-knit, and adult children commonly live with parents until marriage or even after.",
+			"es": "En Bulgaria, las familias suelen ser muy unidas, y es común que los hijos adultos vivan con sus padres hasta casarse o más.",
+			"tr": "Bulgaristan'da aile bağları güçlüdür. Yetişkin çocuklar evlenene kadar veya sonra bile aileyle yaşamaya devam eder."
+		  }
+		},
+		"slang": {
+		  "region": "Plovdiv",
+		  "text": {
+			"en": "A casual word for 'mom' is 'мамче', and for 'dad' it's 'татко'. You’ll hear them a lot in friendly conversation.",
+			"es": "Una forma informal de decir 'mamá' es 'мамче' y para 'papá' es 'татко'. Son muy comunes en conversaciones cotidianas.",
+			"tr": "'Anne' için yaygın bir sözcük 'мамче', 'baba' içinse 'татко'. Günlük konuşmalarda sık duyulur."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "Which of these means 'my backpack'?",
+			  "es": "¿Cuál significa 'mi mochila'?",
+			  "tr": "'Sırt çantam' hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": {
+			  "en": [
+				"моят раница",
+				"моята раница",
+				"моето раница"
+			  ],
+			  "es": [
+				"моят раница",
+				"моята раница",
+				"моето раница"
+			  ],
+			  "tr": [
+				"моят раница",
+				"моята раница",
+				"моето раница"
+			  ]
+			},
+			"answer": {
+			  "en": "моята раница",
+			  "es": "моята раница",
+			  "tr": "моята раница"
+			},
+			"explanation": {
+			  "en": "‘раница’ is feminine, so use ‘моята’.",
+			  "es": "‘раница’ es femenino, así que se usa ‘моята’.",
+			  "tr": "‘раница’ dişi olduğu için ‘моята’ kullanılır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which is the plural possessive form of 'my'?",
+			  "es": "¿Cuál es la forma posesiva plural de 'mi'?",
+			  "tr": "'Benim' kelimesinin çoğul hali hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "моят",
+			  "моето",
+			  "моите"
+			],
+			"answer": "моите",
+			"explanation": {
+			  "en": "'моите' is used for plural nouns.",
+			  "es": "'моите' se usa con sustantivos en plural.",
+			  "tr": "'моите', çoğul isimlerle kullanılır."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Това е моят баща. – А това е моята майка. – Имаш ли брат или сестра? – Да, имам сестра.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What family member does the speaker have?",
+				"es": "¿Qué familiar tiene el hablante?",
+				"tr": "Konuşmacının hangi aile üyesi var?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Brother",
+				  "Sister",
+				  "No one"
+				],
+				"es": [
+				  "Hermano",
+				  "Hermana",
+				  "Nadie"
+				],
+				"tr": [
+				  "Erkek kardeş",
+				  "Kız kardeş",
+				  "Yok"
+				]
+			  },
+			  "answer": {
+				"en": "Sister",
+				"es": "Hermana",
+				"tr": "Kız kardeş"
+			  },
+			  "explanation": {
+				"en": "They say: 'Да, имам сестра.'",
+				"es": "Dice: 'Да, имам сестра.'",
+				"tr": "'Да, имам сестра.' diyor."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are showing a photo to a friend. Your brother is Ivan, and your mother is Anna.",
+			"es": "Estás mostrando una foto a un amigo. Tu hermano se llama Iván y tu madre, Ana.",
+			"tr": "Bir arkadaşına bir fotoğraf gösteriyorsun. Erkek kardeşin Ivan, annenin adı Anna."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Кой е това?",
+			"Лице B: ____________",
+			"Лице A: А тя коя е?",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Това е моят брат Иван"
+			  ]
+			},
+			{
+			  "correct": [
+				"Това е моята майка Анна"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_06",
+		"cefr_level": "A1",
+		"phase": "start",
+		"title": {
+		  "en": "At the Supermarket",
+		  "es": "En el Supermercado",
+		  "tr": "Süpermarkette"
+		},
+		"vocabulary": [
+		  {
+			"bg": "хляб",
+			"translation": {
+			  "en": "bread",
+			  "es": "pan",
+			  "tr": "ekmek"
+			}
+		  },
+		  {
+			"bg": "мляко",
+			"translation": {
+			  "en": "milk",
+			  "es": "leche",
+			  "tr": "süt"
+			}
+		  },
+		  {
+			"bg": "сирене",
+			"translation": {
+			  "en": "white cheese",
+			  "es": "queso blanco",
+			  "tr": "beyaz peynir"
+			}
+		  },
+		  {
+			"bg": "кашкавал",
+			"translation": {
+			  "en": "yellow cheese",
+			  "es": "queso amarillo",
+			  "tr": "kaşar peyniri"
+			}
+		  },
+		  {
+			"bg": "яйца",
+			"translation": {
+			  "en": "eggs",
+			  "es": "huevos",
+			  "tr": "yumurtalar"
+			}
+		  },
+		  {
+			"bg": "домати",
+			"translation": {
+			  "en": "tomatoes",
+			  "es": "tomates",
+			  "tr": "domatesler"
+			}
+		  },
+		  {
+			"bg": "краставици",
+			"translation": {
+			  "en": "cucumbers",
+			  "es": "pepinos",
+			  "tr": "salatalıklar"
+			}
+		  },
+		  {
+			"bg": "ябълки",
+			"translation": {
+			  "en": "apples",
+			  "es": "manzanas",
+			  "tr": "elma(lar)"
+			}
+		  },
+		  {
+			"bg": "банани",
+			"translation": {
+			  "en": "bananas",
+			  "es": "plátanos",
+			  "tr": "muzlar"
+			}
+		  },
+		  {
+			"bg": "килограм",
+			"translation": {
+			  "en": "kilogram",
+			  "es": "kilogramo",
+			  "tr": "kilogram"
+			}
+		  },
+		  {
+			"bg": "грам",
+			"translation": {
+			  "en": "gram",
+			  "es": "gramo",
+			  "tr": "gram"
+			}
+		  },
+		  {
+			"bg": "цена",
+			"translation": {
+			  "en": "price",
+			  "es": "precio",
+			  "tr": "fiyat"
+			}
+		  },
+		  {
+			"bg": "колко струва?",
+			"translation": {
+			  "en": "how much is it?",
+			  "es": "¿cuánto cuesta?",
+			  "tr": "ne kadar?"
+			}
+		  },
+		  {
+			"bg": "скъп",
+			"translation": {
+			  "en": "expensive",
+			  "es": "caro",
+			  "tr": "pahalı"
+			}
+		  },
+		  {
+			"bg": "евтин",
+			"translation": {
+			  "en": "cheap",
+			  "es": "barato",
+			  "tr": "ucuz"
+			}
+		  },
+		  {
+			"bg": "бутилка",
+			"translation": {
+			  "en": "bottle",
+			  "es": "botella",
+			  "tr": "şişe"
+			}
+		  },
+		  {
+			"bg": "опаковка",
+			"translation": {
+			  "en": "package",
+			  "es": "paquete",
+			  "tr": "paket"
+			}
+		  },
+		  {
+			"bg": "брой",
+			"translation": {
+			  "en": "piece",
+			  "es": "unidad",
+			  "tr": "adet"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Countable and Uncountable Nouns + Plural Forms",
+			"es": "Sustantivos Contables/Incontables y Plurales",
+			"tr": "Sayılabilir ve Sayılamayan İsimler + Çoğul Formlar"
+		  },
+		  "explanation": {
+			"en": "Some nouns in Bulgarian are countable (e.g. ябълка → ябълки) and others are uncountable (e.g. мляко). Countable nouns can take plural endings and be counted. Uncountable nouns don’t change and need measures like 'бутилка' (bottle) or 'килограм'.",
+			"es": "Algunos sustantivos en búlgaro son contables (ej. ябълка → ябълки) y otros incontables (ej. мляко). Los contables tienen forma plural. Los incontables necesitan medidas como 'бутилка' o 'килограм'.",
+			"tr": "Bazı Bulgarca isimler sayılabilir (örn: ябълка → ябълки) bazıları ise sayılamaz (örn: мляко). Sayılabilir isimler çoğul alabilir, sayılamayanlar ise ölçü ile kullanılır: 'бутилка' (şişe), 'килограм'."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Noun",
+				"Singular",
+				"Plural"
+			  ],
+			  "es": [
+				"Sustantivo",
+				"Singular",
+				"Plural"
+			  ],
+			  "tr": [
+				"İsim",
+				"Tekil",
+				"Çoğul"
+			  ]
+			},
+			"rows": [
+			  [
+				"ябълка (apple)",
+				"ябълка",
+				"ябълки"
+			  ],
+			  [
+				"домат (tomato)",
+				"домат",
+				"домати"
+			  ],
+			  [
+				"опаковка (package)",
+				"опаковка",
+				"опаковки"
+			  ],
+			  [
+				"яйце (egg)",
+				"яйце",
+				"яйца"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Искам един хляб и една бутилка мляко.",
+			  "translation": {
+				"en": "I want one bread and a bottle of milk.",
+				"es": "Quiero un pan y una botella de leche.",
+				"tr": "Bir ekmek ve bir şişe süt istiyorum."
+			  }
+			},
+			{
+			  "bg": "Колко струват яйцата?",
+			  "translation": {
+				"en": "How much are the eggs?",
+				"es": "¿Cuánto cuestan los huevos?",
+				"tr": "Yumurtalar ne kadar?"
+			  }
+			},
+			{
+			  "bg": "Два килограма домати, моля.",
+			  "translation": {
+				"en": "Two kilograms of tomatoes, please.",
+				"es": "Dos kilos de tomates, por favor.",
+				"tr": "İki kilo domates, lütfen."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Always use a measure (kilogram, bottle) with uncountable items like milk or cheese.",
+			"es": "Siempre usa una medida (kilo, botella) con alimentos incontables como leche o queso.",
+			"tr": "Süt veya peynir gibi sayılamayan ürünlerle mutlaka ölçü (kilo, şişe) kullanılır."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Markets are popular in Bulgaria. People often buy fruits, vegetables, and cheese from open-air markets (пазар), not just supermarkets.",
+			"es": "Los mercados son muy populares en Bulgaria. Muchos compran frutas, verduras y queso en mercados al aire libre (пазар), no solo en supermercados.",
+			"tr": "Bulgaristan'da açık pazarlar (пазар) oldukça popülerdir. İnsanlar sadece süpermarket değil, pazardan da sebze, meyve, peynir alır."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "People often say 'кило' instead of the full word 'килограм'. For example: 'Дай ми едно кило домати.'",
+			"es": "La gente dice 'кило' en lugar de 'килограм'. Ejemplo: 'Dame un kilo de tomates.'",
+			"tr": "'килограм' yerine genelde 'кило' derler. Örnek: 'Bir kilo domates ver.'"
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What is the plural of 'ябълка' (apple)?",
+			  "es": "¿Cuál es el plural de 'ябълка' (manzana)?",
+			  "tr": "'ябълка' (elma) kelimesinin çoğulu nedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "ябълки",
+			  "ябълце",
+			  "ябълчета"
+			],
+			"answer": "ябълки",
+			"explanation": {
+			  "en": "'ябълки' is the correct plural form.",
+			  "es": "'ябълки' es la forma plural correcta.",
+			  "tr": "'ябълки' doğru çoğul formudur."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which item is uncountable?",
+			  "es": "¿Cuál de estos es incontable?",
+			  "tr": "Hangisi sayılamaz?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "мляко",
+			  "яйце",
+			  "домат"
+			],
+			"answer": "мляко",
+			"explanation": {
+			  "en": "'мляко' (milk) is uncountable in Bulgarian.",
+			  "es": "'мляко' (leche) es incontable en búlgaro.",
+			  "tr": "'мляко' (süt) Bulgarcada sayılamaz bir isimdir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "How would you say 'two kilos of tomatoes'?",
+			  "es": "¿Cómo se dice 'dos kilos de tomates'?",
+			  "tr": "'İki kilo domates' nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "две килограми домат",
+			  "два килограма домати",
+			  "двама килограма домати"
+			],
+			"answer": "два килограма домати",
+			"explanation": {
+			  "en": "'два килограма домати' is correct.",
+			  "es": "'два килограма домати' es correcto.",
+			  "tr": "'два килограма домати' doğrudur."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which word means 'package'?",
+			  "es": "¿Qué palabra significa 'paquete'?",
+			  "tr": "'Paket' hangi kelimeyle söylenir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "бутилка",
+			  "опаковка",
+			  "брой"
+			],
+			"answer": "опаковка",
+			"explanation": {
+			  "en": "'опаковка' means package.",
+			  "es": "'опаковка' significa paquete.",
+			  "tr": "'опаковка' paket demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'колко струва?' mean?",
+			  "es": "¿Qué significa 'колко струва?'",
+			  "tr": "'колко струва?' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "What time is it?",
+			  "How much is it?",
+			  "Where is it?"
+			],
+			"answer": "How much is it?",
+			"explanation": {
+			  "en": "It's the common way to ask for the price.",
+			  "es": "Es la forma común de preguntar el precio.",
+			  "tr": "Fiyat sormak için kullanılan yaygın ifadedir."
+			}
+		  }
+		],
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are at the market buying food. You want 1 bread, 2 kilos of apples, and 1 bottle of milk.",
+			"es": "Estás en el mercado comprando comida. Quieres 1 pan, 2 kilos de manzanas y 1 botella de leche.",
+			"tr": "Pazardasın ve yiyecek alıyorsun. 1 ekmek, 2 kilo elma ve 1 şişe süt istiyorsun."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Какво ще желаете?",
+			"Лице B: ____________",
+			"Лице A: Нещо друго?",
+			"Лице B: ____________",
+			"Лице A: Разбира се. Още нещо?",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Един хляб, моля"
+			  ]
+			},
+			{
+			  "correct": [
+				"Два килограма ябълки"
+			  ]
+			},
+			{
+			  "correct": [
+				"Една бутилка мляко"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_07",
+		"cefr_level": "A1",
+		"phase": "mid",
+		"title": {
+		  "en": "Ordering at a Café",
+		  "es": "Pedir en una Cafetería",
+		  "tr": "Kafede Sipariş Verme"
+		},
+		"vocabulary": [
+		  {
+			"bg": "кафе",
+			"translation": {
+			  "en": "coffee",
+			  "es": "café",
+			  "tr": "kahve"
+			}
+		  },
+		  {
+			"bg": "чай",
+			"translation": {
+			  "en": "tea",
+			  "es": "té",
+			  "tr": "çay"
+			}
+		  },
+		  {
+			"bg": "вода",
+			"translation": {
+			  "en": "water",
+			  "es": "agua",
+			  "tr": "su"
+			}
+		  },
+		  {
+			"bg": "сок",
+			"translation": {
+			  "en": "juice",
+			  "es": "jugo",
+			  "tr": "meyve suyu"
+			}
+		  },
+		  {
+			"bg": "бира",
+			"translation": {
+			  "en": "beer",
+			  "es": "cerveza",
+			  "tr": "bira"
+			}
+		  },
+		  {
+			"bg": "сандвич",
+			"translation": {
+			  "en": "sandwich",
+			  "es": "sándwich",
+			  "tr": "sandviç"
+			}
+		  },
+		  {
+			"bg": "закуска",
+			"translation": {
+			  "en": "snack / breakfast",
+			  "es": "tentempié / desayuno",
+			  "tr": "atıştırmalık / kahvaltı"
+			}
+		  },
+		  {
+			"bg": "меню",
+			"translation": {
+			  "en": "menu",
+			  "es": "menú",
+			  "tr": "menü"
+			}
+		  },
+		  {
+			"bg": "поръчка",
+			"translation": {
+			  "en": "order",
+			  "es": "pedido",
+			  "tr": "sipariş"
+			}
+		  },
+		  {
+			"bg": "искам",
+			"translation": {
+			  "en": "I want",
+			  "es": "quiero",
+			  "tr": "istiyorum"
+			}
+		  },
+		  {
+			"bg": "може ли",
+			"translation": {
+			  "en": "may I / can I",
+			  "es": "¿puedo?",
+			  "tr": "alabilir miyim?"
+			}
+		  },
+		  {
+			"bg": "плащам",
+			"translation": {
+			  "en": "I pay",
+			  "es": "pago",
+			  "tr": "ödüyorum"
+			}
+		  },
+		  {
+			"bg": "сметка",
+			"translation": {
+			  "en": "bill",
+			  "es": "cuenta",
+			  "tr": "hesap"
+			}
+		  },
+		  {
+			"bg": "чаша",
+			"translation": {
+			  "en": "glass / cup",
+			  "es": "vaso / taza",
+			  "tr": "bardak / fincan"
+			}
+		  },
+		  {
+			"bg": "чашка",
+			"translation": {
+			  "en": "small cup",
+			  "es": "tacita",
+			  "tr": "küçük fincan"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Polite Requests with 'Искам' and 'Може ли'",
+			"es": "Pedir con Cortesía usando 'Искам' y 'Може ли'",
+			"tr": "'Искам' ve 'Може ли' ile Nazikçe İstemek"
+		  },
+		  "explanation": {
+			"en": "To order something, you can say 'Искам кафе' (I want coffee). A more polite form is 'Може ли кафе?' (Can I have a coffee?). You can also use 'едно', 'една', 'едно' to match the noun's gender: 'едно кафе', 'една бира'.",
+			"es": "Para pedir algo, puedes decir 'Искам кафе' (Quiero un café). Más cortés es 'Може ли кафе?' (¿Puedo tener un café?). Usa 'едно', 'една' según el género: 'едно кафе', 'една бира'.",
+			"tr": "Bir şey sipariş etmek için 'Искам кафе' (Kahve istiyorum) diyebilirsin. Daha kibar olanı: 'Може ли кафе?' (Bir kahve alabilir miyim?). İsmin cinsiyetine göre 'едно', 'една' kullanılır: 'едно кафе', 'една бира'."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Form",
+				"Example",
+				"Meaning"
+			  ],
+			  "es": [
+				"Forma",
+				"Ejemplo",
+				"Significado"
+			  ],
+			  "tr": [
+				"Kalıp",
+				"Örnek",
+				"Anlamı"
+			  ]
+			},
+			"rows": [
+			  [
+				"Искам + noun",
+				"Искам чай",
+				"I want tea"
+			  ],
+			  [
+				"Може ли + noun",
+				"Може ли кафе?",
+				"Can I have a coffee?"
+			  ],
+			  [
+				"Едно / една + noun",
+				"Една бира",
+				"One beer"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Може ли вода, моля?",
+			  "translation": {
+				"en": "Can I have water, please?",
+				"es": "¿Puedo tener agua, por favor?",
+				"tr": "Su alabilir miyim, lütfen?"
+			  }
+			},
+			{
+			  "bg": "Искам сандвич.",
+			  "translation": {
+				"en": "I want a sandwich.",
+				"es": "Quiero un sándwich.",
+				"tr": "Bir sandviç istiyorum."
+			  }
+			},
+			{
+			  "bg": "Една бира, моля.",
+			  "translation": {
+				"en": "One beer, please.",
+				"es": "Una cerveza, por favor.",
+				"tr": "Bir bira, lütfen."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Use 'моля' at the end to sound extra polite. Bulgarians appreciate it!",
+			"es": "Usa 'моля' al final para sonar más cortés. ¡A los búlgaros les gusta!",
+			"tr": "'моля' kelimesini sona ekleyerek daha kibar olursun. Bulgarlar bunu takdir eder."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Tipping is common in cafés in Bulgaria — usually 5–10%. It’s polite to say 'Благодаря!' (Thank you!) when served.",
+			"es": "En Bulgaria es común dejar propina en las cafeterías — entre 5 y 10%. Es cortés decir 'Благодаря!' al ser atendido.",
+			"tr": "Bulgaristan’da kafelerde genelde %5–10 bahşiş bırakılır. Servis aldığında 'Благодаря!' (Teşekkür ederim) demek kibarlıktır."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Locals sometimes say 'кафенце' for a small or cozy coffee — it’s a cute way to say 'little coffee'.",
+			"es": "Algunos locales dicen 'кафенце' para referirse cariñosamente a un café pequeño o agradable.",
+			"tr": "Yerel halk küçük kahve için bazen 'кафенце' der — sevimli bir söylem biçimidir."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "How do you politely ask for water?",
+			  "es": "¿Cómo pides agua con cortesía?",
+			  "tr": "Suyu nazikçe nasıl istersin?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Искам вода",
+			  "Може ли вода?",
+			  "Вода!"
+			],
+			"answer": "Може ли вода?",
+			"explanation": {
+			  "en": "‘Може ли’ is the polite form.",
+			  "es": "‘Може ли’ es la forma cortés.",
+			  "tr": "‘Може ли’ kibar olan formdur."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which phrase means 'One tea, please'?",
+			  "es": "¿Cuál significa 'Un té, por favor'?",
+			  "tr": "'Bir çay, lütfen' hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Една чай, моля",
+			  "Един чай, моля",
+			  "Едно чай, моля"
+			],
+			"answer": "Един чай, моля",
+			"explanation": {
+			  "en": "'чай' is masculine, so use 'един'.",
+			  "es": "'чай' es masculino, por eso se usa 'един'.",
+			  "tr": "'чай' eril olduğu için 'един' kullanılır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'искам кафе' mean?",
+			  "es": "¿Qué significa 'искам кафе'?",
+			  "tr": "'искам кафе' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "I want coffee",
+			  "Coffee is ready",
+			  "Buy coffee"
+			],
+			"answer": "I want coffee",
+			"explanation": {
+			  "en": "‘Искам’ means ‘I want’.",
+			  "es": "‘Искам’ significa ‘quiero’.",
+			  "tr": "‘Искам’ 'istiyorum' demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which word means 'bill' in Bulgarian?",
+			  "es": "¿Cuál es la palabra para 'cuenta' en búlgaro?",
+			  "tr": "'Hesap' Bulgarcada nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "поръчка",
+			  "сметка",
+			  "чаша"
+			],
+			"answer": "сметка",
+			"explanation": {
+			  "en": "‘сметка’ means bill or check.",
+			  "es": "‘сметка’ significa cuenta.",
+			  "tr": "‘сметка’ hesap demektir."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Може ли едно кафе и една вода? – Разбира се. – Благодаря! – Заповядайте.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What does the person order?",
+				"es": "¿Qué pide la persona?",
+				"tr": "Kişi ne sipariş ediyor?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Coffee and water",
+				  "Juice and tea",
+				  "Beer and sandwich"
+				],
+				"es": [
+				  "Café y agua",
+				  "Jugo y té",
+				  "Cerveza y sándwich"
+				],
+				"tr": [
+				  "Kahve ve su",
+				  "Meyve suyu ve çay",
+				  "Bira ve sandviç"
+				]
+			  },
+			  "answer": {
+				"en": "Coffee and water",
+				"es": "Café y agua",
+				"tr": "Kahve ve su"
+			  },
+			  "explanation": {
+				"en": "They say: 'едно кафе и една вода'.",
+				"es": "Dicen: 'едно кафе и една вода'.",
+				"tr": "'едно кафе и една вода' diyorlar."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are at a café. You want a tea, a sandwich, and ask for the bill.",
+			"es": "Estás en una cafetería. Quieres un té, un sándwich y la cuenta.",
+			"tr": "Bir kafedesin. Bir çay, bir sandviç ve hesabı istiyorsun."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Какво ще пиете?",
+			"Лице B: ____________",
+			"Лице A: А нещо за хапване?",
+			"Лице B: ____________",
+			"Лице A: Всичко ли е наред?",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Един чай, моля"
+			  ]
+			},
+			{
+			  "correct": [
+				"Един сандвич, моля"
+			  ]
+			},
+			{
+			  "correct": [
+				"Сметката, моля"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_08",
+		"cefr_level": "A1",
+		"phase": "mid",
+		"title": {
+		  "en": "Describing People and Objects",
+		  "es": "Describir Personas y Objetos",
+		  "tr": "Kişileri ve Nesneleri Tanımlama"
+		},
+		"vocabulary": [
+		  {
+			"bg": "висок",
+			"translation": {
+			  "en": "tall",
+			  "es": "alto",
+			  "tr": "uzun"
+			}
+		  },
+		  {
+			"bg": "нисък",
+			"translation": {
+			  "en": "short",
+			  "es": "bajo",
+			  "tr": "kısa"
+			}
+		  },
+		  {
+			"bg": "млад",
+			"translation": {
+			  "en": "young",
+			  "es": "joven",
+			  "tr": "genç"
+			}
+		  },
+		  {
+			"bg": "възрастен",
+			"translation": {
+			  "en": "elderly",
+			  "es": "mayor",
+			  "tr": "yaşlı"
+			}
+		  },
+		  {
+			"bg": "красив",
+			"translation": {
+			  "en": "beautiful",
+			  "es": "hermoso",
+			  "tr": "güzel"
+			}
+		  },
+		  {
+			"bg": "нов",
+			"translation": {
+			  "en": "new",
+			  "es": "nuevo",
+			  "tr": "yeni"
+			}
+		  },
+		  {
+			"bg": "стар",
+			"translation": {
+			  "en": "old",
+			  "es": "viejo",
+			  "tr": "eski"
+			}
+		  },
+		  {
+			"bg": "малък",
+			"translation": {
+			  "en": "small",
+			  "es": "pequeño",
+			  "tr": "küçük"
+			}
+		  },
+		  {
+			"bg": "голям",
+			"translation": {
+			  "en": "big",
+			  "es": "grande",
+			  "tr": "büyük"
+			}
+		  },
+		  {
+			"bg": "чанта",
+			"translation": {
+			  "en": "bag",
+			  "es": "bolso",
+			  "tr": "çanta"
+			}
+		  },
+		  {
+			"bg": "телефон",
+			"translation": {
+			  "en": "phone",
+			  "es": "teléfono",
+			  "tr": "telefon"
+			}
+		  },
+		  {
+			"bg": "книга",
+			"translation": {
+			  "en": "book",
+			  "es": "libro",
+			  "tr": "kitap"
+			}
+		  },
+		  {
+			"bg": "човек",
+			"translation": {
+			  "en": "person",
+			  "es": "persona",
+			  "tr": "kişi"
+			}
+		  },
+		  {
+			"bg": "момче",
+			"translation": {
+			  "en": "boy",
+			  "es": "niño",
+			  "tr": "erkek çocuk"
+			}
+		  },
+		  {
+			"bg": "момиче",
+			"translation": {
+			  "en": "girl",
+			  "es": "niña",
+			  "tr": "kız çocuk"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Adjective-Noun Agreement",
+			"es": "Concordancia Adjetivo-Sustantivo",
+			"tr": "Sıfat–İsim Uyumu"
+		  },
+		  "explanation": {
+			"en": "In Bulgarian, adjectives must match the noun they describe in gender and number. Masculine, feminine, neuter, and plural forms are different. Example: 'нов телефон' (new phone - masculine), 'нова чанта' (new bag - feminine), 'ново момиче' (new girl - neuter), 'нови книги' (new books - plural).",
+			"es": "En búlgaro, los adjetivos deben coincidir con el género y número del sustantivo. Masculino, femenino, neutro y plural tienen formas diferentes.",
+			"tr": "Bulgarcada sıfatlar, nitelendirdikleri ismin cinsiyetine ve sayısına göre değişir. Eril, dişil, nötr ve çoğul için farklı biçimler kullanılır."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Form",
+				"Example",
+				"Translation"
+			  ],
+			  "es": [
+				"Forma",
+				"Ejemplo",
+				"Traducción"
+			  ],
+			  "tr": [
+				"Biçim",
+				"Örnek",
+				"Çeviri"
+			  ]
+			},
+			"rows": [
+			  [
+				"Masculine",
+				"висок човек",
+				"tall person"
+			  ],
+			  [
+				"Feminine",
+				"висока жена",
+				"tall woman"
+			  ],
+			  [
+				"Neuter",
+				"високо момиче",
+				"tall girl (child)"
+			  ],
+			  [
+				"Plural",
+				"високи хора",
+				"tall people"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Това е нова чанта.",
+			  "translation": {
+				"en": "This is a new bag.",
+				"es": "Este es un bolso nuevo.",
+				"tr": "Bu yeni bir çanta."
+			  }
+			},
+			{
+			  "bg": "Имам малък телефон.",
+			  "translation": {
+				"en": "I have a small phone.",
+				"es": "Tengo un teléfono pequeño.",
+				"tr": "Küçük bir telefonum var."
+			  }
+			},
+			{
+			  "bg": "Те са стари книги.",
+			  "translation": {
+				"en": "They are old books.",
+				"es": "Son libros viejos.",
+				"tr": "Onlar eski kitaplar."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "In Bulgarian, adjectives usually come before the noun. Don't forget to change endings!",
+			"es": "En búlgaro, los adjetivos van antes del sustantivo. ¡Recuerda cambiar las terminaciones!",
+			"tr": "Bulgarcada sıfatlar genellikle isimden önce gelir. Son ekleri değiştirmeyi unutma!"
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Compliments in Bulgaria are often sincere but reserved. People may compliment clothing, work, or appearance using short phrases like 'Много си красива.'",
+			"es": "En Bulgaria los cumplidos son sinceros pero discretos. Se pueden hacer con frases como 'Много си красива'.",
+			"tr": "Bulgaristan’da iltifatlar genelde içten ama ölçülüdür. 'Много си красива' gibi kısa ifadeler kullanılır."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "To say someone is cool, young people use 'готин' (gotin) for a man and 'готина' for a woman.",
+			"es": "Para decir que alguien es 'guay', los jóvenes dicen 'готин' (hombre) y 'готина' (mujer).",
+			"tr": "Birinin havalı olduğunu söylemek için gençler 'готин' (erkek) ve 'готина' (kadın) der."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "Which form is correct for 'a big phone'?",
+			  "es": "¿Cuál es la forma correcta para 'un teléfono grande'?",
+			  "tr": "'Büyük bir telefon' için doğru form hangisi?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "голяма телефон",
+			  "голям телефон",
+			  "голямо телефон"
+			],
+			"answer": "голям телефон",
+			"explanation": {
+			  "en": "'телефон' is masculine, so use 'голям'.",
+			  "es": "'телефон' es masculino, se usa 'голям'.",
+			  "tr": "'телефон' eril olduğu için 'голям' kullanılır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'висока жена' mean?",
+			  "es": "¿Qué significa 'висока жена'?",
+			  "tr": "'висока жена' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Tall man",
+			  "Tall woman",
+			  "Old woman"
+			],
+			"answer": "Tall woman",
+			"explanation": {
+			  "en": "'висока' is feminine; 'жена' means woman.",
+			  "es": "'висока' es femenino; 'жена' significa mujer.",
+			  "tr": "'висока' dişil; 'жена' kadın demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which phrase means 'They are new books'?",
+			  "es": "¿Cuál significa 'Son libros nuevos'?",
+			  "tr": "'Onlar yeni kitaplar' nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Те са нова книга",
+			  "Те е нови книги",
+			  "Те са нови книги"
+			],
+			"answer": "Те са нови книги",
+			"explanation": {
+			  "en": "Correct plural form: 'нови книги'.",
+			  "es": "Forma plural correcta: 'нови книги'.",
+			  "tr": "Doğru çoğul ifade: 'нови книги'."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "How do you say 'small bag' in Bulgarian?",
+			  "es": "¿Cómo se dice 'bolso pequeño' en búlgaro?",
+			  "tr": "'Küçük çanta' Bulgarcada nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "малък чанта",
+			  "малка чанта",
+			  "малко чанта"
+			],
+			"answer": "малка чанта",
+			"explanation": {
+			  "en": "'чанта' is feminine → 'малка чанта'.",
+			  "es": "'чанта' es femenino → 'малка чанта'.",
+			  "tr": "'чанта' dişil → 'малка чанта'."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Това е нов телефон. – Да, много е хубав. – А чантата е стара, но красива.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What is new?",
+				"es": "¿Qué es nuevo?",
+				"tr": "Yeni olan nedir?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "The bag",
+				  "The phone",
+				  "The book"
+				],
+				"es": [
+				  "El bolso",
+				  "El teléfono",
+				  "El libro"
+				],
+				"tr": [
+				  "Çanta",
+				  "Telefon",
+				  "Kitap"
+				]
+			  },
+			  "answer": {
+				"en": "The phone",
+				"es": "El teléfono",
+				"tr": "Telefon"
+			  },
+			  "explanation": {
+				"en": "They say: 'Това е нов телефон.'",
+				"es": "Dicen: 'Това е нов телефон.'",
+				"tr": "'Това е нов телефон.' diyorlar."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are describing items to a friend. You have a big bag, a small book, and a new phone.",
+			"es": "Estás describiendo objetos a un amigo. Tienes un bolso grande, un libro pequeño y un teléfono nuevo.",
+			"tr": "Bir arkadaşına eşyalarını anlatıyorsun. Büyük bir çantan, küçük bir kitabın ve yeni bir telefonun var."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Каква е тази чанта?",
+			"Лице B: ____________",
+			"Лице A: А книгата?",
+			"Лице B: ____________",
+			"Лице A: А телефонът?",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Голяма чанта"
+			  ]
+			},
+			{
+			  "correct": [
+				"Малка книга"
+			  ]
+			},
+			{
+			  "correct": [
+				"Нов телефон"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_09",
+		"cefr_level": "A1",
+		"phase": "mid",
+		"title": {
+		  "en": "Getting Around Town",
+		  "es": "Moverse por la Ciudad",
+		  "tr": "Şehirde Yolunu Bulma"
+		},
+		"vocabulary": [
+		  {
+			"bg": "автобус",
+			"translation": {
+			  "en": "bus",
+			  "es": "autobús",
+			  "tr": "otobüs"
+			}
+		  },
+		  {
+			"bg": "метро",
+			"translation": {
+			  "en": "metro / subway",
+			  "es": "metro",
+			  "tr": "metro"
+			}
+		  },
+		  {
+			"bg": "трамвай",
+			"translation": {
+			  "en": "tram",
+			  "es": "tranvía",
+			  "tr": "tramvay"
+			}
+		  },
+		  {
+			"bg": "гара",
+			"translation": {
+			  "en": "station",
+			  "es": "estación",
+			  "tr": "istasyon"
+			}
+		  },
+		  {
+			"bg": "спирка",
+			"translation": {
+			  "en": "stop",
+			  "es": "parada",
+			  "tr": "durak"
+			}
+		  },
+		  {
+			"bg": "улица",
+			"translation": {
+			  "en": "street",
+			  "es": "calle",
+			  "tr": "sokak"
+			}
+		  },
+		  {
+			"bg": "ъгъл",
+			"translation": {
+			  "en": "corner",
+			  "es": "esquina",
+			  "tr": "köşe"
+			}
+		  },
+		  {
+			"bg": "карта",
+			"translation": {
+			  "en": "map",
+			  "es": "mapa",
+			  "tr": "harita"
+			}
+		  },
+		  {
+			"bg": "къде е...",
+			"translation": {
+			  "en": "where is...",
+			  "es": "¿dónde está...?",
+			  "tr": "'... nerede?"
+			}
+		  },
+		  {
+			"bg": "има",
+			"translation": {
+			  "en": "there is",
+			  "es": "hay",
+			  "tr": "var"
+			}
+		  },
+		  {
+			"bg": "няма",
+			"translation": {
+			  "en": "there isn't",
+			  "es": "no hay",
+			  "tr": "yok"
+			}
+		  },
+		  {
+			"bg": "до",
+			"translation": {
+			  "en": "next to",
+			  "es": "al lado de",
+			  "tr": "yanında"
+			}
+		  },
+		  {
+			"bg": "пред",
+			"translation": {
+			  "en": "in front of",
+			  "es": "delante de",
+			  "tr": "önünde"
+			}
+		  },
+		  {
+			"bg": "зад",
+			"translation": {
+			  "en": "behind",
+			  "es": "detrás de",
+			  "tr": "arkasında"
+			}
+		  },
+		  {
+			"bg": "вляво",
+			"translation": {
+			  "en": "to the left",
+			  "es": "a la izquierda",
+			  "tr": "solda"
+			}
+		  },
+		  {
+			"bg": "вдясно",
+			"translation": {
+			  "en": "to the right",
+			  "es": "a la derecha",
+			  "tr": "sağda"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Prepositions of Place and Asking Questions",
+			"es": "Preposiciones de Lugar y Preguntas",
+			"tr": "Yer Edatları ve Soru Cümleleri"
+		  },
+		  "explanation": {
+			"en": "Use prepositions like 'до' (next to), 'пред' (in front of), and 'зад' (behind) with locations. To ask a question, use 'Къде е...?' (Where is...?). You can also use 'има ли...?' to ask if something exists.",
+			"es": "Usa preposiciones como 'до' (al lado), 'пред' (delante), 'зад' (detrás). Para preguntar, usa 'Къде е...?' (¿Dónde está...?). También puedes usar 'има ли...?' para preguntar si algo existe.",
+			"tr": "'до' (yanında), 'пред' (önünde), 'зад' (arkasında) gibi edatları yer bildirmek için kullan. 'Къде е...?' (Nerede...?) sorusu yer sormak içindir. 'има ли...?' ise bir şeyin olup olmadığını sorar."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Phrase",
+				"Example",
+				"Meaning"
+			  ],
+			  "es": [
+				"Frase",
+				"Ejemplo",
+				"Significado"
+			  ],
+			  "tr": [
+				"İfade",
+				"Örnek",
+				"Anlamı"
+			  ]
+			},
+			"rows": [
+			  [
+				"Къде е...",
+				"Къде е спирката?",
+				"Where is the stop?"
+			  ],
+			  [
+				"до",
+				"Метрото е до парка.",
+				"The metro is next to the park."
+			  ],
+			  [
+				"има / няма",
+				"Има ли аптека наблизо?",
+				"Is there a pharmacy nearby?"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Къде е улица Иван Асен?",
+			  "translation": {
+				"en": "Where is Ivan Asen Street?",
+				"es": "¿Dónde está la calle Ivan Asen?",
+				"tr": "Ivan Asen Caddesi nerede?"
+			  }
+			},
+			{
+			  "bg": "Автобусната спирка е пред гарата.",
+			  "translation": {
+				"en": "The bus stop is in front of the station.",
+				"es": "La parada de autobús está delante de la estación.",
+				"tr": "Otobüs durağı istasyonun önünde."
+			  }
+			},
+			{
+			  "bg": "Зад ъгъла има малък магазин.",
+			  "translation": {
+				"en": "There is a small shop behind the corner.",
+				"es": "Hay una tienda pequeña detrás de la esquina.",
+				"tr": "Köşenin arkasında küçük bir dükkân var."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Use gestures when asking for directions — Bulgarians often point or draw a map with their hands.",
+			"es": "Usa gestos al preguntar direcciones — los búlgaros a menudo señalan o dibujan con las manos.",
+			"tr": "Yön sormada el hareketleri kullan — Bulgarlar sıkça eliyle tarif eder veya hayali harita çizer."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "In Sofia, public transport is popular and cheap. People often say 'влизай' (get in) when offering a ride or space on a tram.",
+			"es": "En Sofía el transporte público es popular y barato. La gente dice 'влизай' (sube) para ofrecer asiento o espacio.",
+			"tr": "Sofya’da toplu taşıma yaygındır ve ucuzdur. İnsanlar tramvayda yer verirken 'влизай' (geç içeri) der."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Young people sometimes shorten 'спирка' (stop) to just 'спи' when talking fast or texting.",
+			"es": "Los jóvenes a veces abrevian 'спирка' (parada) como 'спи' al hablar rápido o mandar mensajes.",
+			"tr": "Gençler 'спирка' (durak) kelimesini hızlı konuşurken ya da mesajda kısaca 'спи' olarak söyler."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'Къде е спирката?' mean?",
+			  "es": "¿Qué significa 'Къде е спирката?'",
+			  "tr": "'Къде е спирката?' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Where is the stop?",
+			  "How much is the ticket?",
+			  "What is that street?"
+			],
+			"answer": "Where is the stop?",
+			"explanation": {
+			  "en": "'Къде е' means 'Where is'.",
+			  "es": "'Къде е' significa '¿Dónde está?'.",
+			  "tr": "'Къде е' 'Nerede?' anlamına gelir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which preposition means 'in front of'?",
+			  "es": "¿Qué preposición significa 'delante de'?",
+			  "tr": "Hangi edat 'önünde' anlamındadır?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "зад",
+			  "пред",
+			  "до"
+			],
+			"answer": "пред",
+			"explanation": {
+			  "en": "'пред' means 'in front of'.",
+			  "es": "'пред' significa 'delante de'.",
+			  "tr": "'пред' 'önünde' demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "How do you ask if there’s a pharmacy nearby?",
+			  "es": "¿Cómo preguntas si hay una farmacia cerca?",
+			  "tr": "Yakında eczane var mı? nasıl sorulur?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Къде е аптеката?",
+			  "Има ли аптека наблизо?",
+			  "Какво е аптеката?"
+			],
+			"answer": "Има ли аптека наблизо?",
+			"explanation": {
+			  "en": "This structure is used to ask if something exists.",
+			  "es": "Esta estructura se usa para preguntar si algo existe.",
+			  "tr": "Bu yapı bir şeyin olup olmadığını sormak için kullanılır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'вляво' mean?",
+			  "es": "¿Qué significa 'вляво'?",
+			  "tr": "'вляво' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "On the right",
+			  "To the left",
+			  "Behind"
+			],
+			"answer": "To the left",
+			"explanation": {
+			  "en": "'вляво' means 'to the left'.",
+			  "es": "'вляво' significa 'a la izquierda'.",
+			  "tr": "'вляво' 'sola doğru' anlamına gelir."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Извинете, къде е метрото? – До парка. Вървете направо и после вдясно. – Благодаря!",
+		  "questions": [
+			{
+			  "question": {
+				"en": "Where is the metro?",
+				"es": "¿Dónde está el metro?",
+				"tr": "Metro nerede?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Next to the store",
+				  "Next to the park",
+				  "Behind the corner"
+				],
+				"es": [
+				  "Al lado de la tienda",
+				  "Al lado del parque",
+				  "Detrás de la esquina"
+				],
+				"tr": [
+				  "Dükkânın yanında",
+				  "Parkın yanında",
+				  "Köşenin arkasında"
+				]
+			  },
+			  "answer": {
+				"en": "Next to the park",
+				"es": "Al lado del parque",
+				"tr": "Parkın yanında"
+			  },
+			  "explanation": {
+				"en": "They say: 'До парка'.",
+				"es": "Dicen: 'До парка'.",
+				"tr": "'До парка' diyorlar."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are asking how to get to the bus stop. You follow the directions, ask about a nearby pharmacy, and thank the person.",
+			"es": "Estás preguntando cómo llegar a la parada de autobús. Sigues las instrucciones, preguntas por una farmacia cercana y agradeces.",
+			"tr": "Otobüs durağına nasıl gideceğini soruyorsun. Tarifi alıp yakındaki eczaneyi soruyorsun ve teşekkür ediyorsun."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Извинете, ____________?",
+			"Лице B: Спирката е до парка.",
+			"Лице A: ____________?",
+			"Лице B: Вървете направо и после вдясно.",
+			"Лице A: А има ли ____________?",
+			"Лице B: Да, зад спирката."
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Къде е спирката"
+			  ]
+			},
+			{
+			  "correct": [
+				"Как да стигна до там"
+			  ]
+			},
+			{
+			  "correct": [
+				"аптека"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_10",
+		"cefr_level": "A1",
+		"phase": "mid",
+		"title": {
+		  "en": "In the Hotel",
+		  "es": "En el Hotel",
+		  "tr": "Otelde"
+		},
+		"vocabulary": [
+		  {
+			"bg": "хотел",
+			"translation": {
+			  "en": "hotel",
+			  "es": "hotel",
+			  "tr": "otel"
+			}
+		  },
+		  {
+			"bg": "стаи",
+			"translation": {
+			  "en": "rooms",
+			  "es": "habitaciones",
+			  "tr": "odalar"
+			}
+		  },
+		  {
+			"bg": "единична стая",
+			"translation": {
+			  "en": "single room",
+			  "es": "habitación individual",
+			  "tr": "tek kişilik oda"
+			}
+		  },
+		  {
+			"bg": "двойна стая",
+			"translation": {
+			  "en": "double room",
+			  "es": "habitación doble",
+			  "tr": "çift kişilik oda"
+			}
+		  },
+		  {
+			"bg": "рецепция",
+			"translation": {
+			  "en": "reception",
+			  "es": "recepción",
+			  "tr": "resepsiyon"
+			}
+		  },
+		  {
+			"bg": "резервация",
+			"translation": {
+			  "en": "reservation",
+			  "es": "reserva",
+			  "tr": "rezervasyon"
+			}
+		  },
+		  {
+			"bg": "ключ",
+			"translation": {
+			  "en": "key",
+			  "es": "llave",
+			  "tr": "anahtar"
+			}
+		  },
+		  {
+			"bg": "асансьор",
+			"translation": {
+			  "en": "elevator",
+			  "es": "ascensor",
+			  "tr": "asansör"
+			}
+		  },
+		  {
+			"bg": "баня",
+			"translation": {
+			  "en": "bathroom",
+			  "es": "baño",
+			  "tr": "banyo"
+			}
+		  },
+		  {
+			"bg": "включено",
+			"translation": {
+			  "en": "included",
+			  "es": "incluido",
+			  "tr": "dahil"
+			}
+		  },
+		  {
+			"bg": "закуска",
+			"translation": {
+			  "en": "breakfast",
+			  "es": "desayuno",
+			  "tr": "kahvaltı"
+			}
+		  },
+		  {
+			"bg": "има",
+			"translation": {
+			  "en": "there is",
+			  "es": "hay",
+			  "tr": "var"
+			}
+		  },
+		  {
+			"bg": "няма",
+			"translation": {
+			  "en": "there isn’t",
+			  "es": "no hay",
+			  "tr": "yok"
+			}
+		  },
+		  {
+			"bg": "свободен",
+			"translation": {
+			  "en": "available / free",
+			  "es": "libre / disponible",
+			  "tr": "boş / müsait"
+			}
+		  },
+		  {
+			"bg": "зает",
+			"translation": {
+			  "en": "occupied",
+			  "es": "ocupado",
+			  "tr": "dolu"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Using 'има / няма' in Hotel Situations",
+			"es": "Usar 'има / няма' en el Hotel",
+			"tr": "Otelde 'има / няма' Kullanımı"
+		  },
+		  "explanation": {
+			"en": "'Има' means 'there is / there are', and 'няма' means 'there isn’t / there aren’t'. These are used to talk about availability or amenities in hotels. Example: 'Има свободна стая.' = There is a free room. 'Няма асансьор.' = There is no elevator.",
+			"es": "'Има' significa 'hay' y 'няма' significa 'no hay'. Se usan para hablar de disponibilidad o servicios. Ejemplo: 'Има habitación libre.' / 'No hay ascensor.'",
+			"tr": "'Има' 'var', 'няма' ise 'yok' demektir. Otel olanakları ya da müsaitlik hakkında konuşmak için kullanılır. Örnek: 'Има свободна стая.' = Boş oda var. 'Няма асансьор.' = Asansör yok."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Form",
+				"Example",
+				"Meaning"
+			  ],
+			  "es": [
+				"Forma",
+				"Ejemplo",
+				"Significado"
+			  ],
+			  "tr": [
+				"Yapı",
+				"Örnek",
+				"Anlam"
+			  ]
+			},
+			"rows": [
+			  [
+				"има + noun",
+				"Има закуска.",
+				"There is breakfast."
+			  ],
+			  [
+				"няма + noun",
+				"Няма баня.",
+				"There is no bathroom."
+			  ],
+			  [
+				"има ли + noun?",
+				"Има ли свободна стая?",
+				"Is there a free room?"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Има ли двойна стая?",
+			  "translation": {
+				"en": "Is there a double room?",
+				"es": "¿Hay habitación doble?",
+				"tr": "Çift kişilik oda var mı?"
+			  }
+			},
+			{
+			  "bg": "Няма асансьор в хотела.",
+			  "translation": {
+				"en": "There is no elevator in the hotel.",
+				"es": "No hay ascensor en el hotel.",
+				"tr": "Otelde asansör yok."
+			  }
+			},
+			{
+			  "bg": "Има закуска включена.",
+			  "translation": {
+				"en": "Breakfast is included.",
+				"es": "El desayuno está incluido.",
+				"tr": "Kahvaltı dahil."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Use 'има ли...?' when asking if a feature or service exists. It's the polite way to inquire at hotels.",
+			"es": "Usa 'има ли...?' para preguntar si hay algo. Es una forma cortés en hoteles.",
+			"tr": "Otelde bir şeyin olup olmadığını sormak için 'има ли...?' yapısını kullan."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Many Bulgarian hotels include breakfast. Smaller guesthouses may require cash payments, and it's common to leave your key at reception.",
+			"es": "Muchos hoteles en Bulgaria incluyen desayuno. En casas de huéspedes pequeñas se paga en efectivo y se deja la llave en recepción.",
+			"tr": "Bulgaristan’daki otellerin çoğunda kahvaltı dahil olur. Küçük pansiyonlarda nakit ödeme gerekir ve anahtarı resepsiyona bırakmak yaygındır."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Receptionists might say 'няма проблем' to mean 'No problem' in a casual way.",
+			"es": "Los recepcionistas pueden decir 'няма проблем' como forma casual de 'no hay problema'.",
+			"tr": "Resepsiyon görevlileri genellikle 'няма проблем' (sorun yok) gibi rahatça söyler."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'Има ли свободна стая?' mean?",
+			  "es": "¿Qué significa 'Има ли свободна стая?'",
+			  "tr": "'Има ли свободна стая?' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Is there a free room?",
+			  "Do you have keys?",
+			  "Where is the bathroom?"
+			],
+			"answer": "Is there a free room?",
+			"explanation": {
+			  "en": "'Има ли' = is there, 'свободна стая' = free room.",
+			  "es": "'Има ли' = hay, 'свободна стая' = habitación libre.",
+			  "tr": "'Има ли' = var mı, 'свободна стая' = boş oda."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which sentence means 'There is no elevator'?",
+			  "es": "¿Cuál frase significa 'No hay ascensor'?",
+			  "tr": "'Asansör yok' hangi cümledir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Има асансьор",
+			  "Няма асансьор",
+			  "Има баня"
+			],
+			"answer": "Няма асансьор",
+			"explanation": {
+			  "en": "'няма' means 'there is not'.",
+			  "es": "'няма' significa 'no hay'.",
+			  "tr": "'няма' 'yok' demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'включено' mean in a hotel context?",
+			  "es": "¿Qué significa 'включено' en un hotel?",
+			  "tr": "'включено' otel bağlamında ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Extra",
+			  "Available",
+			  "Included"
+			],
+			"answer": "Included",
+			"explanation": {
+			  "en": "'включено' means something is included (e.g. breakfast).",
+			  "es": "'включено' significa que algo está incluido (ej. desayuno).",
+			  "tr": "'включено' bir şeyin dahil olduğunu belirtir (ör. kahvaltı)."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which word means 'key'?",
+			  "es": "¿Cuál palabra significa 'llave'?",
+			  "tr": "'Anahtar' kelimesi hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "баня",
+			  "ключ",
+			  "ресторант"
+			],
+			"answer": "ключ",
+			"explanation": {
+			  "en": "'ключ' = key.",
+			  "es": "'ключ' = llave.",
+			  "tr": "'ключ' = anahtar."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Добър ден! Има ли свободна двойна стая? – Да, с баня и закуска включена. – Колко струва? – 80 лева на вечер.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "How much is the room per night?",
+				"es": "¿Cuánto cuesta la habitación por noche?",
+				"tr": "Oda gecelik ne kadar?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "60 leva",
+				  "70 leva",
+				  "80 leva"
+				],
+				"es": [
+				  "60 levas",
+				  "70 levas",
+				  "80 levas"
+				],
+				"tr": [
+				  "60 leva",
+				  "70 leva",
+				  "80 leva"
+				]
+			  },
+			  "answer": {
+				"en": "80 leva",
+				"es": "80 levas",
+				"tr": "80 leva"
+			  },
+			  "explanation": {
+				"en": "They say: '80 лева на вечер.'",
+				"es": "Dicen: '80 лева на вечер.'",
+				"tr": "'80 лева на вечер.' diyor."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are checking into a hotel. You ask for a double room, ask if breakfast is included, and get your key.",
+			"es": "Estás haciendo el check-in en un hotel. Pides una habitación doble, preguntas si el desayuno está incluido y recibes la llave.",
+			"tr": "Bir otele giriş yapıyorsun. Çift kişilik oda istiyorsun, kahvaltı dahil mi diye soruyorsun ve anahtarını alıyorsun."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Здравейте! ____________?",
+			"Лице B: Да, има свободна.",
+			"Лице A: ____________?",
+			"Лице B: Да, включена е.",
+			"Лице A: Благодаря! ____________?",
+			"Лице B: Ето ключа."
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Има ли двойна стая"
+			  ]
+			},
+			{
+			  "correct": [
+				"Закуската включена ли е"
+			  ]
+			},
+			{
+			  "correct": [
+				"Може ли ключа"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_11",
+		"cefr_level": "A1",
+		"phase": "mid",
+		"title": {
+		  "en": "Talking About Daily Routine",
+		  "es": "Hablar de la Rutina Diaria",
+		  "tr": "Günlük Rutin Hakkında Konuşma"
+		},
+		"vocabulary": [
+		  {
+			"bg": "събуждам се",
+			"translation": {
+			  "en": "wake up",
+			  "es": "despertarse",
+			  "tr": "uyanmak"
+			}
+		  },
+		  {
+			"bg": "ставам",
+			"translation": {
+			  "en": "get up",
+			  "es": "levantarse",
+			  "tr": "kalkmak"
+			}
+		  },
+		  {
+			"bg": "мия се",
+			"translation": {
+			  "en": "wash up",
+			  "es": "lavarse",
+			  "tr": "yıkanmak"
+			}
+		  },
+		  {
+			"bg": "обличам се",
+			"translation": {
+			  "en": "get dressed",
+			  "es": "vestirse",
+			  "tr": "giyinmek"
+			}
+		  },
+		  {
+			"bg": "закусвам",
+			"translation": {
+			  "en": "have breakfast",
+			  "es": "desayunar",
+			  "tr": "kahvaltı yapmak"
+			}
+		  },
+		  {
+			"bg": "отивам",
+			"translation": {
+			  "en": "go (to)",
+			  "es": "ir (a)",
+			  "tr": "gitmek"
+			}
+		  },
+		  {
+			"bg": "работя",
+			"translation": {
+			  "en": "work",
+			  "es": "trabajar",
+			  "tr": "çalışmak"
+			}
+		  },
+		  {
+			"bg": "обядвам",
+			"translation": {
+			  "en": "have lunch",
+			  "es": "almorzar",
+			  "tr": "öğle yemeği yemek"
+			}
+		  },
+		  {
+			"bg": "почивам си",
+			"translation": {
+			  "en": "rest",
+			  "es": "descansar",
+			  "tr": "dinlenmek"
+			}
+		  },
+		  {
+			"bg": "вечерям",
+			"translation": {
+			  "en": "have dinner",
+			  "es": "cenar",
+			  "tr": "akşam yemeği yemek"
+			}
+		  },
+		  {
+			"bg": "лягам си",
+			"translation": {
+			  "en": "go to bed",
+			  "es": "acostarse",
+			  "tr": "yatmak"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Present Tense: Regular Verb Conjugation",
+			"es": "Presente: Conjugación de Verbos Regulares",
+			"tr": "Geniş Zaman: Düzenli Fiil Çekimi"
+		  },
+		  "explanation": {
+			"en": "Bulgarian regular verbs in the present tense follow patterns depending on their endings. Here are examples using 'работя' (to work), 'ставам' (to get up), and 'вечерям' (to have dinner).",
+			"es": "Los verbos regulares en búlgaro tienen patrones según su terminación. Aquí tienes ejemplos con 'работя' (trabajar), 'ставам' (levantarse) y 'вечерям' (cenar).",
+			"tr": "Bulgarca düzenli fiiller geniş zamanda belli ek kalıplarına göre çekimlenir. Aşağıda 'работя' (çalışmak), 'ставам' (kalkmak) ve 'вечерям' (akşam yemeği yemek) fiillerinin örneklerini görebilirsin."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Person",
+				"работя",
+				"ставам",
+				"вечерям"
+			  ],
+			  "es": [
+				"Persona",
+				"работя",
+				"ставам",
+				"вечерям"
+			  ],
+			  "tr": [
+				"Kişi",
+				"работя",
+				"ставам",
+				"вечерям"
+			  ]
+			},
+			"rows": [
+			  [
+				"Аз",
+				"работя",
+				"ставам",
+				"вечерям"
+			  ],
+			  [
+				"Ти",
+				"работиш",
+				"ставаш",
+				"вечеряш"
+			  ],
+			  [
+				"Той/Тя",
+				"работи",
+				"става",
+				"вечеря"
+			  ],
+			  [
+				"Ние",
+				"работим",
+				"ставаме",
+				"вечеряме"
+			  ],
+			  [
+				"Вие",
+				"работите",
+				"ставате",
+				"вечеряте"
+			  ],
+			  [
+				"Те",
+				"работят",
+				"стават",
+				"вечерят"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Аз ставам в 7 часа.",
+			  "translation": {
+				"en": "I get up at 7.",
+				"es": "Me levanto a las 7.",
+				"tr": "Saat 7'de kalkarım."
+			  }
+			},
+			{
+			  "bg": "Той работи всеки ден.",
+			  "translation": {
+				"en": "He works every day.",
+				"es": "Él trabaja todos los días.",
+				"tr": "O her gün çalışır."
+			  }
+			},
+			{
+			  "bg": "Ние вечеряме в 8.",
+			  "translation": {
+				"en": "We have dinner at 8.",
+				"es": "Cenamos a las 8.",
+				"tr": "Saat 8'de akşam yemeği yeriz."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Pronouns are often dropped if the verb form is clear.",
+			"es": "Los pronombres se omiten si el verbo ya indica quién es el sujeto.",
+			"tr": "Eğer fiilin çekimi belliyse özne zamiri genelde atlanır."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "In Bulgaria, most people start work around 9:00 and eat dinner late, around 8–9 PM.",
+			"es": "En Bulgaria, la gente suele empezar a trabajar a las 9:00 y cenar tarde, sobre las 8–9 PM.",
+			"tr": "Bulgaristan’da insanlar genellikle saat 9:00’da işe başlar ve 20–21 gibi akşam yemeği yerler."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Instead of saying 'почивам си', young people often say 'чилвам' (chillvam) meaning 'I'm chilling' or relaxing.",
+			"es": "En lugar de 'почивам си', los jóvenes dicen 'чилвам', que significa relajarse o descansar.",
+			"tr": "'почивам си' yerine gençler genelde 'чилвам' der — rahatlamak, takılmak anlamında."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'ставам' mean?",
+			  "es": "¿Qué significa 'ставам'?",
+			  "tr": "'ставам' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "go to bed",
+			  "get up",
+			  "go out"
+			],
+			"answer": "get up",
+			"explanation": {
+			  "en": "'ставам' means to get up.",
+			  "es": "'ставам' significa levantarse.",
+			  "tr": "'ставам' kalkmak demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "How do you say 'We work'?",
+			  "es": "¿Cómo se dice 'Nosotros trabajamos'?",
+			  "tr": "'Biz çalışıyoruz' nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Работят",
+			  "Работим",
+			  "Работиш"
+			],
+			"answer": "Работим",
+			"explanation": {
+			  "en": "'Ние работим' = We work.",
+			  "es": "'Ние работим' = Nosotros trabajamos.",
+			  "tr": "'Ние работим' = Biz çalışıyoruz."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which verb means 'to go to bed'?",
+			  "es": "¿Qué verbo significa 'acostarse'?",
+			  "tr": "'Yatmak' anlamına gelen fiil hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "ставам",
+			  "лягам си",
+			  "вечерям"
+			],
+			"answer": "лягам си",
+			"explanation": {
+			  "en": "'лягам си' means go to bed.",
+			  "es": "'лягам си' significa acostarse.",
+			  "tr": "'лягам си' yatmak demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What time do Bulgarians typically eat dinner?",
+			  "es": "¿A qué hora cenan normalmente los búlgaros?",
+			  "tr": "Bulgarlar genelde saat kaçta akşam yemeği yer?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "6 PM",
+			  "7 PM",
+			  "8–9 PM"
+			],
+			"answer": "8–9 PM",
+			"explanation": {
+			  "en": "Dinner is usually between 8–9 PM in Bulgaria.",
+			  "es": "La cena suele ser entre 8–9 PM en Bulgaria.",
+			  "tr": "Bulgaristan’da akşam yemeği genelde 20–21 arasıdır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'чилвам' mean?",
+			  "es": "¿Qué significa 'чилвам'?",
+			  "tr": "'чилвам' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "to sleep",
+			  "to chill",
+			  "to eat"
+			],
+			"answer": "to chill",
+			"explanation": {
+			  "en": "It's slang for relaxing or taking it easy.",
+			  "es": "Es una jerga para relajarse.",
+			  "tr": "Bu, takılmak ya da rahatlamak anlamında argo bir kelime."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which is the correct form: 'He works'?",
+			  "es": "¿Cuál es la forma correcta: 'Él trabaja'?",
+			  "tr": "'O çalışıyor' doğru şekli hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Работиш",
+			  "Работя",
+			  "Работи"
+			],
+			"answer": "Работи",
+			"explanation": {
+			  "en": "'Той работи' means 'He works'.",
+			  "es": "'Той работи' significa 'Él trabaja'.",
+			  "tr": "'Той работи' 'O çalışıyor' demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What is the infinitive of 'вечеряме'?",
+			  "es": "¿Cuál es el infinitivo de 'вечеряме'?",
+			  "tr": "'вечеряме' fiilinin mastar hali nedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "вечерям",
+			  "вечеря",
+			  "вечеряме"
+			],
+			"answer": "вечерям",
+			"explanation": {
+			  "en": "Infinitive: вечерям",
+			  "es": "Infinitivo: вечерям",
+			  "tr": "Mastar: вечерям"
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– В колко часа ставаш? – В 7. После закусвам и отивам на работа. – А кога вечеряш? – Обикновено в 8.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What time does the person get up?",
+				"es": "¿A qué hora se levanta la persona?",
+				"tr": "Kişi saat kaçta kalkıyor?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "6",
+				  "7",
+				  "8"
+				],
+				"es": [
+				  "6",
+				  "7",
+				  "8"
+				],
+				"tr": [
+				  "6",
+				  "7",
+				  "8"
+				]
+			  },
+			  "answer": {
+				"en": "7",
+				"es": "7",
+				"tr": "7"
+			  },
+			  "explanation": {
+				"en": "He says: 'В 7.'",
+				"es": "Dice: 'В 7.'",
+				"tr": "'В 7' diyor."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are telling a friend about your daily routine. You wake up at 7, eat breakfast, work until 6, and go to bed at 11.",
+			"es": "Estás contando a un amigo tu rutina diaria. Te despiertas a las 7, desayunas, trabajas hasta las 6 y te acuestas a las 11.",
+			"tr": "Bir arkadaşına günlük rutinin hakkında konuşuyorsun. Saat 7'de uyanıyorsun, kahvaltı yapıyorsun, saat 6’ya kadar çalışıyorsun ve saat 11’de yatıyorsun."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: В колко часа се събуждаш?",
+			"Лице B: ____________",
+			"Лице A: И после?",
+			"Лице B: ____________",
+			"Лице A: Обядваш ли навън?",
+			"Лице B: ____________",
+			"Лице A: А вечер?",
+			"Лице B: ____________",
+			"Лице A: И кога си лягаш?",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Събуждам се в 7 часа"
+			  ]
+			},
+			{
+			  "correct": [
+				"Ставам и закусвам"
+			  ]
+			},
+			{
+			  "correct": [
+				"Не, обядвам у дома",
+				"Да, обядвам навън"
+			  ]
+			},
+			{
+			  "correct": [
+				"Работя до 6 и вечерям"
+			  ]
+			},
+			{
+			  "correct": [
+				"Лягам си в 11"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_12",
+		"cefr_level": "A1",
+		"phase": "final",
+		"title": {
+		  "en": "Health and the Body",
+		  "es": "La Salud y el Cuerpo",
+		  "tr": "Sağlık ve Vücut"
+		},
+		"vocabulary": [
+		  {
+			"bg": "глава",
+			"translation": {
+			  "en": "head",
+			  "es": "cabeza",
+			  "tr": "baş"
+			}
+		  },
+		  {
+			"bg": "стомах",
+			"translation": {
+			  "en": "stomach",
+			  "es": "estómago",
+			  "tr": "mide"
+			}
+		  },
+		  {
+			"bg": "зъб",
+			"translation": {
+			  "en": "tooth",
+			  "es": "diente",
+			  "tr": "diş"
+			}
+		  },
+		  {
+			"bg": "крак",
+			"translation": {
+			  "en": "leg",
+			  "es": "pierna",
+			  "tr": "bacak"
+			}
+		  },
+		  {
+			"bg": "ръка",
+			"translation": {
+			  "en": "arm / hand",
+			  "es": "brazo / mano",
+			  "tr": "kol / el"
+			}
+		  },
+		  {
+			"bg": "гърло",
+			"translation": {
+			  "en": "throat",
+			  "es": "garganta",
+			  "tr": "boğaz"
+			}
+		  },
+		  {
+			"bg": "температура",
+			"translation": {
+			  "en": "fever",
+			  "es": "fiebre",
+			  "tr": "ateş"
+			}
+		  },
+		  {
+			"bg": "болка",
+			"translation": {
+			  "en": "pain",
+			  "es": "dolor",
+			  "tr": "ağrı"
+			}
+		  },
+		  {
+			"bg": "лекар",
+			"translation": {
+			  "en": "doctor",
+			  "es": "médico",
+			  "tr": "doktor"
+			}
+		  },
+		  {
+			"bg": "аптека",
+			"translation": {
+			  "en": "pharmacy",
+			  "es": "farmacia",
+			  "tr": "eczane"
+			}
+		  },
+		  {
+			"bg": "лекарство",
+			"translation": {
+			  "en": "medicine",
+			  "es": "medicina",
+			  "tr": "ilaç"
+			}
+		  },
+		  {
+			"bg": "трябва",
+			"translation": {
+			  "en": "must / need to",
+			  "es": "deber / necesitar",
+			  "tr": "gerekmek"
+			}
+		  },
+		  {
+			"bg": "почивка",
+			"translation": {
+			  "en": "rest",
+			  "es": "descanso",
+			  "tr": "dinlenme"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Using the Modal Verb 'трябва'",
+			"es": "Usar el Verbo Modal 'трябва'",
+			"tr": "'трябва' Yardımcı Fiilinin Kullanımı"
+		  },
+		  "explanation": {
+			"en": "'трябва' means 'must' or 'need to'. It is used with verbs in infinitive form to express obligation or advice. Example: 'Трябва да отида на лекар.' = I need to go to the doctor.",
+			"es": "'трябва' significa 'deber' o 'necesitar'. Se usa con el verbo en infinitivo. Ejemplo: 'Трябва да отида на лекар.' = Necesito ir al médico.",
+			"tr": "'трябва' 'gerekmek' ya da 'zorunda olmak' anlamına gelir. Ardından fiil mastar (infinitive) hâliyle gelir. Örn: 'Трябва да отида на лекар.' = Doktora gitmem gerek."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Form",
+				"Example",
+				"Translation"
+			  ],
+			  "es": [
+				"Forma",
+				"Ejemplo",
+				"Traducción"
+			  ],
+			  "tr": [
+				"Yapı",
+				"Örnek",
+				"Çeviri"
+			  ]
+			},
+			"rows": [
+			  [
+				"трябва да + verb",
+				"Трябва да почивам.",
+				"I need to rest."
+			  ],
+			  [
+				"трябва да + verb",
+				"Трябва да взема лекарство.",
+				"I must take medicine."
+			  ],
+			  [
+				"трябва да + verb",
+				"Трябва да отида в аптеката.",
+				"I need to go to the pharmacy."
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Боли ме гърлото.",
+			  "translation": {
+				"en": "My throat hurts.",
+				"es": "Me duele la garganta.",
+				"tr": "Boğazım ağrıyor."
+			  }
+			},
+			{
+			  "bg": "Имам температура.",
+			  "translation": {
+				"en": "I have a fever.",
+				"es": "Tengo fiebre.",
+				"tr": "Ateşim var."
+			  }
+			},
+			{
+			  "bg": "Трябва да си почина.",
+			  "translation": {
+				"en": "I need to rest.",
+				"es": "Necesito descansar.",
+				"tr": "Dinlenmem gerekiyor."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Don't conjugate 'трябва' — it’s always the same form, used with another verb.",
+			"es": "'трябва' no se conjuga. Siempre va con otro verbo en infinitivo.",
+			"tr": "'трябва' çekimlenmez — ardından gelen fiil mastarda kalır."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "In Bulgaria, many people go straight to the pharmacy instead of seeing a doctor for common issues. Pharmacists can give advice and medicine.",
+			"es": "En Bulgaria, la gente suele ir directamente a la farmacia sin ir al médico para problemas comunes.",
+			"tr": "Bulgaristan’da insanlar basit sağlık sorunlarında doğrudan eczaneye gider — eczacılar öneri ve ilaç verebilir."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "When someone feels sick, they might say 'не съм добре' (I'm not okay) or just 'зле съм' (I feel bad).",
+			"es": "Cuando alguien se siente mal, puede decir 'не съм добре' o simplemente 'зле съм'.",
+			"tr": "Hasta hisseden biri genelde 'не съм добре' (iyi değilim) ya da 'зле съм' (kötüyüm) der."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'глава' mean?",
+			  "es": "¿Qué significa 'глава'?",
+			  "tr": "'глава' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Leg",
+			  "Head",
+			  "Arm"
+			],
+			"answer": "Head",
+			"explanation": {
+			  "en": "'глава' means head.",
+			  "es": "'глава' significa cabeza.",
+			  "tr": "'глава' baş demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'Трябва да отида на лекар' mean?",
+			  "es": "¿Qué significa 'Трябва да отида на лекар'?",
+			  "tr": "'Трябва да отида на лекар' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "I want a doctor",
+			  "I feel better",
+			  "I need to go to the doctor"
+			],
+			"answer": "I need to go to the doctor",
+			"explanation": {
+			  "en": "'трябва да отида' = I must go",
+			  "es": "'трябва да отида' = debo ir",
+			  "tr": "'трябва да отида' = gitmem gerekiyor"
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which sentence means 'I have a fever'?",
+			  "es": "¿Cuál significa 'Tengo fiebre'?",
+			  "tr": "'Ateşim var' cümlesi hangisi?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Имам температура",
+			  "Боли ме кракът",
+			  "Няма лекарство"
+			],
+			"answer": "Имам температура",
+			"explanation": {
+			  "en": "'Имам температура' = I have a fever.",
+			  "es": "'Имам температура' = Tengo fiebre.",
+			  "tr": "'Имам температура' = Ateşim var."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'аптека' mean?",
+			  "es": "¿Qué significa 'аптека'?",
+			  "tr": "'аптека' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Hospital",
+			  "Clinic",
+			  "Pharmacy"
+			],
+			"answer": "Pharmacy",
+			"explanation": {
+			  "en": "'аптека' is a pharmacy.",
+			  "es": "'аптека' es una farmacia.",
+			  "tr": "'аптека' eczane demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which verb is used to say 'must' or 'need to'?",
+			  "es": "¿Qué verbo se usa para 'deber' o 'necesitar'?",
+			  "tr": "'Gerekli / zorunda olmak' için hangi fiil kullanılır?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "имам",
+			  "трябва",
+			  "искам"
+			],
+			"answer": "трябва",
+			"explanation": {
+			  "en": "'трябва' = must / need to",
+			  "es": "'трябва' = deber / necesitar",
+			  "tr": "'трябва' = gerekmek"
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'зле съм' mean?",
+			  "es": "¿Qué significa 'зле съм'?",
+			  "tr": "'зле съм' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "I'm okay",
+			  "I'm sick",
+			  "I'm tired"
+			],
+			"answer": "I'm sick",
+			"explanation": {
+			  "en": "It's an informal way to say you feel bad or ill.",
+			  "es": "Es una forma informal de decir que te sientes mal.",
+			  "tr": "Kötü hissetmek, hasta olmak için argo bir ifadedir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Choose the correct use of 'трябва':",
+			  "es": "Elige el uso correcto de 'трябва':",
+			  "tr": "'трябва' yapısını doğru kullananı seçin:"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "трябва спя",
+			  "трябва да спя",
+			  "трябва спиш"
+			],
+			"answer": "трябва да спя",
+			"explanation": {
+			  "en": "Use 'трябва да' + infinitive.",
+			  "es": "Se usa 'трябва да' + infinitivo.",
+			  "tr": "'трябва да' + mastar kullanılır."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Как си? – Зле съм. Имам болки в гърлото. – Взе ли лекарство? – Да, трябва да си почина.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What is the person’s symptom?",
+				"es": "¿Cuál es el síntoma de la persona?",
+				"tr": "Kişinin belirtisi ne?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Stomach pain",
+				  "Throat pain",
+				  "Toothache"
+				],
+				"es": [
+				  "Dolor de estómago",
+				  "Dolor de garganta",
+				  "Dolor de muelas"
+				],
+				"tr": [
+				  "Mide ağrısı",
+				  "Boğaz ağrısı",
+				  "Diş ağrısı"
+				]
+			  },
+			  "answer": {
+				"en": "Throat pain",
+				"es": "Dolor de garganta",
+				"tr": "Boğaz ağrısı"
+			  },
+			  "explanation": {
+				"en": "They say: 'болки в гърлото'",
+				"es": "Dicen: 'болки в гърлото'",
+				"tr": "'болки в гърлото' diyorlar"
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You feel sick and go to the pharmacy. You say your throat hurts, you have a fever, and you need to rest and take medicine.",
+			"es": "Te sientes mal y vas a la farmacia. Dices que te duele la garganta, tienes fiebre y necesitas descansar y tomar medicina.",
+			"tr": "Kendini kötü hissediyorsun ve eczaneye gidiyorsun. Boğazının ağrıdığını, ateşin olduğunu, dinlenmen ve ilaç alman gerektiğini söylüyorsun."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Какво има?",
+			"Лице B: ____________",
+			"Лице A: Имаш ли температура?",
+			"Лице B: ____________",
+			"Лице A: Искаш ли лекарство?",
+			"Лице B: ____________",
+			"Лице A: Трябва да си починеш.",
+			"Лице B: ____________",
+			"Лице A: Ще се оправиш скоро.",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Боли ме гърлото"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, имам температура"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, искам лекарство"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, трябва да си почина"
+			  ]
+			},
+			{
+			  "correct": [
+				"Благодаря"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_13",
+		"cefr_level": "A1",
+		"phase": "final",
+		"title": {
+		  "en": "Making Plans and Invitations",
+		  "es": "Hacer Planes e Invitaciones",
+		  "tr": "Plan Yapmak ve Davet Etmek"
+		},
+		"vocabulary": [
+		  {
+			"bg": "кино",
+			"translation": {
+			  "en": "cinema",
+			  "es": "cine",
+			  "tr": "sinema"
+			}
+		  },
+		  {
+			"bg": "кафене",
+			"translation": {
+			  "en": "café",
+			  "es": "cafetería",
+			  "tr": "kafe"
+			}
+		  },
+		  {
+			"bg": "покана",
+			"translation": {
+			  "en": "invitation",
+			  "es": "invitación",
+			  "tr": "davet"
+			}
+		  },
+		  {
+			"bg": "ще",
+			"translation": {
+			  "en": "will (future)",
+			  "es": "futuro (haré, irá...)",
+			  "tr": "'-ecek/-acak' (gelecek zaman)"
+			}
+		  },
+		  {
+			"bg": "идвам",
+			"translation": {
+			  "en": "come",
+			  "es": "venir",
+			  "tr": "gelmek"
+			}
+		  },
+		  {
+			"bg": "отивам",
+			"translation": {
+			  "en": "go",
+			  "es": "ir",
+			  "tr": "gitmek"
+			}
+		  },
+		  {
+			"bg": "ще видим",
+			"translation": {
+			  "en": "we'll see",
+			  "es": "ya veremos",
+			  "tr": "bakarız"
+			}
+		  },
+		  {
+			"bg": "свободен",
+			"translation": {
+			  "en": "free (not busy)",
+			  "es": "libre",
+			  "tr": "müsait"
+			}
+		  },
+		  {
+			"bg": "среща",
+			"translation": {
+			  "en": "meeting / date",
+			  "es": "reunión / cita",
+			  "tr": "buluşma / randevu"
+			}
+		  },
+		  {
+			"bg": "искаш ли",
+			"translation": {
+			  "en": "do you want (to)?",
+			  "es": "¿quieres?",
+			  "tr": "ister misin?"
+			}
+		  },
+		  {
+			"bg": "може би",
+			"translation": {
+			  "en": "maybe",
+			  "es": "quizás",
+			  "tr": "belki"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Future with 'ще' + verb",
+			"es": "Futuro con 'ще' + verbo",
+			"tr": "'ще' + fiil ile Gelecek Zaman"
+		  },
+		  "explanation": {
+			"en": "'ще' is used before a verb to show future tense. For example: 'Ще отида на кино.' (I will go to the cinema). The verb stays in present tense form after 'ще'.",
+			"es": "'ще' se usa antes del verbo para indicar futuro. Ejemplo: 'Ще отида al cine.' (Iré al cine). El verbo sigue en presente.",
+			"tr": "'ще' gelecek zaman için fiilden önce gelir. Örneğin: 'Ще отида на кино.' (Sinemaya gideceğim). Fiil geniş zaman halinde kalır."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Person",
+				"Bulgarian",
+				"Meaning"
+			  ],
+			  "es": [
+				"Persona",
+				"Búlgaro",
+				"Significado"
+			  ],
+			  "tr": [
+				"Kişi",
+				"Bulgarca",
+				"Anlamı"
+			  ]
+			},
+			"rows": [
+			  [
+				"Аз",
+				"Ще уча",
+				"I will study"
+			  ],
+			  [
+				"Ти",
+				"Ще дойдеш",
+				"You will come"
+			  ],
+			  [
+				"Той/Тя",
+				"Ще гледа",
+				"He/She will watch"
+			  ],
+			  [
+				"Ние",
+				"Ще ходим",
+				"We will go"
+			  ],
+			  [
+				"Вие",
+				"Ще пиете",
+				"You will drink"
+			  ],
+			  [
+				"Те",
+				"Ще излязат",
+				"They will go out"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Ще отидем на кафе утре.",
+			  "translation": {
+				"en": "We will go for coffee tomorrow.",
+				"es": "Iremos a tomar café mañana.",
+				"tr": "Yarın kafeye gideceğiz."
+			  }
+			},
+			{
+			  "bg": "Ще има среща в 6.",
+			  "translation": {
+				"en": "There will be a meeting at 6.",
+				"es": "Habrá una reunión a las 6.",
+				"tr": "Saat 6'da buluşma olacak."
+			  }
+			},
+			{
+			  "bg": "Ще дойда с теб.",
+			  "translation": {
+				"en": "I will come with you.",
+				"es": "Vendré contigo.",
+				"tr": "Seninle geleceğim."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "The verb form after 'ще' looks like present tense, but it's about the future.",
+			"es": "El verbo después de 'ще' parece presente, pero indica futuro.",
+			"tr": "'ще'den sonra gelen fiil geniş zamandadır ama gelecek zamanı ifade eder."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Bulgarians often meet for a café or walk when making plans. It's common to say 'Да се видим?' (Shall we meet?) when inviting.",
+			"es": "Los búlgaros suelen quedar para un café o paseo. Se usa mucho 'Да се видим?' para invitar.",
+			"tr": "Bulgarlar genellikle kahve ya da yürüyüş için buluşur. Davet ederken 'Да се видим?' (Görüşelim mi?) denir."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Young people say 'навит ли си?' which means 'Are you down?' for making fun or casual plans.",
+			"es": "Los jóvenes dicen 'навит ли си?' como '¿te animas?' para planes informales.",
+			"tr": "Gençler gayriresmî olarak 'навит ли си?' yani 'var mısın?' der."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'Ще отида на кино' mean?",
+			  "es": "¿Qué significa 'Ще отида на кино'?",
+			  "tr": "'Ще отида на кино' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "I went to the cinema",
+			  "I will go to the cinema",
+			  "I go to the cinema"
+			],
+			"answer": "I will go to the cinema",
+			"explanation": {
+			  "en": "'ще' shows future tense.",
+			  "es": "'ще' indica futuro.",
+			  "tr": "'ще' gelecek zaman belirtir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which of these is a question to invite someone?",
+			  "es": "¿Cuál es una pregunta para invitar a alguien?",
+			  "tr": "Birini davet etmek için hangi soru kullanılır?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Ще спиш?",
+			  "Искаш ли да дойдеш?",
+			  "Имаш кафе?"
+			],
+			"answer": "Искаш ли да дойдеш?",
+			"explanation": {
+			  "en": "That means 'Do you want to come?'",
+			  "es": "Significa '¿Quieres venir?'",
+			  "tr": "'Gelmek ister misin?' anlamındadır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What is the meaning of 'свободен'?",
+			  "es": "¿Qué significa 'свободен'?",
+			  "tr": "'свободен' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "free / available",
+			  "fun",
+			  "busy"
+			],
+			"answer": "free / available",
+			"explanation": {
+			  "en": "'свободен' = free / available.",
+			  "es": "'свободен' = libre / disponible.",
+			  "tr": "'свободен' = boş / müsait."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which form is correct for 'We will go'?",
+			  "es": "¿Cuál es la forma correcta para 'Iremos'?",
+			  "tr": "'Gideceğiz' için doğru ifade hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Ще ходим",
+			  "Ще ходя",
+			  "Ходим ще"
+			],
+			"answer": "Ще ходим",
+			"explanation": {
+			  "en": "Use 'ще' + 'ходим' for 'we will go'.",
+			  "es": "Se usa 'ще' + 'ходим' para 'iremos'.",
+			  "tr": "'Ще ходим' = Gideceğiz."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "How do you say 'maybe'?",
+			  "es": "¿Cómo se dice 'quizás'?",
+			  "tr": "'Belki' nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "може би",
+			  "навит",
+			  "вчера"
+			],
+			"answer": "може би",
+			"explanation": {
+			  "en": "'може би' = maybe.",
+			  "es": "'може би' = quizás.",
+			  "tr": "'може би' = belki."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'Ще видим' mean?",
+			  "es": "¿Qué significa 'Ще видим'?",
+			  "tr": "'Ще видим' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "We saw",
+			  "We'll see",
+			  "We go"
+			],
+			"answer": "We'll see",
+			"explanation": {
+			  "en": "'Ще видим' = we will see.",
+			  "es": "'Ще видим' = ya veremos.",
+			  "tr": "'Ще видим' = bakarız / göreceğiz."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What’s a casual way to say 'Are you in?'",
+			  "es": "¿Cómo se dice informalmente '¿te animas?'",
+			  "tr": "'Var mısın?' gayriresmî olarak nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Готов ли си?",
+			  "Навит ли си?",
+			  "Ще си?"
+			],
+			"answer": "Навит ли си?",
+			"explanation": {
+			  "en": "It’s casual slang for 'Are you down?'",
+			  "es": "Es jerga para '¿te animas?'",
+			  "tr": "Gayriresmî olarak 'Var mısın?' demektir."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Искаш ли да излезем утре вечер? – Да, може би кино? – Супер! Ще ти пиша в 6.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What are they planning to do?",
+				"es": "¿Qué planean hacer?",
+				"tr": "Ne planlıyorlar?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Go to dinner",
+				  "Go to the cinema",
+				  "Go shopping"
+				],
+				"es": [
+				  "Ir a cenar",
+				  "Ir al cine",
+				  "Ir de compras"
+				],
+				"tr": [
+				  "Akşam yemeğine gitmek",
+				  "Sinemaya gitmek",
+				  "Alışverişe gitmek"
+				]
+			  },
+			  "answer": {
+				"en": "Go to the cinema",
+				"es": "Ir al cine",
+				"tr": "Sinemaya gitmek"
+			  },
+			  "explanation": {
+				"en": "'може би кино' = maybe cinema.",
+				"es": "'може би кино' = quizás cine.",
+				"tr": "'може би кино' = belki sinema."
+			  }
+			},
+			{
+			  "question": {
+				"en": "When will they message?",
+				"es": "¿Cuándo se escribirán?",
+				"tr": "Ne zaman mesajlaşacaklar?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "At 5",
+				  "At 6",
+				  "At 7"
+				],
+				"es": [
+				  "A las 5",
+				  "A las 6",
+				  "A las 7"
+				],
+				"tr": [
+				  "Saat 5’te",
+				  "Saat 6’da",
+				  "Saat 7’de"
+				]
+			  },
+			  "answer": {
+				"en": "At 6",
+				"es": "A las 6",
+				"tr": "Saat 6’da"
+			  },
+			  "explanation": {
+				"en": "They say: 'Ще ти пиша в 6.'",
+				"es": "Dicen: 'Ще ти пиша в 6.'",
+				"tr": "'Saat 6’da mesaj atarım' diyorlar."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You and your friend are making plans for Saturday. You will go to a café at 5 PM and then to the cinema. The cinema starts at 7.",
+			"es": "Tú y tu amigo hacéis planes para el sábado. Irán a un café a las 5 PM y después al cine. La película empieza a las 7.",
+			"tr": "Cumartesi günü arkadaşınla plan yapıyorsun. Saat 5’te kafeye, sonra sinemaya gideceksiniz. Film 7’de başlıyor."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Свободен ли си в събота?",
+			"Лице B: ____________",
+			"Лице A: Искаш ли да отидем на кафе в 5?",
+			"Лице B: ____________",
+			"Лице A: После – кино?",
+			"Лице B: ____________",
+			"Лице A: Филмът е в 7.",
+			"Лице B: ____________",
+			"Лице A: Супер, ще се видим!"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Да, свободен съм"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, звучи добре"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, ще дойда"
+			  ]
+			},
+			{
+			  "correct": [
+				"Чудесно, ще взема билети"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_14",
+		"cefr_level": "A1",
+		"phase": "final",
+		"title": {
+		  "en": "Weather and Seasons",
+		  "es": "El Tiempo y las Estaciones",
+		  "tr": "Hava Durumu ve Mevsimler"
+		},
+		"vocabulary": [
+		  {
+			"bg": "време",
+			"translation": {
+			  "en": "weather",
+			  "es": "clima",
+			  "tr": "hava"
+			}
+		  },
+		  {
+			"bg": "дъжд",
+			"translation": {
+			  "en": "rain",
+			  "es": "lluvia",
+			  "tr": "yağmur"
+			}
+		  },
+		  {
+			"bg": "сняг",
+			"translation": {
+			  "en": "snow",
+			  "es": "nieve",
+			  "tr": "kar"
+			}
+		  },
+		  {
+			"bg": "слънце",
+			"translation": {
+			  "en": "sun",
+			  "es": "sol",
+			  "tr": "güneş"
+			}
+		  },
+		  {
+			"bg": "вятър",
+			"translation": {
+			  "en": "wind",
+			  "es": "viento",
+			  "tr": "rüzgar"
+			}
+		  },
+		  {
+			"bg": "топло",
+			"translation": {
+			  "en": "warm",
+			  "es": "caliente / templado",
+			  "tr": "sıcak / ılık"
+			}
+		  },
+		  {
+			"bg": "студено",
+			"translation": {
+			  "en": "cold",
+			  "es": "frío",
+			  "tr": "soğuk"
+			}
+		  },
+		  {
+			"bg": "вали",
+			"translation": {
+			  "en": "it rains",
+			  "es": "llueve",
+			  "tr": "yağıyor (yağmur)"
+			}
+		  },
+		  {
+			"bg": "духа вятър",
+			"translation": {
+			  "en": "the wind blows",
+			  "es": "hay viento",
+			  "tr": "rüzgar esiyor"
+			}
+		  },
+		  {
+			"bg": "лято",
+			"translation": {
+			  "en": "summer",
+			  "es": "verano",
+			  "tr": "yaz"
+			}
+		  },
+		  {
+			"bg": "зима",
+			"translation": {
+			  "en": "winter",
+			  "es": "invierno",
+			  "tr": "kış"
+			}
+		  },
+		  {
+			"bg": "пролет",
+			"translation": {
+			  "en": "spring",
+			  "es": "primavera",
+			  "tr": "ilkbahar"
+			}
+		  },
+		  {
+			"bg": "есен",
+			"translation": {
+			  "en": "autumn",
+			  "es": "otoño",
+			  "tr": "sonbahar"
+			}
+		  },
+		  {
+			"bg": "яке",
+			"translation": {
+			  "en": "jacket",
+			  "es": "chaqueta",
+			  "tr": "ceket"
+			}
+		  },
+		  {
+			"bg": "шапка",
+			"translation": {
+			  "en": "hat",
+			  "es": "sombrero / gorro",
+			  "tr": "şapka"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Impersonal Weather Expressions",
+			"es": "Expresiones Impersonales del Clima",
+			"tr": "Hava İçin Zamir Olmayan Yapılar"
+		  },
+		  "explanation": {
+			"en": "In Bulgarian, weather is often described with impersonal verbs like 'вали' (it rains), 'духа' (it blows). No subject is used. Example: 'Вали дъжд.' = It is raining.",
+			"es": "En búlgaro, el clima se describe con verbos impersonales como 'вали' (llueve), 'духа' (sopla). No hay sujeto. Ej: 'Вали дъжд.' = Llueve.",
+			"tr": "Bulgarcada hava durumunu anlatmak için 'вали' (yağmur yağıyor), 'духа' (rüzgar esiyor) gibi öznesiz fiiller kullanılır. Örn: 'Вали дъжд.' = Yağmur yağıyor."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Bulgarian",
+				"Translation"
+			  ],
+			  "es": [
+				"Búlgaro",
+				"Traducción"
+			  ],
+			  "tr": [
+				"Bulgarca",
+				"Çeviri"
+			  ]
+			},
+			"rows": [
+			  [
+				"Вали дъжд",
+				"It is raining / Está lloviendo / Yağmur yağıyor"
+			  ],
+			  [
+				"Вали сняг",
+				"It is snowing / Está nevando / Kar yağıyor"
+			  ],
+			  [
+				"Духа вятър",
+				"The wind is blowing / Hace viento / Rüzgar esiyor"
+			  ],
+			  [
+				"Студено е",
+				"It is cold / Hace frío / Hava soğuk"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Вали сняг в София.",
+			  "translation": {
+				"en": "It is snowing in Sofia.",
+				"es": "Nieva en Sofía.",
+				"tr": "Sofya’da kar yağıyor."
+			  }
+			},
+			{
+			  "bg": "През лятото е топло.",
+			  "translation": {
+				"en": "In summer it is warm.",
+				"es": "En verano hace calor.",
+				"tr": "Yazın hava sıcak."
+			  }
+			},
+			{
+			  "bg": "Днес е много студено.",
+			  "translation": {
+				"en": "It’s very cold today.",
+				"es": "Hoy hace mucho frío.",
+				"tr": "Bugün hava çok soğuk."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "Weather expressions usually start with a verb — no need for a subject pronoun.",
+			"es": "Las frases del clima empiezan con un verbo, sin sujeto.",
+			"tr": "Hava cümleleri öznesiz başlar — doğrudan fiil gelir."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Bulgarians dress warmly in winter and often wear hats and thick jackets. Seasons can be extreme.",
+			"es": "En Bulgaria se abrigan mucho en invierno, con gorros y chaquetas gruesas. El clima puede ser extremo.",
+			"tr": "Bulgarlar kışın kalın giyinir — şapka ve mont mutlaka olur. Mevsimler sert geçebilir."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "People say 'мега студ' (mega cold) or 'яко топло' (crazy warm) in casual talk about weather.",
+			"es": "En lenguaje informal se dice 'мега студ' (frío extremo) o 'яко топло' (mucho calor).",
+			"tr": "Gündelik konuşmada 'мега студ' (aşırı soğuk) ya da 'яко топло' (çok sıcak) denir."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'вали дъжд' mean?",
+			  "es": "¿Qué significa 'вали дъжд'?",
+			  "tr": "'вали дъжд' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "It is sunny",
+			  "It is raining",
+			  "It is windy"
+			],
+			"answer": "It is raining",
+			"explanation": {
+			  "en": "'вали дъжд' = it is raining.",
+			  "es": "'вали дъжд' = está lloviendo.",
+			  "tr": "'вали дъжд' = yağmur yağıyor."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which word means 'autumn'?",
+			  "es": "¿Cuál significa 'otoño'?",
+			  "tr": "'Sonbahar' kelimesi hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "зима",
+			  "есен",
+			  "пролет"
+			],
+			"answer": "есен",
+			"explanation": {
+			  "en": "'есен' = autumn.",
+			  "es": "'есен' = otoño.",
+			  "tr": "'есен' = sonbahar."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What is the Bulgarian word for 'hat'?",
+			  "es": "¿Cuál es la palabra búlgara para 'gorro'?",
+			  "tr": "'Şapka' kelimesi Bulgarcada nedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "шапка",
+			  "яке",
+			  "вятър"
+			],
+			"answer": "шапка",
+			"explanation": {
+			  "en": "'шапка' = hat.",
+			  "es": "'шапка' = gorro.",
+			  "tr": "'шапка' = şapka."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which of these means 'snow'?",
+			  "es": "¿Cuál significa 'nieve'?",
+			  "tr": "'Kar' hangi kelimedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "слънце",
+			  "сняг",
+			  "вятър"
+			],
+			"answer": "сняг",
+			"explanation": {
+			  "en": "'сняг' = snow.",
+			  "es": "'сняг' = nieve.",
+			  "tr": "'сняг' = kar."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Translate: 'It’s cold today'",
+			  "es": "Traduce: 'Hoy hace frío'",
+			  "tr": "Çevir: 'Bugün hava soğuk'"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Днес е студено",
+			  "Утре е топло",
+			  "Сега вали"
+			],
+			"answer": "Днес е студено",
+			"explanation": {
+			  "en": "Correct: 'Днес' = today, 'студено' = cold.",
+			  "es": "Correcto: 'Днес' = hoy, 'студено' = frío.",
+			  "tr": "'Днес' = bugün, 'студено' = soğuk."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'яко топло' mean?",
+			  "es": "¿Qué significa 'яко топло'?",
+			  "tr": "'яко топло' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Very cold",
+			  "Very warm",
+			  "A little wind"
+			],
+			"answer": "Very warm",
+			"explanation": {
+			  "en": "Slang: 'яко топло' = really warm.",
+			  "es": "Jerga: 'яко топло' = muy cálido.",
+			  "tr": "Argo: 'яко топло' = çok sıcak."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which verb is used for 'It’s snowing'?",
+			  "es": "¿Qué verbo se usa para 'Está nevando'?",
+			  "tr": "'Kar yağıyor' için hangi fiil kullanılır?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "вали",
+			  "духа",
+			  "топло"
+			],
+			"answer": "вали",
+			"explanation": {
+			  "en": "'вали сняг' = It’s snowing.",
+			  "es": "'вали сняг' = Está nevando.",
+			  "tr": "'вали сняг' = Kar yağıyor."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Какво е времето? – Вали сняг и духа вятър. – Топло ли е? – Не, студено е!",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What’s the weather like?",
+				"es": "¿Cómo está el clima?",
+				"tr": "Hava nasıl?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "It is sunny",
+				  "It is snowing and windy",
+				  "It is hot"
+				],
+				"es": [
+				  "Hace sol",
+				  "Nieva y hace viento",
+				  "Hace calor"
+				],
+				"tr": [
+				  "Güneşli",
+				  "Kar yağıyor ve rüzgarlı",
+				  "Sıcak"
+				]
+			  },
+			  "answer": {
+				"en": "It is snowing and windy",
+				"es": "Nieva y hace viento",
+				"tr": "Kar yağıyor ve rüzgarlı"
+			  },
+			  "explanation": {
+				"en": "They say: 'Вали сняг и духа вятър.'",
+				"es": "Dicen: 'Вали сняг и духа вятър.'",
+				"tr": "'Kar yağıyor ve rüzgar esiyor' diyorlar."
+			  }
+			},
+			{
+			  "question": {
+				"en": "Is it warm?",
+				"es": "¿Hace calor?",
+				"tr": "Hava sıcak mı?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Yes",
+				  "No",
+				  "Maybe"
+				],
+				"es": [
+				  "Sí",
+				  "No",
+				  "Tal vez"
+				],
+				"tr": [
+				  "Evet",
+				  "Hayır",
+				  "Belki"
+				]
+			  },
+			  "answer": {
+				"en": "No",
+				"es": "No",
+				"tr": "Hayır"
+			  },
+			  "explanation": {
+				"en": "They say: 'Не, студено е!'",
+				"es": "Dicen: '¡No, hace frío!'",
+				"tr": "'Hayır, soğuk' diyor."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are talking with a friend about today's weather. You say it's cold, windy, and you are wearing a jacket and hat.",
+			"es": "Estás hablando con un amigo sobre el clima de hoy. Dices que hace frío, viento, y llevas chaqueta y gorro.",
+			"tr": "Bugünkü hava durumunu bir arkadaşınla konuşuyorsun. Soğuk, rüzgarlı olduğunu ve ceket ile şapka giydiğini söylüyorsun."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Какво е времето днес?",
+			"Лице B: ____________",
+			"Лице A: Вали ли?",
+			"Лице B: ____________",
+			"Лице A: Има ли вятър?",
+			"Лице B: ____________",
+			"Лице A: Как си облечен?",
+			"Лице B: ____________",
+			"Лице A: И аз съм с яке!"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Студено е"
+			  ]
+			},
+			{
+			  "correct": [
+				"Не, не вали"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, духа вятър"
+			  ]
+			},
+			{
+			  "correct": [
+				"С яке и шапка"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_15",
+		"cefr_level": "A1",
+		"phase": "final",
+		"title": {
+		  "en": "At the Post Office or Bank",
+		  "es": "En la Oficina de Correos o Banco",
+		  "tr": "Postanede veya Bankada"
+		},
+		"vocabulary": [
+		  {
+			"bg": "поща",
+			"translation": {
+			  "en": "post office",
+			  "es": "oficina de correos",
+			  "tr": "postane"
+			}
+		  },
+		  {
+			"bg": "пратка",
+			"translation": {
+			  "en": "package",
+			  "es": "paquete",
+			  "tr": "paket"
+			}
+		  },
+		  {
+			"bg": "писмо",
+			"translation": {
+			  "en": "letter",
+			  "es": "carta",
+			  "tr": "mektup"
+			}
+		  },
+		  {
+			"bg": "изпращам",
+			"translation": {
+			  "en": "send",
+			  "es": "enviar",
+			  "tr": "göndermek"
+			}
+		  },
+		  {
+			"bg": "получавам",
+			"translation": {
+			  "en": "receive",
+			  "es": "recibir",
+			  "tr": "almak"
+			}
+		  },
+		  {
+			"bg": "банка",
+			"translation": {
+			  "en": "bank",
+			  "es": "banco",
+			  "tr": "banka"
+			}
+		  },
+		  {
+			"bg": "пари",
+			"translation": {
+			  "en": "money",
+			  "es": "dinero",
+			  "tr": "para"
+			}
+		  },
+		  {
+			"bg": "сметка",
+			"translation": {
+			  "en": "account",
+			  "es": "cuenta",
+			  "tr": "hesap"
+			}
+		  },
+		  {
+			"bg": "отварям",
+			"translation": {
+			  "en": "open",
+			  "es": "abrir",
+			  "tr": "açmak"
+			}
+		  },
+		  {
+			"bg": "заповядайте",
+			"translation": {
+			  "en": "here you go / please",
+			  "es": "aquí tiene / por favor",
+			  "tr": "buyrun / lütfen"
+			}
+		  },
+		  {
+			"bg": "вземете",
+			"translation": {
+			  "en": "take (formal)",
+			  "es": "tome",
+			  "tr": "alınız"
+			}
+		  },
+		  {
+			"bg": "подпишете",
+			"translation": {
+			  "en": "sign (formal)",
+			  "es": "firme",
+			  "tr": "imzalayınız"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Formal Imperatives",
+			"es": "Imperativos Formales",
+			"tr": "Resmî Emir Kipleri"
+		  },
+		  "explanation": {
+			"en": "In formal situations like banks or post offices, imperatives use the formal 'you' form. Common phrases include 'Заповядайте' (Here you go), 'Вземете' (Take it), and 'Подпишете' (Sign it). These are used to give instructions or serve customers politely.",
+			"es": "En situaciones formales como bancos o correos, los imperativos usan la forma de usted. Frases comunes: 'Заповядайте' (Aquí tiene), 'Вземете' (Tome), 'Подпишете' (Firme). Se usan para dar instrucciones o atender con cortesía.",
+			"tr": "Banka veya postane gibi yerlerde resmî emir kipleri kullanılır. Örnekler: 'Заповядайте' (Buyrun), 'Вземете' (Alınız), 'Подпишете' (İmzalayınız)."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Bulgarian",
+				"Translation (EN / ES / TR)"
+			  ],
+			  "es": [
+				"Búlgaro",
+				"Traducción (EN / ES / TR)"
+			  ],
+			  "tr": [
+				"Bulgarca",
+				"Çeviri (EN / ES / TR)"
+			  ]
+			},
+			"rows": [
+			  [
+				"Заповядайте",
+				"Here you go / Aquí tiene / Buyrun"
+			  ],
+			  [
+				"Вземете",
+				"Take / Tome / Alınız"
+			  ],
+			  [
+				"Подпишете",
+				"Sign / Firme / İmzalayınız"
+			  ],
+			  [
+				"Попълнете",
+				"Fill out / Rellene / Doldurunuz"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Заповядайте формуляра.",
+			  "translation": {
+				"en": "Here is the form.",
+				"es": "Aquí tiene el formulario.",
+				"tr": "Formu buyurun."
+			  }
+			},
+			{
+			  "bg": "Вземете билет от касата.",
+			  "translation": {
+				"en": "Take a ticket from the counter.",
+				"es": "Tome un boleto de la taquilla.",
+				"tr": "Giședen bilet alın."
+			  }
+			},
+			{
+			  "bg": "Подпишете тук, моля.",
+			  "translation": {
+				"en": "Please sign here.",
+				"es": "Firme aquí, por favor.",
+				"tr": "Lütfen buraya imzalayınız."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "These forms are polite and commonly used when addressing strangers or clients.",
+			"es": "Estas formas son corteses y se usan con desconocidos o clientes.",
+			"tr": "Bu ifadeler resmî ve yabancılara hitap ederken kullanılır."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "In Bulgarian banks or post offices, people often take a number and wait. Staff will say 'заповядайте' to call you up.",
+			"es": "En bancos o correos búlgaros, se toma un número y se espera. El personal dice 'заповядайте' al llamarte.",
+			"tr": "Bulgaristan'daki banka veya postanede sıra alınır. Görevliler sizi çağırırken 'заповядайте' der."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Some people say 'в пощата съм' to mean 'I’m at the post office' — it's quick and casual.",
+			"es": "Algunos dicen 'в пощата съм' como forma informal de decir que están en correos.",
+			"tr": "Bazıları 'в пощата съм' diyerek kısaca 'postanedeyim' der — gayriresmîdir."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'Заповядайте' mean?",
+			  "es": "¿Qué significa 'Заповядайте'?",
+			  "tr": "'Заповядайте' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Goodbye",
+			  "Here you go",
+			  "See you later"
+			],
+			"answer": "Here you go",
+			"explanation": {
+			  "en": "It's a polite way to say 'please' or 'here you go' in formal settings.",
+			  "es": "Es una forma educada de decir 'aquí tiene' en contextos formales.",
+			  "tr": "Resmî ortamlarda 'buyurun' demek için kullanılır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which word means 'bank'?",
+			  "es": "¿Qué palabra significa 'banco'?",
+			  "tr": "'Banka' kelimesi hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "поща",
+			  "банка",
+			  "пари"
+			],
+			"answer": "банка",
+			"explanation": {
+			  "en": "'банка' = bank.",
+			  "es": "'банка' = banco.",
+			  "tr": "'банка' = banka."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Translate: 'Sign here, please.'",
+			  "es": "Traduce: 'Firme aquí, por favor.'",
+			  "tr": "Çevir: 'Lütfen buraya imzalayın.'"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Вземете тук",
+			  "Подпишете тук, моля",
+			  "Изпратете писмо"
+			],
+			"answer": "Подпишете тук, моля",
+			"explanation": {
+			  "en": "'Подпишете тук, моля' means 'Sign here, please.'",
+			  "es": "Significa 'Firme aquí, por favor.'",
+			  "tr": "'Podpishete tuk, molya' 'Lütfen buraya imzalayın' demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What do you do at a post office?",
+			  "es": "¿Qué haces en una oficina de correos?",
+			  "tr": "Postanede ne yapılır?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Cook food",
+			  "Send letters",
+			  "Withdraw money"
+			],
+			"answer": "Send letters",
+			"explanation": {
+			  "en": "A post office is where you send or receive mail.",
+			  "es": "En correos se envían o reciben cartas.",
+			  "tr": "Postanede mektup gönderilir veya alınır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What is the formal command to say 'Take this'?",
+			  "es": "¿Cómo se dice 'Tome esto' en modo formal?",
+			  "tr": "'Bunu alınız' resmi şekilde nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Вземете",
+			  "Попитайте",
+			  "Седнете"
+			],
+			"answer": "Вземете",
+			"explanation": {
+			  "en": "'Вземете' is the polite form of 'take'.",
+			  "es": "'Вземете' es la forma cortés de 'tomar'.",
+			  "tr": "'Вземете' resmi 'alın' demektir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which word means 'money'?",
+			  "es": "¿Qué palabra significa 'dinero'?",
+			  "tr": "'Para' kelimesi hangisidir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "пари",
+			  "писмо",
+			  "подпишете"
+			],
+			"answer": "пари",
+			"explanation": {
+			  "en": "'пари' = money.",
+			  "es": "'пари' = dinero.",
+			  "tr": "'пари' = para."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'сметка' mean in a bank context?",
+			  "es": "¿Qué significa 'сметка' en un banco?",
+			  "tr": "'сметка' banka bağlamında ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Envelope",
+			  "Account",
+			  "Receipt"
+			],
+			"answer": "Account",
+			"explanation": {
+			  "en": "'сметка' = account.",
+			  "es": "'сметка' = cuenta.",
+			  "tr": "'сметка' = hesap."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Choose the correct command: 'Fill out the form.'",
+			  "es": "Elige el mandato correcto: 'Rellene el formulario.'",
+			  "tr": "'Formu doldurun' doğru emri seçin."
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Попълнете формуляра",
+			  "Вземете формуляра",
+			  "Пратете формуляра"
+			],
+			"answer": "Попълнете формуляра",
+			"explanation": {
+			  "en": "'Попълнете' means 'fill out'.",
+			  "es": "'Попълнете' significa 'rellene'.",
+			  "tr": "'Попълнете' = doldurunuz."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Добър ден, искам да изпратя пратка. – Заповядайте формуляра. Попълнете го, моля. – Готово. – Подпишете тук.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "What does the customer want to do?",
+				"es": "¿Qué quiere hacer el cliente?",
+				"tr": "Müşteri ne yapmak istiyor?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Open an account",
+				  "Send a package",
+				  "Get money"
+				],
+				"es": [
+				  "Abrir una cuenta",
+				  "Enviar un paquete",
+				  "Recibir dinero"
+				],
+				"tr": [
+				  "Hesap açmak",
+				  "Paket göndermek",
+				  "Para almak"
+				]
+			  },
+			  "answer": {
+				"en": "Send a package",
+				"es": "Enviar un paquete",
+				"tr": "Paket göndermek"
+			  },
+			  "explanation": {
+				"en": "'искам да изпратя пратка' = I want to send a package.",
+				"es": "'искам да изпратя пратка' = Quiero enviar un paquete.",
+				"tr": "'искам да изпратя пратка' = Paket göndermek istiyorum."
+			  }
+			},
+			{
+			  "question": {
+				"en": "What does the staff give the customer?",
+				"es": "¿Qué le da el personal al cliente?",
+				"tr": "Görevli müşteriye ne veriyor?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "A pen",
+				  "A form",
+				  "Money"
+				],
+				"es": [
+				  "Un bolígrafo",
+				  "Un formulario",
+				  "Dinero"
+				],
+				"tr": [
+				  "Bir kalem",
+				  "Bir form",
+				  "Para"
+				]
+			  },
+			  "answer": {
+				"en": "A form",
+				"es": "Un formulario",
+				"tr": "Bir form"
+			  },
+			  "explanation": {
+				"en": "'Заповядайте формуляра' = Here is the form.",
+				"es": "'Заповядайте формуляра' = Aquí tiene el formulario.",
+				"tr": "'Заповядайте формуляра' = Formu buyurun."
+			  }
+			},
+			{
+			  "question": {
+				"en": "What is the final instruction given?",
+				"es": "¿Cuál es la instrucción final?",
+				"tr": "Son talimat nedir?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Pay here",
+				  "Take a number",
+				  "Sign here"
+				],
+				"es": [
+				  "Pague aquí",
+				  "Tome un número",
+				  "Firme aquí"
+				],
+				"tr": [
+				  "Burada ödeme yapın",
+				  "Numara alın",
+				  "Buraya imzalayın"
+				]
+			  },
+			  "answer": {
+				"en": "Sign here",
+				"es": "Firme aquí",
+				"tr": "Buraya imzalayın"
+			  },
+			  "explanation": {
+				"en": "They say: 'Подпишете тук.'",
+				"es": "Dicen: 'Подпишете тук.'",
+				"tr": "'Подпишете тук' deniyor."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are at the bank. You want to open an account, fill out a form, sign, and receive confirmation. Your name is Ivan Petrov.",
+			"es": "Estás en el banco. Quieres abrir una cuenta, rellenar un formulario, firmar y recibir confirmación. Te llamas Ivan Petrov.",
+			"tr": "Bankadasınız. Hesap açmak, form doldurmak, imzalamak ve onay almak istiyorsunuz. Adınız Ivan Petrov."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Добър ден, с какво мога да помогна?",
+			"Лице B: ____________",
+			"Лице A: Заповядайте формуляра.",
+			"Лице B: ____________",
+			"Лице A: Подпишете тук, моля.",
+			"Лице B: ____________",
+			"Лице A: Благодаря. Всичко е готово.",
+			"Лице B: ____________",
+			"Лице A: Приятен ден!"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Искам да отворя сметка"
+			  ]
+			},
+			{
+			  "correct": [
+				"Попълних формуляра"
+			  ]
+			},
+			{
+			  "correct": [
+				"Подписах"
+			  ]
+			},
+			{
+			  "correct": [
+				"Благодаря"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_16",
+		"cefr_level": "A1",
+		"phase": "final",
+		"title": {
+		  "en": "Likes and Dislikes",
+		  "es": "Gustos y Disgustos",
+		  "tr": "Beğeniler ve Beğenmediklerimiz"
+		},
+		"vocabulary": [
+		  {
+			"bg": "харесвам",
+			"translation": {
+			  "en": "to like",
+			  "es": "gustar",
+			  "tr": "beğenmek"
+			}
+		  },
+		  {
+			"bg": "не харесвам",
+			"translation": {
+			  "en": "to dislike",
+			  "es": "no gustar",
+			  "tr": "beğenmemek"
+			}
+		  },
+		  {
+			"bg": "музика",
+			"translation": {
+			  "en": "music",
+			  "es": "música",
+			  "tr": "müzik"
+			}
+		  },
+		  {
+			"bg": "филм",
+			"translation": {
+			  "en": "movie",
+			  "es": "película",
+			  "tr": "film"
+			}
+		  },
+		  {
+			"bg": "спорт",
+			"translation": {
+			  "en": "sport",
+			  "es": "deporte",
+			  "tr": "spor"
+			}
+		  },
+		  {
+			"bg": "храна",
+			"translation": {
+			  "en": "food",
+			  "es": "comida",
+			  "tr": "yemek"
+			}
+		  },
+		  {
+			"bg": "шоколад",
+			"translation": {
+			  "en": "chocolate",
+			  "es": "chocolate",
+			  "tr": "çikolata"
+			}
+		  },
+		  {
+			"bg": "риба",
+			"translation": {
+			  "en": "fish",
+			  "es": "pescado",
+			  "tr": "balık"
+			}
+		  },
+		  {
+			"bg": "четене",
+			"translation": {
+			  "en": "reading",
+			  "es": "leer",
+			  "tr": "okuma"
+			}
+		  },
+		  {
+			"bg": "танцуване",
+			"translation": {
+			  "en": "dancing",
+			  "es": "bailar",
+			  "tr": "dans etmek"
+			}
+		  },
+		  {
+			"bg": "готвене",
+			"translation": {
+			  "en": "cooking",
+			  "es": "cocinar",
+			  "tr": "yemek yapmak"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Using 'харесвам' and Negation",
+			"es": "Uso de 'харесвам' y la Negación",
+			"tr": "'харесвам' ve Olumsuzluk Kullanımı"
+		  },
+		  "explanation": {
+			"en": "The verb 'харесвам' means 'to like'. To say 'I don’t like', add 'не' before the verb: 'Не харесвам'.",
+			"es": "El verbo 'харесвам' significa 'gustar'. Para decir 'no me gusta', se agrega 'не' antes del verbo: 'Не харесвам'.",
+			"tr": "'харесвам' fiili 'beğenmek' demektir. Olumsuz yapmak için başına 'не' getirilir: 'Не харесвам' (beğenmem)."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"Bulgarian",
+				"Translation (EN / ES / TR)"
+			  ],
+			  "es": [
+				"Búlgaro",
+				"Traducción (EN / ES / TR)"
+			  ],
+			  "tr": [
+				"Bulgarca",
+				"Çeviri (EN / ES / TR)"
+			  ]
+			},
+			"rows": [
+			  [
+				"Харесвам музика",
+				"I like music / Me gusta la música / Müzik severim"
+			  ],
+			  [
+				"Не харесвам риба",
+				"I don’t like fish / No me gusta el pescado / Balık sevmem"
+			  ],
+			  [
+				"Харесваш шоколад?",
+				"Do you like chocolate? / ¿Te gusta el chocolate? / Çikolatayı sever misin?"
+			  ],
+			  [
+				"Не харесва филми",
+				"He doesn’t like movies / No le gustan las películas / Film sevmez"
+			  ]
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Харесвам спорт и музика.",
+			  "translation": {
+				"en": "I like sports and music.",
+				"es": "Me gusta el deporte y la música.",
+				"tr": "Spor ve müzik severim."
+			  }
+			},
+			{
+			  "bg": "Не харесвам кафе.",
+			  "translation": {
+				"en": "I don’t like coffee.",
+				"es": "No me gusta el café.",
+				"tr": "Kahve sevmem."
+			  }
+			},
+			{
+			  "bg": "Харесваш ли да четеш?",
+			  "translation": {
+				"en": "Do you like to read?",
+				"es": "¿Te gusta leer?",
+				"tr": "Okumayı sever misin?"
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "'харесвам' works like 'like' in English, but uses the present tense form. Don’t forget to add 'не' for negative.",
+			"es": "'харесвам' funciona como 'gustar' pero se conjuga en presente. Añade 'не' para negar.",
+			"tr": "'харесвам', Türkçedeki 'beğenmek' gibi kullanılır. Olumsuz için başına 'не' getirin."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Bulgarian people often bond over shared tastes in food and music. It's common to ask 'Какво харесваш?' to get to know someone.",
+			"es": "En Bulgaria, se conectan mucho por la comida y la música. Se usa mucho 'Какво харесваш?' para conocer a alguien.",
+			"tr": "Bulgarlar genellikle ortak müzik ve yemek zevkleriyle anlaşırlar. 'Какво харесваш?' (Neyi seversin?) sıkça sorulur."
+		  }
+		},
+		"slang": {
+		  "region": "Sofia",
+		  "text": {
+			"en": "Young people use 'кефя се' to mean 'I enjoy it!' — it's casual and fun.",
+			"es": "Los jóvenes dicen 'кефя се' para decir '¡me encanta!' de forma informal.",
+			"tr": "Gençler 'кефя се' diyerek 'bayıldım!' ya da 'çok hoşuma gitti' der."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'харесвам' mean?",
+			  "es": "¿Qué significa 'харесвам'?",
+			  "tr": "'харесвам' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "To eat",
+			  "To like",
+			  "To go"
+			],
+			"answer": "To like",
+			"explanation": {
+			  "en": "'харесвам' means 'to like'.",
+			  "es": "'харесвам' significa 'gustar'.",
+			  "tr": "'харесвам' = beğenmek."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What is the correct negation of 'I like chocolate'?",
+			  "es": "¿Cuál es la negación de 'Me gusta el chocolate'?",
+			  "tr": "'Çikolatayı severim' cümlesinin olumsuzu nedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Харесвам шоколад",
+			  "Не харесвам шоколад",
+			  "Не искам шоколад"
+			],
+			"answer": "Не харесвам шоколад",
+			"explanation": {
+			  "en": "Add 'не' before the verb to form the negative.",
+			  "es": "Se usa 'не' antes del verbo para negar.",
+			  "tr": "'не' fiilden önce gelerek olumsuz yapar."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Translate: 'Do you like movies?'",
+			  "es": "Traduce: '¿Te gustan las películas?'",
+			  "tr": "Çevir: 'Filmleri sever misin?'"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Харесваш ли филми?",
+			  "Гледаш ли филми?",
+			  "Имаш ли филми?"
+			],
+			"answer": "Харесваш ли филми?",
+			"explanation": {
+			  "en": "'Харесваш ли' = 'Do you like...?'",
+			  "es": "'Харесваш ли' = '¿Te gusta...?'",
+			  "tr": "'Харесваш ли' = 'Sever misin...?'"
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which of these is a hobby?",
+			  "es": "¿Cuál de estos es un pasatiempo?",
+			  "tr": "Bunlardan hangisi bir hobi?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "шоколад",
+			  "готвене",
+			  "риба"
+			],
+			"answer": "готвене",
+			"explanation": {
+			  "en": "'готвене' means 'cooking', a hobby.",
+			  "es": "'готвене' significa 'cocinar', un pasatiempo.",
+			  "tr": "'готвене' = yemek yapmak, hobidir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "How do you say 'I don’t like fish'?",
+			  "es": "¿Cómo se dice 'No me gusta el pescado'?",
+			  "tr": "'Balık sevmem' nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Харесвам риба",
+			  "Не харесвам риба",
+			  "Не искам риба"
+			],
+			"answer": "Не харесвам риба",
+			"explanation": {
+			  "en": "'Не харесвам риба' = I don’t like fish.",
+			  "es": "'Не харесвам риба' = No me gusta el pescado.",
+			  "tr": "'Не харесвам риба' = Balık sevmem."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What’s a casual way to say 'I like it'?",
+			  "es": "¿Cómo se dice informalmente 'me gusta'?",
+			  "tr": "'Beğendim' demenin samimi bir yolu nedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Кефя се",
+			  "Готвя се",
+			  "Тичам се"
+			],
+			"answer": "Кефя се",
+			"explanation": {
+			  "en": "'кефя се' = I’m into it / I enjoy it.",
+			  "es": "'кефя се' = ¡me encanta!",
+			  "tr": "'кефя се' = bayıldım / hoşuma gitti."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What is the correct form to say 'He doesn’t like movies'?",
+			  "es": "¿Cómo se dice 'A él no le gustan las películas'?",
+			  "tr": "'O film sevmez' nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Не харесва филми",
+			  "Харесваш ли филми?",
+			  "Той има филми"
+			],
+			"answer": "Не харесва филми",
+			"explanation": {
+			  "en": "Use 'не харесва' for 'he doesn’t like'.",
+			  "es": "Se usa 'не харесва' para 'él no gusta'.",
+			  "tr": "'Не харесва' = o sevmez."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What is 'reading' in Bulgarian?",
+			  "es": "¿Cómo se dice 'leer' en búlgaro?",
+			  "tr": "'Okuma' Bulgarcada nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "танцуване",
+			  "четене",
+			  "музика"
+			],
+			"answer": "четене",
+			"explanation": {
+			  "en": "'четене' = reading.",
+			  "es": "'четене' = leer.",
+			  "tr": "'четене' = okuma."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "– Харесваш ли риба? – Не, не харесвам. – А шоколад? – Много! Кефя се на шоколад.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "Does the person like fish?",
+				"es": "¿A la persona le gusta el pescado?",
+				"tr": "Kişi balığı sever mi?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Yes",
+				  "No",
+				  "Maybe"
+				],
+				"es": [
+				  "Sí",
+				  "No",
+				  "Tal vez"
+				],
+				"tr": [
+				  "Evet",
+				  "Hayır",
+				  "Belki"
+				]
+			  },
+			  "answer": {
+				"en": "No",
+				"es": "No",
+				"tr": "Hayır"
+			  },
+			  "explanation": {
+				"en": "They say: 'Не, не харесвам.'",
+				"es": "Dicen: 'No, no me gusta.'",
+				"tr": "'Hayır, sevmem' diyor."
+			  }
+			},
+			{
+			  "question": {
+				"en": "What do they love?",
+				"es": "¿Qué le encanta?",
+				"tr": "Neyi çok seviyor?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Chocolate",
+				  "Fish",
+				  "Reading"
+				],
+				"es": [
+				  "Chocolate",
+				  "Pescado",
+				  "Leer"
+				],
+				"tr": [
+				  "Çikolata",
+				  "Balık",
+				  "Okuma"
+				]
+			  },
+			  "answer": {
+				"en": "Chocolate",
+				"es": "Chocolate",
+				"tr": "Çikolata"
+			  },
+			  "explanation": {
+				"en": "They say: 'Кефя се на шоколад.'",
+				"es": "Dicen: 'Me encanta el chocolate.'",
+				"tr": "'Çikolataya bayılırım' deniyor."
+			  }
+			},
+			{
+			  "question": {
+				"en": "How do they express strong liking?",
+				"es": "¿Cómo expresan que les gusta mucho?",
+				"tr": "Çok sevdiklerini nasıl söylüyorlar?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Харесвам",
+				  "Не харесвам",
+				  "Кефя се"
+				],
+				"es": [
+				  "Харесвам",
+				  "Не харесвам",
+				  "Кефя се"
+				],
+				"tr": [
+				  "Харесвам",
+				  "Не харесвам",
+				  "Кефя се"
+				]
+			  },
+			  "answer": {
+				"en": "Кефя се",
+				"es": "Кефя се",
+				"tr": "Кефя се"
+			  },
+			  "explanation": {
+				"en": "'Кефя се' is slang for loving something.",
+				"es": "'Кефя се' es jerga para 'me encanta'.",
+				"tr": "'Кефя се' = çok sevmek (argo)."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are meeting a new friend and talking about your likes and dislikes. You like chocolate and reading, but don’t like fish or sports.",
+			"es": "Conoces a un nuevo amigo y hablas de tus gustos. Te gusta el chocolate y leer, pero no el pescado ni el deporte.",
+			"tr": "Yeni bir arkadaşla tanışıyorsun. Çikolata ve okumayı seviyorsun, ama balık ve sporu sevmiyorsun."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Здравей! Какво харесваш?",
+			"Лице B: ____________",
+			"Лице A: А нещо, което не харесваш?",
+			"Лице B: ____________",
+			"Лице A: Ходиш ли на спорт?",
+			"Лице B: ____________",
+			"Лице A: А шоколад?",
+			"Лице B: ____________",
+			"Лице A: Имаме много общо!",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Харесвам шоколад и четене"
+			  ]
+			},
+			{
+			  "correct": [
+				"Не харесвам риба"
+			  ]
+			},
+			{
+			  "correct": [
+				"Не, не ходя на спорт"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, обожавам шоколад"
+			  ]
+			},
+			{
+			  "correct": [
+				"И аз така мисля"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  },
+	  {
+		"lesson_id": "a1_17",
+		"cefr_level": "A1",
+		"phase": "final",
+		"title": {
+		  "en": "Short Stories and Listening Practice",
+		  "es": "Cuentos Cortos y Comprensión Auditiva",
+		  "tr": "Kısa Hikayeler ve Dinleme Alıştırması"
+		},
+		"vocabulary": [
+		  {
+			"bg": "ходя",
+			"translation": {
+			  "en": "to go",
+			  "es": "ir",
+			  "tr": "gitmek"
+			}
+		  },
+		  {
+			"bg": "виждам",
+			"translation": {
+			  "en": "to see",
+			  "es": "ver",
+			  "tr": "görmek"
+			}
+		  },
+		  {
+			"bg": "говоря",
+			"translation": {
+			  "en": "to speak / talk",
+			  "es": "hablar",
+			  "tr": "konuşmak"
+			}
+		  },
+		  {
+			"bg": "идвам",
+			"translation": {
+			  "en": "to come",
+			  "es": "venir",
+			  "tr": "gelmek"
+			}
+		  },
+		  {
+			"bg": "приятел",
+			"translation": {
+			  "en": "friend",
+			  "es": "amigo",
+			  "tr": "arkadaş"
+			}
+		  },
+		  {
+			"bg": "магазин",
+			"translation": {
+			  "en": "store",
+			  "es": "tienda",
+			  "tr": "mağaza"
+			}
+		  },
+		  {
+			"bg": "обичам",
+			"translation": {
+			  "en": "to love",
+			  "es": "amar",
+			  "tr": "sevmek"
+			}
+		  },
+		  {
+			"bg": "история",
+			"translation": {
+			  "en": "story",
+			  "es": "historia",
+			  "tr": "hikaye"
+			}
+		  },
+		  {
+			"bg": "и",
+			"translation": {
+			  "en": "and",
+			  "es": "y",
+			  "tr": "ve"
+			}
+		  },
+		  {
+			"bg": "след това",
+			"translation": {
+			  "en": "then / after that",
+			  "es": "después",
+			  "tr": "sonra"
+			}
+		  },
+		  {
+			"bg": "но",
+			"translation": {
+			  "en": "but",
+			  "es": "pero",
+			  "tr": "ama"
+			}
+		  }
+		],
+		"grammar_topic": {
+		  "title": {
+			"en": "Present and Past Tense (Preview)",
+			"es": "Presente y Pasado (Vista Previa)",
+			"tr": "Şimdiki Zaman ve Geçmiş Zaman (Giriş)"
+		  },
+		  "explanation": {
+			"en": "In Bulgarian, past tense verbs for 'I' usually end in '-х'. Remove the present ending and add '-х'. Example: 'ходя' → 'ходих'. Learn to recognize past forms for basic storytelling.",
+			"es": "En búlgaro, los verbos en pasado para 'yo' terminan en '-х'. Quita la terminación del presente y añade '-х'. Ejemplo: 'ходя' → 'ходих'. Aprende a reconocer estas formas para contar historias.",
+			"tr": "Bulgarcada 'ben' zamiri için geçmiş zaman fiilleri genellikle '-х' ile biter. Şimdiki zaman sonunu çıkar, '-х' ekle: 'ходя' → 'ходих'. Basit hikaye anlatımı için bu yapıları tanıyın."
+		  },
+		  "table": {
+			"headers": {
+			  "en": [
+				"When to Use",
+				"Rule",
+				"Example"
+			  ],
+			  "es": [
+				"Cuándo usar",
+				"Regla",
+				"Ejemplo"
+			  ],
+			  "tr": [
+				"Ne zaman kullanılır",
+				"Kural",
+				"Örnek"
+			  ]
+			},
+			"rows": [
+			  {
+				"en": "Verbs ending in -я",
+				"es": "Verbos que terminan en -я",
+				"tr": "-я ile biten fiiller",
+				"explanation": {
+				  "en": "Drop -я, add -их",
+				  "es": "Quita -я, añade -их",
+				  "tr": "-я → -их"
+				},
+				"example": "говоря → говорих"
+			  },
+			  {
+				"en": "Verbs ending in -ам",
+				"es": "Verbos que terminan en -ам",
+				"tr": "-ам ile biten fiiller",
+				"explanation": {
+				  "en": "Drop -ам, add -ах",
+				  "es": "Quita -ам, añade -ах",
+				  "tr": "-ам → -ах"
+				},
+				"example": "обичам → обичах"
+			  },
+			  {
+				"en": "Verbs ending in -ем / -ея",
+				"es": "Verbos que terminan en -ем / -ея",
+				"tr": "-ем / -ея ile biten fiiller",
+				"explanation": {
+				  "en": "Drop -ея, add -еех",
+				  "es": "Quita -ея, añade -еех",
+				  "tr": "-ея → -еех"
+				},
+				"example": "живея → живеех"
+			  },
+			  {
+				"en": "Neutral stem verbs",
+				"es": "Verbos de raíz neutral",
+				"tr": "Nötr köklü fiiller",
+				"explanation": {
+				  "en": "Add -х",
+				  "es": "Añade -х",
+				  "tr": "-х ekle"
+				},
+				"example": "ходя → ходих"
+			  },
+			  {
+				"en": "Irregular (stem change)",
+				"es": "Irregulares (cambio de raíz)",
+				"tr": "Düzensiz (kök değişimi)",
+				"explanation": {
+				  "en": "Stem changes",
+				  "es": "Raíz cambia",
+				  "tr": "Kök değişir"
+				},
+				"example": "виждам → видях"
+			  },
+			  {
+				"en": "Irregular (short root)",
+				"es": "Irregulares (raíz corta)",
+				"tr": "Düzensiz (kısa kök)",
+				"explanation": {
+				  "en": "Memorize",
+				  "es": "Memorízalo",
+				  "tr": "Ezberle"
+				},
+				"example": "ям → ядох"
+			  },
+			  {
+				"en": "Irregular (vowel change)",
+				"es": "Irregulares (cambio vocálico)",
+				"tr": "Düzensiz (ünlü değişimi)",
+				"explanation": {
+				  "en": "Vowel change",
+				  "es": "Cambio de vocal",
+				  "tr": "Ünlü değişir"
+				},
+				"example": "пия → пих"
+			  },
+			  {
+				"en": "Irregular (suffix change)",
+				"es": "Irregulares (cambio de sufijo)",
+				"tr": "Düzensiz (ek değişimi)",
+				"explanation": {
+				  "en": "Suffix change",
+				  "es": "Cambio de sufijo",
+				  "tr": "Ek değişir"
+				},
+				"example": "дойда → дойдох"
+			  }
+			]
+		  },
+		  "examples": [
+			{
+			  "bg": "Вчера ходих до магазина и купих хляб.",
+			  "translation": {
+				"en": "Yesterday I went to the store and bought bread.",
+				"es": "Ayer fui a la tienda y compré pan.",
+				"tr": "Dün mağazaya gittim ve ekmek aldım."
+			  }
+			},
+			{
+			  "bg": "Говорих с приятел и след това пих кафе.",
+			  "translation": {
+				"en": "I spoke with a friend and then had coffee.",
+				"es": "Hablé con un amigo y después tomé café.",
+				"tr": "Bir arkadaşla konuştum ve sonra kahve içtim."
+			  }
+			},
+			{
+			  "bg": "Видях Мария, но не говорих с нея.",
+			  "translation": {
+				"en": "I saw Maria, but didn’t talk to her.",
+				"es": "Vi a María, pero no hablé con ella.",
+				"tr": "Maria’yı gördüm ama onunla konuşmadım."
+			  }
+			}
+		  ],
+		  "usage_tip": {
+			"en": "In past tense, verbs often end in –х for 'I' form. Just recognize them for now.",
+			"es": "En pasado, los verbos suelen terminar en –х en primera persona. Solo reconoce.",
+			"tr": "Geçmişte fiiller genelde –х ile biter. Şimdilik sadece tanıyın."
+		  }
+		},
+		"cultural_tip": {
+		  "region": "National",
+		  "text": {
+			"en": "Traditional Bulgarian stories often begin with 'Имало едно време...' (Once upon a time...).",
+			"es": "Los cuentos búlgaros empiezan con 'Имало едно време...' (Érase una vez...).",
+			"tr": "Geleneksel Bulgar hikayeleri genellikle 'Имало едно време...' (Bir varmış bir yokmuş...) diye başlar."
+		  }
+		},
+		"slang": {
+		  "region": "Plovdiv",
+		  "text": {
+			"en": "People sometimes say 'голям филм беше' (it was a big movie) to mean 'what a drama!'",
+			"es": "A veces dicen 'голям филм беше' para decir '¡qué drama!'",
+			"tr": "Bazen 'голям филм беше' denir – 'tam bir olaydı' anlamında."
+		  }
+		},
+		"quiz": [
+		  {
+			"question": {
+			  "en": "What does 'видях' mean?",
+			  "es": "¿Qué significa 'видях'?",
+			  "tr": "'видях' ne demek?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "I go",
+			  "I saw",
+			  "I came"
+			],
+			"answer": "I saw",
+			"explanation": {
+			  "en": "'видях' is the past tense of 'виждам' – to see.",
+			  "es": "'видях' es el pasado de 'виждам' – ver.",
+			  "tr": "'видях', 'виждам' (görmek) fiilinin geçmiş hâlidir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which connector means 'then'?",
+			  "es": "¿Cuál conector significa 'después'?",
+			  "tr": "'Sonra' anlamına gelen bağlaç hangisi?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "и",
+			  "след това",
+			  "но"
+			],
+			"answer": "след това",
+			"explanation": {
+			  "en": "'след това' = then / after that.",
+			  "es": "'след това' = después.",
+			  "tr": "'след това' = sonra / ardından."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Choose the correct sentence in past tense:",
+			  "es": "Elige la frase correcta en pasado:",
+			  "tr": "Aşağıdakilerden hangisi geçmiş zamandır?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Говоря с Иван.",
+			  "Ходих в парка.",
+			  "Ходя на работа."
+			],
+			"answer": "Ходих в парка.",
+			"explanation": {
+			  "en": "Only 'Ходих' is in past tense.",
+			  "es": "Solo 'Ходих' está en pasado.",
+			  "tr": "Sadece 'Ходих' geçmiş zamandır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What is the past tense of 'ям'?",
+			  "es": "¿Cuál es el pasado de 'ям'?",
+			  "tr": "'ям' fiilinin geçmiş zamanı nedir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "ямях",
+			  "ядох",
+			  "ямих"
+			],
+			"answer": "ядох",
+			"explanation": {
+			  "en": "Irregular: 'ям' → 'ядох'.",
+			  "es": "Irregular: 'ям' → 'ядох'.",
+			  "tr": "Düzensiz: 'ям' → 'ядох'."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "How do you say 'I came'?",
+			  "es": "¿Cómo se dice 'yo vine'?",
+			  "tr": "'Geldim' nasıl denir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "идвам",
+			  "дойдох",
+			  "дойда"
+			],
+			"answer": "дойдох",
+			"explanation": {
+			  "en": "'дойдох' is the past tense of 'идвам' (to come).",
+			  "es": "'дойдох' es el pasado de 'идвам' (venir).",
+			  "tr": "'дойдох', 'идвам' (gelmek) fiilinin geçmiş hâlidir."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which verb means 'to talk'?",
+			  "es": "¿Cuál verbo significa 'hablar'?",
+			  "tr": "'Konuşmak' hangi fiildir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "говоря",
+			  "ходя",
+			  "ям"
+			],
+			"answer": "говоря",
+			"explanation": {
+			  "en": "'говоря' = to talk.",
+			  "es": "'говоря' = hablar.",
+			  "tr": "'говоря' = konuşmak."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "What does 'след това' help us do?",
+			  "es": "¿Para qué sirve 'след това'?",
+			  "tr": "'след това' ne işe yarar?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "Ask questions",
+			  "Connect events",
+			  "Negate verbs"
+			],
+			"answer": "Connect events",
+			"explanation": {
+			  "en": "It's a connector meaning 'then/after that'.",
+			  "es": "Es un conector que significa 'después'.",
+			  "tr": "'Sonra' anlamında bağlaçtır."
+			}
+		  },
+		  {
+			"question": {
+			  "en": "Which is NOT in past tense?",
+			  "es": "¿Cuál NO está en pasado?",
+			  "tr": "Hangisi geçmiş zaman değildir?"
+			},
+			"type": "multiple_choice",
+			"options": [
+			  "ходих",
+			  "дойдох",
+			  "виждам"
+			],
+			"answer": "виждам",
+			"explanation": {
+			  "en": "'виждам' is present tense. The others are past.",
+			  "es": "'виждам' está en presente. Los otros son pasado.",
+			  "tr": "'виждам' şimdiki zamandır. Diğerleri geçmiş."
+			}
+		  }
+		],
+		"listening": {
+		  "script": "Вчера отидох до магазина. Видях приятел и говорихме за кино. След това дойдох вкъщи и ядох вечеря.",
+		  "questions": [
+			{
+			  "question": {
+				"en": "Where did the speaker go first?",
+				"es": "¿A dónde fue primero?",
+				"tr": "İlk olarak nereye gitti?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "To the cinema",
+				  "To a friend’s house",
+				  "To the store"
+				],
+				"es": [
+				  "Al cine",
+				  "A casa de un amigo",
+				  "A la tienda"
+				],
+				"tr": [
+				  "Sinemaya",
+				  "Arkadaşının evine",
+				  "Mağazaya"
+				]
+			  },
+			  "answer": {
+				"en": "To the store",
+				"es": "A la tienda",
+				"tr": "Mağazaya"
+			  },
+			  "explanation": {
+				"en": "'Отидох до магазина' means 'I went to the store'.",
+				"es": "'Отидох до магазина' = fui a la tienda.",
+				"tr": "'Отидох до магазина' = mağazaya gittim."
+			  }
+			},
+			{
+			  "question": {
+				"en": "What did they talk about?",
+				"es": "¿De qué hablaron?",
+				"tr": "Ne hakkında konuştular?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Books",
+				  "Movies",
+				  "Food"
+				],
+				"es": [
+				  "Libros",
+				  "Películas",
+				  "Comida"
+				],
+				"tr": [
+				  "Kitaplar",
+				  "Filmler",
+				  "Yemek"
+				]
+			  },
+			  "answer": {
+				"en": "Movies",
+				"es": "Películas",
+				"tr": "Filmler"
+			  },
+			  "explanation": {
+				"en": "'говорихме за кино' = we talked about movies.",
+				"es": "'говорихме за кино' = hablamos sobre cine.",
+				"tr": "'говорихме за кино' = sinema hakkında konuştuk."
+			  }
+			},
+			{
+			  "question": {
+				"en": "What did the speaker do last?",
+				"es": "¿Qué hizo al final?",
+				"tr": "Son olarak ne yaptı?"
+			  },
+			  "type": "multiple_choice",
+			  "options": {
+				"en": [
+				  "Went out",
+				  "Ate dinner",
+				  "Watched TV"
+				],
+				"es": [
+				  "Salió",
+				  "Cenó",
+				  "Vio televisión"
+				],
+				"tr": [
+				  "Dışarı çıktı",
+				  "Akşam yemeği yedi",
+				  "TV izledi"
+				]
+			  },
+			  "answer": {
+				"en": "Ate dinner",
+				"es": "Cenó",
+				"tr": "Akşam yemeği yedi"
+			  },
+			  "explanation": {
+				"en": "'ядох вечеря' = I ate dinner.",
+				"es": "'ядох вечеря' = cené.",
+				"tr": "'ядох вечеря' = akşam yemeği yedim."
+			  }
+			}
+		  ]
+		},
+		"fitr_roleplay": {
+		  "scenario": {
+			"en": "You are telling your friend about your day. Use past tense verbs to describe where you went, who you saw, and what you did.",
+			"es": "Estás contando a tu amigo cómo fue tu día. Usa verbos en pasado para decir adónde fuiste, a quién viste y qué hiciste.",
+			"tr": "Arkadaşına gününü anlatıyorsun. Nereye gittin, kimi gördün, ne yaptın — geçmiş zaman fiillerini kullan."
+		  },
+		  "dialogue_with_blanks": [
+			"Лице A: Как беше денят ти?",
+			"Лице B: ____________",
+			"Лице A: И после?",
+			"Лице B: ____________",
+			"Лице A: Само това ли?",
+			"Лице B: ____________",
+			"Лице A: С кого беше?",
+			"Лице B: ____________",
+			"Лице A: Звучи като хубав ден!",
+			"Лице B: ____________"
+		  ],
+		  "answers": [
+			{
+			  "correct": [
+				"Ходих до магазина"
+			  ]
+			},
+			{
+			  "correct": [
+				"След това говорих с приятел"
+			  ]
+			},
+			{
+			  "correct": [
+				"После дойдох вкъщи и ядох"
+			  ]
+			},
+			{
+			  "correct": [
+				"Бях с Иван"
+			  ]
+			},
+			{
+			  "correct": [
+				"Да, беше чудесен ден"
+			  ]
+			}
+		  ],
+		  "pass_score_percent": 80
+		}
+	  }
+	]
+  }

@@ -1,0 +1,161 @@
+{
+    "maps":[
+       {
+          "map_id":"a1_phase_1",
+          "cefr_level":"A1",
+          "phase":"first",
+          "background":"assets/images/maps/a1_phase1.png",
+          "lesson_circles":[
+            {
+               "lesson_id": "a1_00",
+               "position": {
+                 "x_percent": 808,
+                 "y_percent": 960
+               }
+             },
+             {
+               "lesson_id": "a1_01",
+               "position": {
+                 "x_percent": 710,
+                 "y_percent": 868
+               }
+             },
+             {
+               "lesson_id": "a1_02",
+               "position": {
+                 "x_percent": 646,
+                 "y_percent": 760
+               }
+             },
+             {
+               "lesson_id": "a1_03",
+               "position": {
+                 "x_percent": 760,
+                 "y_percent": 688
+               }
+             },
+             {
+               "lesson_id": "a1_04",
+               "position": {
+                 "x_percent": 844,
+                 "y_percent": 666
+               }
+             },
+             {
+               "lesson_id": "a1_05",
+               "position": {
+                 "x_percent": 953,
+                 "y_percent": 632
+               }
+             }
+          ]
+       },
+       {
+          "map_id":"a1_phase_2",
+          "cefr_level":"A1",
+          "phase":"mid",
+          "background":"assets/images/maps/a1_phase2.png",
+          "lesson_circles":[
+            {
+               "lesson_id": "a1_06",
+               "position": {
+                 "x": 463,
+                 "y": 959
+               }
+             },
+             {
+               "lesson_id": "a1_07",
+               "position": {
+                 "x": 511,
+                 "y": 828
+               }
+             },
+             {
+               "lesson_id": "a1_08",
+               "position": {
+                 "x": 1309,
+                 "y": 843
+               }
+             },
+             {
+               "lesson_id": "a1_09",
+               "position": {
+                 "x": 939,
+                 "y": 800
+               }
+             },
+             {
+               "lesson_id": "a1_10",
+               "position": {
+                 "x": 738,
+                 "y": 687
+               }
+             },
+             {
+               "lesson_id": "a1_11",
+               "position": {
+                 "x": 697,
+                 "y": 609
+               }
+            }
+          ]
+       },
+       {
+          "map_id":"a1_phase_3",
+          "cefr_level":"A1",
+          "phase":"final",
+          "background":"assets/images/maps/a1_phase3.png",
+          "lesson_circles":[
+            {
+               "lesson_id": "a1_12",
+               "position": {
+                 "x": 641,
+                 "y": 963
+               }
+             },
+             {
+               "lesson_id": "a1_13",
+               "position": {
+                 "x": 600,
+                 "y": 840
+               }
+             },
+             {
+               "lesson_id": "a1_14",
+               "position": {
+                 "x": 658,
+                 "y": 732
+               }
+             },
+             {
+               "lesson_id": "a1_15",
+               "position": {
+                 "x": 400,
+                 "y": 665
+               }
+             },
+             {
+               "lesson_id": "a1_16",
+               "position": {
+                 "x": 712,
+                 "y": 641
+               }
+             },
+             {
+               "lesson_id": "a1_17",
+               "position": {
+                 "x": 706,
+                 "y": 556
+               }
+             },
+             {
+              "lesson_id": "boss_a1",
+              "position": {
+                "x": 706,
+                "y": 300
+              }
+            }
+          ]
+       }
+    ]
+ }
