@@ -135,6 +135,7 @@ class KukerSection {
       evaluationCriteria: (json['evaluation_criteria'] as Map?)
           ?.map((k, v) => MapEntry(k, (v as List).cast<String>())),
       chatGptPromptFile: json['chatGPT_prompt_file'],
+      
     );
   }
 }

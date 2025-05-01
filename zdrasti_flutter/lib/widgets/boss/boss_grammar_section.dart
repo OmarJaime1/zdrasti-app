@@ -1,6 +1,7 @@
 // lib/widgets/boss/boss_grammar_section.dart
 
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
 
@@ -8,12 +9,14 @@ class BossGrammarSection extends StatefulWidget {
   final List<GrammarQuestion> questions;
   final int passScore;
   final void Function(bool passed) onCompleted;
+  final Map<String, String>? scenario; 
 
   const BossGrammarSection({
     super.key,
     required this.questions,
     this.passScore = 4,
     required this.onCompleted,
+    this.scenario,
   });
 
   @override
@@ -26,6 +29,7 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
   bool _submitted = false;
   bool _wasCorrect = false;
   final TextEditingController _controller = TextEditingController();
+  late final ValueNotifier<String> _inputText;
 
   void _handleSubmit() {
     final userAnswer = _controller.text.trim().toLowerCase();
@@ -36,6 +40,15 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
       _submitted = true;
       _wasCorrect = isCorrect;
       if (isCorrect) _correctCount++;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _inputText = ValueNotifier('');
+    _controller.addListener(() {
+      _inputText.value = _controller.text;
     });
   }
 
@@ -61,6 +74,15 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+           if (widget.scenario != null && widget.scenario!.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16),
+              child: Text(
+                LocalizationService.getLocalizedText(widget.scenario!),
+                style: const TextStyle(fontSize: 14, fontStyle: FontStyle.italic),
+              ),
+            ),
+
           Text(
             'Question ${_currentIndex + 1} of ${widget.questions.length}',
             style: const TextStyle(fontWeight: FontWeight.bold),
@@ -86,22 +108,39 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
           const SizedBox(height: 12),
 
           if (!_submitted)
-            ElevatedButton(
-              onPressed: _controller.text.trim().isEmpty ? null : _handleSubmit,
-              child: const Text('Submit'),
+            Center(
+              child: ValueListenableBuilder<String>(
+                valueListenable: _inputText,
+                builder: (context, text, _) {
+                  return ElevatedButton(
+                    onPressed: text.trim().isEmpty ? null : _handleSubmit,
+                    child: const Text('Submit'),
+                  );
+                },
+              ),
             )
           else ...[
-            Text(
-              _wasCorrect ? '✅ Correct!' : '❌ Incorrect. Correct: ${widget.questions[_currentIndex].answer}',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: _wasCorrect ? Colors.green : Colors.red,
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: _wasCorrect ? Colors.green.shade100 : Colors.red.shade100,
+                borderRadius: BorderRadius.circular(8),
               ),
+              child: Text(
+                _wasCorrect ? '✅ Correct!' : '❌ Incorrect. Correct: ${widget.questions[_currentIndex].answer}',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: _wasCorrect ? Colors.green : Colors.red,
+                ),
+              )
             ),
             const SizedBox(height: 8),
-            ElevatedButton(
-              onPressed: _next,
-              child: const Text('Next'),
+            Center(
+              child:ElevatedButton(
+                onPressed: _next,
+                child: const Text('Next'),
+              )
             ),
           ],
         ],

@@ -151,9 +151,6 @@ class _LessonMapPageState extends State<LessonMapPage> with TickerProviderStateM
 
   @override
 Widget build(BuildContext context) {
-  print('[BUILD] widget.nodesForMap.length: ${widget.nodesForMap.length}');
-  print('[BUILD] widget.allNodes.length: ${widget.allNodes.length}');
-
   if (widget.nodesForMap.isEmpty) {
     return const Center(
       child: Text(
@@ -167,12 +164,9 @@ Widget build(BuildContext context) {
   final activePhaseIndex = _progressStates.indexWhere((p) => !p);
   final allComplete = _progressStates.every((p) => p);
   final noActive = widget.allNodes.every((n) => n.status == LessonStatus.completed);
-  print('[BUILD] allComplete: $allComplete');
-  print('[BUILD] noActive: $noActive');
 
   const bool forceShowBossIcon = true; // TEMP: dev testing
   final shouldShowBoss = (allComplete && noActive) || forceShowBossIcon;
-  print('[BUILD] shouldShowBoss: $shouldShowBoss');
 
   final lastAttempt = widget.user.last_writing_attempt;
   final cooldownActive = BossLoader.isWritingCooldownActive(lastAttempt);
@@ -183,7 +177,6 @@ Widget build(BuildContext context) {
   final bossNode = widget.nodesForMap.firstWhereOrNull(
     (n) => n.lessonId == 'boss_a1',
   );
-  print('[BUILD] bossNode found: ${bossNode != null}');
 
   return Stack(
     children: [
@@ -212,7 +205,6 @@ Widget build(BuildContext context) {
                       if (frame != null && !_imageReady) {
                         WidgetsBinding.instance.addPostFrameCallback((_) {
                           if (mounted) {
-                            print('[BUILD] Map image loaded.');
                             setState(() => _imageReady = true);
                             widget.onMapImageReady?.call();
                           }
@@ -227,7 +219,6 @@ Widget build(BuildContext context) {
               // Lesson Circles (skip boss)
               ...widget.nodesForMap.map((node) {
                 if (node.lessonId == 'boss_a1') {
-                  print('[BUILD] Skipping boss_a1 node for circle rendering.');
                   return const SizedBox.shrink();
                 }
 
@@ -235,7 +226,6 @@ Widget build(BuildContext context) {
                   (l) => l.lessonId == node.lessonId,
                 );
                 if (lesson == null) {
-                  print('[BUILD] No lesson found for node: ${node.lessonId}');
                   return const SizedBox.shrink();
                 }
 
@@ -261,15 +251,12 @@ Widget build(BuildContext context) {
                 FutureBuilder<KukerBoss>(
                   future: BossLoader.loadBossForLevel(widget.user.current_level),
                   builder: (context, snapshot) {
-                    print('[BUILD] FutureBuilder loading boss...');
                     print('[DEBUG] Loading boss for level: ${widget.user.current_level}');
                     if (!snapshot.hasData) {
-                      print('[BUILD] Boss data not loaded yet.');
                       return const SizedBox.shrink();
                     }
 
                     final boss = snapshot.data!;
-                    print('[BUILD] Boss loaded: ${boss.name}');
 
                     return Positioned(
                       left: bossNode.position.dx,
@@ -282,7 +269,6 @@ Widget build(BuildContext context) {
                             ? "Boss is recovering... Available in $cooldownRemaining"
                             : "Challenge the ${boss.name}",
                         onTap: () {
-                          print('[BUILD] Boss icon tapped.');
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -299,7 +285,6 @@ Widget build(BuildContext context) {
                 )
               else
                  Builder(builder: (_) {
-                  print('[BUILD] Boss icon not shown (shouldShowBoss=$shouldShowBoss, bossNode=$bossNode)');
                   return const SizedBox.shrink();
                 }),
             ],

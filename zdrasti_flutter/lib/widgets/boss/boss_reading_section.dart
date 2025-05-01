@@ -24,6 +24,7 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
   final Map<int, TextEditingController> _controllers = {};
   final List<bool> _results = [];
   bool _submitted = false;
+  bool _passed = false;
 
   @override
   void initState() {
@@ -42,7 +43,14 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
   }
 
   void _handleSubmit() {
-    _results.clear();
+    bool anyEmpty = _controllers.values.any((controller) => controller.text.trim().isEmpty);
+
+    if (anyEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please answer all questions before submitting.')),
+      );
+      return;
+    }
 
     for (int i = 0; i < widget.questions.length; i++) {
       final expected = widget.questions[i].answer.trim().toLowerCase();
@@ -51,21 +59,24 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
     }
 
     final correct = _results.where((r) => r).length;
-    final passed = correct >= widget.passScore;
-
-    setState(() => _submitted = true);
-    widget.onCompleted(passed);
+  
+    setState(() {
+      _submitted = true;
+      _passed = correct >= widget.passScore;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+
           const Text('Read this paragraph:', style: TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
+
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
@@ -74,48 +85,57 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
             ),
             child: Text(widget.paragraph, style: const TextStyle(fontSize: 16)),
           ),
-          const SizedBox(height: 20),
-          for (int i = 0; i < widget.questions.length; i++)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Q${i + 1}: ${widget.questions[i].question}'),
-                  const SizedBox(height: 6),
-                  TextField(
-                    controller: _controllers[i],
-                    enabled: !_submitted,
-                    decoration: InputDecoration(
-                      hintText: 'Your answer...',
-                      fillColor: _submitted
-                          ? (_results[i] ? Colors.green.shade50 : Colors.red.shade50)
-                          : Colors.grey.shade100,
-                      filled: true,
-                      border: const OutlineInputBorder(),
-                    ),
-                  ),
-                  if (_submitted)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 6),
-                      child: Text(
-                        _results[i] ? '✅ Correct' : '❌ Correct: ${widget.questions[i].answer}',
-                        style: TextStyle(
-                          color: _results[i] ? Colors.green : Colors.red,
-                          fontWeight: FontWeight.bold,
+
+          const SizedBox(height: 12),
+
+          Expanded(
+            child: ListView.builder(
+              itemCount: widget.questions.length,
+              itemBuilder: (context, i) {
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Q${i + 1}: ${widget.questions[i].question}'),
+                      const SizedBox(height: 6),
+                      TextField(
+                        controller: _controllers[i],
+                        enabled: !_submitted,
+                        decoration: InputDecoration(
+                          hintText: 'Your answer...',
+                          fillColor: _submitted
+                              ? (_results[i] ? Colors.green.shade50 : Colors.red.shade50)
+                              : Colors.grey.shade100,
+                          filled: true,
+                          border: const OutlineInputBorder(),
                         ),
                       ),
-                    )
-                ],
-              ),
+                      if (_submitted)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 6),
+                          child: Text(
+                            _results[i] ? '✅ Correct' : '❌ Correct: ${widget.questions[i].answer}',
+                            style: TextStyle(
+                              color: _results[i] ? Colors.green : Colors.red,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                    ],
+                  ),
+                );
+              },
             ),
-          if (!_submitted)
-            Center(
-              child: ElevatedButton(
-                onPressed: _handleSubmit,
-                child: const Text('Submit Answers'),
-              ),
-            )
+          ),
+
+          const SizedBox(height: 12),
+          Center(
+            child: ElevatedButton(
+              onPressed: _submitted ? () => widget.onCompleted(_passed) : _handleSubmit,
+              child: Text(_submitted ? 'Next' : 'Submit Answers'),
+            ),
+          ),
         ],
       ),
     );

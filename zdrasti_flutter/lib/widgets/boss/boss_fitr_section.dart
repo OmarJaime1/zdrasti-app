@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
 import 'package:zdrasti_flutter/widgets/translation_bubble.dart';
@@ -25,14 +26,8 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
   final Map<int, TextEditingController> _controllers = {};
   final List<bool> _results = [];
   bool _submitted = false;
-
-  @override
-  void initState() {
-    super.initState();
-    for (var i = 0; i < widget.variant.answers.length; i++) {
-      _controllers[i] = TextEditingController();
-    }
-  }
+  bool _passed = false;
+  int _totalBuiltBlanks = 0;
 
   @override
   void dispose() {
@@ -45,22 +40,42 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
   void _handleSubmit() {
     _results.clear();
 
-    for (int i = 0; i < widget.variant.answers.length; i++) {
-      final accepted = [widget.variant.answers[i].correct];
-      final actual = _controllers[i]!.text.trim().toLowerCase();
-      _results.add(accepted.contains(actual));
+    bool anyEmpty = false;
+    for (int i = 0; i < _totalBuiltBlanks; i++) {
+      final text = _controllers[i]?.text;
+      if (text == null || text.trim().isEmpty) {
+        anyEmpty = true;
+        break;
+      }
+    }
+
+    if (anyEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please fill in all blanks before submitting.')),
+      );
+      return;
+    }
+
+    for (int i = 0; i < _totalBuiltBlanks; i++) {
+      final accepted = widget.variant.answers[i].correct.map((s) => s.toLowerCase().trim()).toList();
+      final actual = _controllers[i]!.text.toLowerCase().trim();
+      final isCorrect = accepted.contains(actual);
+      _results.add(isCorrect);
     }
 
     final correct = _results.where((r) => r).length;
-    final scorePercent = (correct / widget.variant.answers.length) * 100;
-    final passed = scorePercent >= widget.passScorePercent;
+    final scorePercent = (correct / _totalBuiltBlanks) * 100;
 
-    setState(() => _submitted = true);
-    widget.onCompleted(passed);
+    setState(() {
+      _submitted = true;
+      _passed = scorePercent >= widget.passScorePercent;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
+    _totalBuiltBlanks = 0;
+
     final scenarioText = widget.scenario?['en'] ?? widget.scenario?.values.first ?? '';
     final lines = widget.variant.dialogueWithBlanks;
     int blankIndex = 0;
@@ -86,6 +101,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
               ),
             ),
           const SizedBox(height: 20),
+
           for (final line in lines)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 6),
@@ -97,51 +113,79 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
                     child: Wrap(
                       spacing: 6,
                       runSpacing: 8,
-                      children: line.split(' ').map((word) {
-                        if (word.contains('_____')) {
-                          final index = blankIndex++;
-                          return SizedBox(
-                            width: 100,
-                            child: TextField(
-                              controller: _controllers[index],
-                              enabled: !_submitted,
-                              decoration: InputDecoration(
-                                hintText: '...',
-                                filled: true,
-                                fillColor: _submitted
-                                    ? (_results[index]
-                                        ? Colors.green.shade50
-                                        : Colors.red.shade50)
-                                    : Colors.grey.shade100,
-                                border: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: _submitted
-                                        ? (_results[index]
-                                            ? Colors.green
-                                            : Colors.red)
-                                        : Colors.grey.shade300,
+                      children: [
+                        ...line.split(' ').map((word) {
+                          if (word.contains('_____')) {
+                            final index = blankIndex;
+                            if (!_controllers.containsKey(index)) {
+                              _controllers[index] = TextEditingController();
+                            }
+                            final showAnswer = _submitted;
+                            final correctAnswers = widget.variant.answers[index].correct;
+                            final isCorrect = _results.length > index && _results[index];
+                            blankIndex++;
+                            _totalBuiltBlanks++;
+                            return Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(
+                                  width: 100,
+                                  child: TextField(
+                                    controller: _controllers[index],
+                                    enabled: !_submitted,
+                                    decoration: InputDecoration(
+                                      hintText: '...',
+                                      filled: true,
+                                      fillColor: _submitted
+                                          ? (isCorrect
+                                              ? Colors.green.shade50
+                                              : Colors.red.shade50)
+                                          : Colors.grey.shade100,
+                                      border: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: _submitted
+                                              ? (isCorrect
+                                                  ? Colors.green
+                                                  : Colors.red)
+                                              : Colors.grey.shade300,
+                                        ),
+                                      ),
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ),
-                          );
-                        } else {
-                          return Text(word, style: const TextStyle(fontSize: 16));
-                        }
-                      }).toList(),
+                                if (showAnswer)
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 4),
+                                    child: Text(
+                                      'Correct: ${correctAnswers.join(", ")}',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: isCorrect ? Colors.green.shade700 : Colors.red.shade800,
+                                        fontStyle: FontStyle.italic,
+                                      ),
+                                    ),
+                                  )
+                              ],
+                            );
+                          } else {
+                            return Text(word, style: const TextStyle(fontSize: 16));
+                          }
+                        }).toList()
+                      ],
                     ),
                   ),
                 ],
               ),
             ),
+
           const SizedBox(height: 20),
-          if (!_submitted)
-            Center(
-              child: ElevatedButton(
-                onPressed: _handleSubmit,
-                child: const Text('Submit Roleplay'),
-              ),
-            )
+
+          Center(
+            child: ElevatedButton(
+              onPressed: _submitted ? () => widget.onCompleted(_passed) : _handleSubmit,
+              child: Text(_submitted ? 'Next' : 'Submit Roleplay'),
+            ),
+          )
         ],
       ),
     );
@@ -152,7 +196,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
 
   @override
   double getScore() {
-    final total = widget.variant.answers.length;
+    final total = _totalBuiltBlanks;
     final correct = _results.where((r) => r).length;
     return total == 0 ? 0.0 : correct / total;
   }

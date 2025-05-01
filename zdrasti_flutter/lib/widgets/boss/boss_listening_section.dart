@@ -1,5 +1,3 @@
-// lib/widgets/boss/boss_listening_section.dart
-
 import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/backend/service/audio/audio_service.dart';
@@ -23,6 +21,7 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
   final Map<int, TextEditingController> _controllers = {};
   final List<bool> _results = [];
   bool _submitted = false;
+  bool _passed = false;
 
   @override
   void initState() {
@@ -45,19 +44,31 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
   }
 
   void _handleSubmit() {
-    _results.clear();
+    bool anyEmpty = _controllers.values.any((controller) => controller.text.trim().isEmpty);
 
+    if (anyEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please fill in all answers before submitting.')),
+      );
+      return;
+    }
+
+    final newResults = <bool>[];
     for (var i = 0; i < widget.prompts.length; i++) {
       final expected = widget.prompts[i].answer.trim().toLowerCase();
       final actual = _controllers[i]!.text.trim().toLowerCase();
-      _results.add(expected == actual);
+      newResults.add(expected == actual);
     }
 
-    final correct = _results.where((r) => r).length;
-    final passed = correct >= (widget.prompts.length * 0.8);
+    final correct = newResults.where((r) => r).length;
 
-    setState(() => _submitted = true);
-    widget.onCompleted(passed);
+    setState(() {
+      _results.clear();
+      _results.addAll(newResults);
+      _submitted = true;
+      _passed = correct >= (widget.prompts.length * 0.8);
+    });
+
   }
 
   @override
@@ -112,13 +123,12 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
 
           const SizedBox(height: 20),
 
-          if (!_submitted)
-            Center(
-              child: ElevatedButton(
-                onPressed: () => _handleSubmit(),
-                child: const Text('Submit All'),
-              ),
-            )
+          Center(
+            child: ElevatedButton(
+              onPressed: _submitted ? () => widget.onCompleted(_passed) : _handleSubmit,
+              child: Text(_submitted ? 'Next' : 'Submit All'),
+            ),
+          )
         ],
       ),
     );

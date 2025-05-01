@@ -30,6 +30,7 @@ class BossSectionFactory {
           questions: section.grammarQuestions ?? [],
           passScore: section.passScore ?? 4,
           onCompleted: onCompleted,
+          scenario: section.scenario,
         );
 
       case 'audio_transcription':

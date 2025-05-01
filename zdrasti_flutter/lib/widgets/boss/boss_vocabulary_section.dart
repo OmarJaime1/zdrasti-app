@@ -1,5 +1,3 @@
-// lib/widgets/boss/boss_vocabulary_section.dart
-
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
@@ -118,24 +116,38 @@ class _BossVocabularySectionState extends State<BossVocabularySection> with Boss
                 ValueListenableBuilder<String>(
                 valueListenable: _inputText,
                 builder: (context, text, _) {
-                  return ElevatedButton(
-                    onPressed: text.trim().isEmpty ? null : _handleSubmit,
-                    child: const Text('Submit'),
+                  return Center(
+                    child: ElevatedButton(
+                      onPressed: text.trim().isEmpty ? null : _handleSubmit,
+                      child: const Text('Submit'),
+                    ),
                   );
                 },
               )
               else ...[
-                Text(
-                  _wasCorrect ? '✅ Correct!' : '❌ Incorrect. Correct answer: ${current.correctAnswer}',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: _wasCorrect ? Colors.green : Colors.red,
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: _wasCorrect ? Colors.green.shade100 : Colors.red.shade100,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text(
+                    _wasCorrect ? '✅ Correct!' : '❌ Incorrect. Correct answer: ${current.correctAnswer}',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: _wasCorrect ? Colors.green.shade900 : Colors.red.shade900,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 8),
-                ElevatedButton(
-                  onPressed: _next,
-                  child: const Text('Next'),
+                Center(
+                  child: ElevatedButton(
+                    onPressed: _next,
+                    child: const Text('Next'),
+                  ),
                 ),
               ]
             ],

@@ -179,7 +179,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
                         showTail: true,
                       ),
                       const SizedBox(height: 8),
-                      Image.asset(_kukerImagePath, height: 120),
+                      Image.asset(_kukerImagePath, height: 200),
                     ],
                   ),
                 ),
