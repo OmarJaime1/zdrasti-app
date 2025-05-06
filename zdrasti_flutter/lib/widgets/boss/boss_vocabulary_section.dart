@@ -101,17 +101,10 @@ class _BossVocabularySectionState extends State<BossVocabularySection> with Boss
             children: [
               const Text('Translate this word into your language:'),
               const SizedBox(height: 8),
-              TextField(
+              BossSectionHelpers.inputField(
                 controller: _controller,
                 enabled: !_submitted,
-                decoration: InputDecoration(
-                  hintText: 'Type your translation...',
-                  filled: true,
-                  fillColor: Colors.grey.shade50,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                ),
+                hint: 'Type your translation...',
               ),
               const SizedBox(height: 12),
               if (!_submitted)
@@ -133,9 +126,9 @@ class _BossVocabularySectionState extends State<BossVocabularySection> with Boss
                 ),
                 const SizedBox(height: 8),
                 Center(
-                  child: ElevatedButton(
-                    onPressed: _next,
-                    child: const Text('Next'),
+                  child: BossSectionHelpers.nextOrSubmitButton(
+                    submitted: true,
+                    onNext: _next,
                   ),
                 ),
               ]

@@ -98,13 +98,10 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
 
           const SizedBox(height: 12),
 
-          TextField(
+          BossSectionHelpers.inputField(
             controller: _controller,
             enabled: !_submitted,
-            decoration: const InputDecoration(
-              hintText: 'Type your answer...',
-              border: OutlineInputBorder(),
-            ),
+            hint: 'Type your answer...',
           ),
 
           const SizedBox(height: 12),
@@ -128,10 +125,10 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
             ),
             const SizedBox(height: 8),
             Center(
-              child:ElevatedButton(
-                onPressed: _next,
-                child: const Text('Next'),
-              )
+              child: BossSectionHelpers.nextOrSubmitButton(
+                submitted: true,
+                onNext: _next,
+              ),
             ),
           ],
         ],

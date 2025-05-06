@@ -100,17 +100,10 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
                     children: [
                       Text('Q${i + 1}: ${widget.questions[i].question}'),
                       const SizedBox(height: 6),
-                      TextField(
-                        controller: _controllers[i],
+                      BossSectionHelpers.inputField(
+                        controller: _controllers[i]!,
                         enabled: !_submitted,
-                        decoration: InputDecoration(
-                          hintText: 'Your answer...',
-                          fillColor: _submitted
-                              ? (_results[i] ? Colors.green.shade50 : Colors.red.shade50)
-                              : Colors.grey.shade100,
-                          filled: true,
-                          border: const OutlineInputBorder(),
-                        ),
+                        hint: 'Your answer...',
                       ),
                       if (_submitted)
                         BossSectionHelpers.answerFeedbackBox(
@@ -126,9 +119,11 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
 
           const SizedBox(height: 12),
           Center(
-            child: ElevatedButton(
-              onPressed: _submitted ? () => widget.onCompleted(_passed, getScore()) : _handleSubmit,
-              child: Text(_submitted ? 'Next' : 'Submit Answers'),
+            child: BossSectionHelpers.nextOrSubmitButton(
+              submitted: _submitted,
+              onSubmit: _handleSubmit,
+              onNext: () => widget.onCompleted(_passed, getScore()),
+              submitLabel: 'Submit Answers',
             ),
           ),
         ],

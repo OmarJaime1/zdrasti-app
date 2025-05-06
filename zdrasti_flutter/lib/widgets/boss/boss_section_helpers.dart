@@ -60,4 +60,53 @@ class BossSectionHelpers {
     );
   }
 
+  static Widget inputField({
+    required TextEditingController controller,
+    required bool enabled,
+    required String hint,
+    EdgeInsets? margin,
+  }) {
+    return Padding(
+      padding: margin ?? const EdgeInsets.only(bottom: 12),
+      child: TextField(
+        controller: controller,
+        enabled: enabled,
+        decoration: InputDecoration(
+          hintText: hint,
+          filled: true,
+          fillColor: Colors.grey.shade100,
+          border: const OutlineInputBorder(),
+        ),
+      ),
+    );
+  }
+
+  static Widget confirmableSubmitButton({
+    required ValueNotifier<String> notifier,
+    required VoidCallback onPressed,
+    required String label,
+  }) {
+    return ValueListenableBuilder<String>(
+      valueListenable: notifier,
+      builder: (context, text, _) {
+        return ElevatedButton(
+          onPressed: text.trim().isEmpty ? null : onPressed,
+          child: Text(label),
+        );
+      },
+    );
+  }
+
+  static Widget nextOrSubmitButton({
+    required bool submitted,
+    VoidCallback? onSubmit,
+    required VoidCallback onNext,
+    String submitLabel = 'Submit',
+    String nextLabel = 'Next',
+  }) {
+    return ElevatedButton(
+      onPressed: submitted ? onNext : (onSubmit ?? () {}),
+      child: Text(submitted ? nextLabel : submitLabel),
+    );
+  } 
 }

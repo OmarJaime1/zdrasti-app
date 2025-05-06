@@ -95,17 +95,10 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
                       ),
                     ],
                   ),
-                  TextField(
-                    controller: _controllers[i],
+                  BossSectionHelpers.inputField(
+                    controller: _controllers[i]!,
                     enabled: !_submitted,
-                    decoration: InputDecoration(
-                      hintText: 'Type exactly what you hear...',
-                      fillColor: _submitted
-                          ? (_results[i] ? Colors.green.shade50 : Colors.red.shade50)
-                          : Colors.grey.shade100,
-                      filled: true,
-                      border: const OutlineInputBorder(),
-                    ),
+                    hint: 'Type exactly what you hear...',
                   ),
                   if (_submitted)
                     BossSectionHelpers.answerFeedbackBox(
@@ -119,9 +112,11 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
           const SizedBox(height: 20),
 
           Center(
-            child: ElevatedButton(
-              onPressed: _submitted ? () => widget.onCompleted(_passed, getScore()) : _handleSubmit,
-              child: Text(_submitted ? 'Next' : 'Submit All'),
+            child: BossSectionHelpers.nextOrSubmitButton(
+              submitted: _submitted,
+              onSubmit: _handleSubmit,
+              onNext: () => widget.onCompleted(_passed, getScore()),
+              submitLabel: 'Submit All',
             ),
           )
         ],

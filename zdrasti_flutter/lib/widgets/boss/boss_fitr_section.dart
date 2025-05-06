@@ -132,27 +132,11 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
                               children: [
                                 SizedBox(
                                   width: 100,
-                                  child: TextField(
-                                    controller: _controllers[index],
+                                  child: BossSectionHelpers.inputField(
+                                    controller: _controllers[index]!,
                                     enabled: !_submitted,
-                                    decoration: InputDecoration(
-                                      hintText: '...',
-                                      filled: true,
-                                      fillColor: _submitted
-                                          ? (isCorrect
-                                              ? Colors.green.shade50
-                                              : Colors.red.shade50)
-                                          : Colors.grey.shade100,
-                                      border: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: _submitted
-                                              ? (isCorrect
-                                                  ? Colors.green
-                                                  : Colors.red)
-                                              : Colors.grey.shade300,
-                                        ),
-                                      ),
-                                    ),
+                                    hint: '...',
+                                    margin: EdgeInsets.zero,
                                   ),
                                 ),
                                 if (showAnswer)
@@ -176,9 +160,11 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
           const SizedBox(height: 20),
 
           Center(
-            child: ElevatedButton(
-              onPressed: _submitted ? () => widget.onCompleted(_passed, _scorePercent) : _handleSubmit,
-              child: Text(_submitted ? 'Next' : 'Submit Roleplay'),
+            child: BossSectionHelpers.nextOrSubmitButton(
+              submitted: _submitted,
+              onSubmit: _handleSubmit,
+              onNext: () => widget.onCompleted(_passed, _scorePercent),
+              submitLabel: 'Submit Roleplay',
             ),
           )
         ],
