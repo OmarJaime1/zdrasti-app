@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/models/user.dart';
+import 'package:zdrasti_flutter/screens/zdrasti_shell.dart';
 import 'package:zdrasti_flutter/widgets/translation_bubble.dart';
 import 'package:zdrasti_flutter/backend/service/user_service.dart';
 import 'package:confetti/confetti.dart';
@@ -13,6 +14,8 @@ class KukerBossResultScreen extends StatefulWidget {
   final bool passed;
   final bool writingAttempted;
   final String? gptExplanation;
+  final Map<String, double> sectionScores;
+  final Map<String, bool> sectionPasses;
 
   const KukerBossResultScreen({
     super.key,
@@ -21,6 +24,8 @@ class KukerBossResultScreen extends StatefulWidget {
     required this.passed,
     required this.writingAttempted,
     this.gptExplanation,
+    required this.sectionScores,
+    required this.sectionPasses,
   });
 
   @override
@@ -69,8 +74,13 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
     Future.delayed(const Duration(seconds: 10), () {
       if (!mounted) return;
 
-      final route = widget.passed ? '/dashboard' : '/map';
-      Navigator.pushReplacementNamed(context, route);
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(
+          builder: (_) => ZdrastiShell(user: widget.user),
+        ),
+        (route) => false,
+      );
     });
   }
 
@@ -171,7 +181,7 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
         const SizedBox(height: 8),
         for (final section in sections)
           _buildScoreTile(
-            LocalizationService.getLocalizedText(section.title!),
+            LocalizationService.getLocalizedText(section.title),
             section.type == 'text_input'
                 ? (widget.writingAttempted
                     ? (widget.passed ? '✅ Passed' : '❌ Failed')
@@ -183,9 +193,13 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
   }
 
   String _formatScore(KukerSection section) {
-    // This is placeholder logic for now.
-    // In the future, you'd pass the actual section widget state if needed.
-    return '✓ Completed'; // Or "—" if skipped
+    final score = widget.sectionScores[section.id];
+    final passed = widget.sectionPasses[section.id];
+
+    if (score == null) return '—';
+    final percent = (score * 100).round();
+    final emoji = passed == true ? '✅' : '❌';
+    return '$emoji $percent%';
   }
 
   Widget _buildScoreTile(String label, String value) {

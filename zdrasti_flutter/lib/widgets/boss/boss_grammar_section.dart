@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
+import 'package:zdrasti_flutter/widgets/boss/boss_section_helpers.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
 
 class BossGrammarSection extends StatefulWidget {
@@ -121,20 +122,9 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
               ),
             )
           else ...[
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: _wasCorrect ? Colors.green.shade100 : Colors.red.shade100,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Text(
-                _wasCorrect ? '✅ Correct!' : '❌ Incorrect. Correct: ${widget.questions[_currentIndex].answer}',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: _wasCorrect ? Colors.green : Colors.red,
-                ),
-              )
+            BossSectionHelpers.answerFeedbackBox(
+              isCorrect: _wasCorrect,
+              correctAnswer: widget.questions[_currentIndex].answer,
             ),
             const SizedBox(height: 8),
             Center(

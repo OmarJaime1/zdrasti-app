@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
+import 'package:zdrasti_flutter/widgets/boss/boss_section_helpers.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
 import 'package:zdrasti_flutter/widgets/translation_bubble.dart';
 
@@ -39,12 +40,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
   }
 
   void _handleSubmit() {
-    debugPrint('🌟 Starting handleSubmit');
     _results.clear();
-
-    for (int i = 0; i < _totalBuiltBlanks; i++) {
-      debugPrint('🌟 Controller $i text: "${_controllers[i]?.text}"');
-    }
 
     bool anyEmpty = false;
     for (int i = 0; i < _totalBuiltBlanks; i++) {
@@ -54,8 +50,6 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
         break;
       }
     }
-
-    debugPrint('🌟 anyEmpty result: $anyEmpty');
 
     if (anyEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -68,14 +62,11 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
       final accepted = widget.variant.answers[i].correct.map((s) => s.toLowerCase().trim()).toList();
       final actual = _controllers[i]!.text.toLowerCase().trim();
       final isCorrect = accepted.contains(actual);
-      debugPrint('🌟 Checking: "$actual" in $accepted => $isCorrect');
       _results.add(isCorrect);
     }
 
     final correct = _results.where((r) => r).length;
     _scorePercent = (correct / _totalBuiltBlanks) * 100;
-
-    debugPrint('🌟 Correct answers: $correct / $_totalBuiltBlanks => $_scorePercent%');
 
     setState(() {
       _submitted = true;
@@ -85,8 +76,6 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
 
   @override
   Widget build(BuildContext context) {
-    debugPrint('🌟 Building FITR Section');
-    debugPrint('🌟 Variant dialogueWithBlanks: ${widget.variant.dialogueWithBlanks.length} lines');
     _totalBuiltBlanks = 0;
 
     final scenarioText = widget.scenario != null ? LocalizationService.getLocalizedText(widget.scenario!) : '';
@@ -133,8 +122,6 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
                             if (!_controllers.containsKey(index)) {
                               _controllers[index] = TextEditingController();
                             }
-                            debugPrint('🌟 Building TextField at blankIndex $index');
-                            debugPrint('🌟 Current controller linked: ${_controllers[index]?.text}');
                             final showAnswer = _submitted;
                             final correctAnswers = widget.variant.answers[index].correct;
                             final isCorrect = _results.length > index && _results[index];
@@ -169,16 +156,9 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
                                   ),
                                 ),
                                 if (showAnswer)
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 4),
-                                    child: Text(
-                                      'Correct: ${correctAnswers.join(", ")}',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color: isCorrect ? Colors.green.shade700 : Colors.red.shade800,
-                                        fontStyle: FontStyle.italic,
-                                      ),
-                                    ),
+                                  BossSectionHelpers.answerFeedbackBox(
+                                    isCorrect: isCorrect,
+                                    correctAnswer: correctAnswers.join(', '),
                                   )
                               ],
                             );

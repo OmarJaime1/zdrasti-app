@@ -32,4 +32,32 @@ class BossSectionHelpers {
       ),
     );
   }
+
+  static Widget answerFeedbackBox({
+    required bool isCorrect,
+    required String correctAnswer,
+    String? label,
+  }) {
+    final color = isCorrect ? Colors.green.shade100 : Colors.red.shade100;
+    final textColor = isCorrect ? Colors.green.shade800 : Colors.red.shade800;
+    final prefix = isCorrect ? '✅ Correct' : '❌ Correct answer';
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.only(top: 6),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Text(
+        label != null ? '$prefix: $label' : '$prefix: $correctAnswer',
+        style: TextStyle(
+          color: textColor,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
+import 'package:zdrasti_flutter/widgets/boss/boss_section_helpers.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
 
 class BossReadingSection extends StatefulWidget {
@@ -112,15 +113,9 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
                         ),
                       ),
                       if (_submitted)
-                        Padding(
-                          padding: const EdgeInsets.only(top: 6),
-                          child: Text(
-                            _results[i] ? '✅ Correct' : '❌ Correct: ${widget.questions[i].answer}',
-                            style: TextStyle(
-                              color: _results[i] ? Colors.green : Colors.red,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
+                        BossSectionHelpers.answerFeedbackBox(
+                          isCorrect: _results[i],
+                          correctAnswer: widget.questions[i].answer,
                         )
                     ],
                   ),

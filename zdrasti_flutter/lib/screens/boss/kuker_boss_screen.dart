@@ -31,6 +31,7 @@ class KukerBossScreen extends StatefulWidget {
 class _KukerBossScreenState extends State<KukerBossScreen> {
   int _sectionIndex = 0;
   final Map<String, bool> _sectionResults = {};
+  final Map<String, double> _sectionScores = {};
   bool _writingUnlocked = false;
   bool _writingBlockedByCooldown = false;
   bool _hasLoadedCooldown = false;
@@ -72,6 +73,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
   void _onSectionCompleted(bool passed, double score) async {
     final section = widget.boss.sections[_sectionIndex];
     _sectionResults[section.id] = passed;
+    _sectionScores[section.id] = score;
     _updateWritingUnlocked();
 
     setState(() {
@@ -119,6 +121,8 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
           passed: passed,
           writingAttempted: _writingUnlocked,
           gptExplanation: _gptExplanation,
+          sectionScores: _sectionScores,
+          sectionPasses: _sectionResults,
         ),
       ),
     );

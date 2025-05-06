@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
+import 'package:zdrasti_flutter/widgets/boss/boss_section_helpers.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
 import 'package:zdrasti_flutter/widgets/lessons/vocab_card.dart';
 
@@ -126,22 +127,9 @@ class _BossVocabularySectionState extends State<BossVocabularySection> with Boss
                 },
               )
               else ...[
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: _wasCorrect ? Colors.green.shade100 : Colors.red.shade100,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Text(
-                    _wasCorrect ? '✅ Correct!' : '❌ Incorrect. Correct answer: ${current.correctAnswer}',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                      color: _wasCorrect ? Colors.green.shade900 : Colors.red.shade900,
-                    ),
-                  ),
+                BossSectionHelpers.answerFeedbackBox(
+                  isCorrect: _wasCorrect,
+                  correctAnswer: current.correctAnswer,
                 ),
                 const SizedBox(height: 8),
                 Center(
