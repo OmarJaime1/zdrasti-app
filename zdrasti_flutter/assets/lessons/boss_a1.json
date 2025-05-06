@@ -8,17 +8,33 @@
   "sections": [
     {
       "id": "vocabulary",
-      "title": "Vocabulary Challenge",
-      "kuker_script": "Sofia speaks clearly. Do you understand her words?",
+      "title": {
+        "en": "Vocabulary Challenge",
+        "es": "Reto de vocabulario",
+        "tr": "Kelime bilgisi meydan okuması"
+      },
+      "kuker_script": {
+        "en": "Sofia speaks clearly. Do you understand her words?",
+        "es": "Sofía habla claro. ¿Puedes entenderla?",
+        "tr": "Sofya açıkça konuşur. Onun söylediklerini anlıyor musun?"
+      },
       "type": "random_vocabulary_test",
-      "instructions": "Translate the following 10 Bulgarian words into your native language.",
+      "instructions": "Translate the following Bulgarian words into your native language.",
       "number_of_items": 10,
       "pass_score": 8
     },
     {
       "id": "grammar",
-      "title": "Grammar Challenge",
-      "kuker_script": "Let’s see your grip on the building blocks. Grammar is the city’s foundation.",
+      "title": {
+        "en": "Grammar Challenge",
+        "es": "Reto de gramática",
+        "tr": "Dil bilgisi meydan okuması"
+      },
+      "kuker_script": {
+        "en": "Let’s see your grip on the building blocks. Grammar is the city’s foundation.",
+        "es": "Veamos qué tanto dominas la base. La gramática es el fundamento de la ciudad.",
+        "tr": "Temeller üzerindeki hakimiyetini görelim. Dil bilgisi şehrin temelidir."
+      },
       "type": "fill_in_the_blank_quiz",
       "scenario": {
         "en": "You're talking to a friend about daily routines, where you live, and your plans for tomorrow.",
@@ -36,8 +52,16 @@
     },
     {
       "id": "listening",
-      "title": "Listening Challenge",
-      "kuker_script": "Listen well—Sofia’s trams speak fast and true.",
+      "title": {
+        "en": "Listening Challenge",
+        "es": "Reto de escucha",
+        "tr": "Dinleme meydan okuması"
+      },
+      "kuker_script": {
+        "en": "Listen well—Sofia’s trams speak fast and true.",
+        "es": "Escucha bien: los tranvías de Sofía hablan rápido y claro.",
+        "tr": "İyi dinle — Sofya’nın tramvayları hızlı ve net konuşur."
+      },
       "type": "audio_transcription",
       "instructions": "Listen to 3 short sentences and type exactly what you hear in Bulgarian.",
       "verification_type": "exact_match",
@@ -61,8 +85,16 @@
     },
     {
       "id": "reading",
-      "title": "Reading Challenge",
-      "kuker_script": "Even stone walls carry meaning. Can you read the signs?",
+      "title": {
+        "en": "Reading Challenge",
+        "es": "Reto de lectura",
+        "tr": "Okuma meydan okuması"
+      },
+      "kuker_script": {
+        "en": "Even stone walls carry meaning. Can you read the signs?",
+        "es": "Hasta los muros de piedra tienen significado. ¿Puedes leer las señales?",
+        "tr": "Taş duvarlar bile anlam taşır. İşaretleri okuyabilir misin?"
+      },
       "type": "short_paragraph_comprehension",
       "paragraph": "Казвам се Анна. Живея в София и работя в ресторант. Всяка сутрин пия кафе и чета книга. Днес е неделя и няма работа.",
       "questions": [
@@ -76,8 +108,16 @@
     },
     {
       "id": "fitr_battle",
-      "title": "Kuker Roleplay",
-      "kuker_script": "Speak like you walk these streets. The Kuker listens.",
+      "title": {
+        "en": "Kuker Roleplay",
+        "es": "Actúa con el Kuker",
+        "tr": "Kuker rol oyunu"
+      },
+      "kuker_script": {
+        "en": "Speak like you walk these streets. The Kuker listens.",
+        "es": "Habla como si caminaras por aquí. El Kuker escucha.",
+        "tr": "Bu sokaklarda yürüyormuş gibi konuş. Kuker seni dinliyor."
+      },
       "type": "fitr",
       "use_random_variant": true,
       "minimum_score_percent": 80,
@@ -188,8 +228,16 @@
     },
 	{
 	  "id": "writing_evaluation",
-	  "title": "Writing Challenge",
-	  "kuker_script": "Words shape cities too. Show Sofia your thoughts in writing.",
+	  "title": {
+      "en": "Writing Challenge",
+      "es": "Reto de escritura",
+      "tr": "Yazma meydan okuması"
+    },
+    "kuker_script": {
+      "en": "Words shape cities too. Show Sofia your thoughts in writing.",
+      "es": "Las palabras también moldean ciudades. Muestra a Sofía tus pensamientos por escrito.",
+      "tr": "Kelimeler de şehirleri şekillendirir. Düşüncelerini yazıyla Sofya’ya göster."
+    },
 	  "type": "text_input",
 	  "chatGPT_prompt_file": "boss_a1_chatgpt_writing_evaluation.txt",
 	  "user_prompt": {

@@ -9,7 +9,7 @@ class BossVocabularySection extends StatefulWidget {
   final List<VocabularyWord> allWords;
   final int numberOfItems;
   final int passScore;
-  final void Function(bool passed) onCompleted;
+  final void Function(bool passed, double score) onCompleted;
 
   const BossVocabularySection({
     super.key,
@@ -69,7 +69,8 @@ class _BossVocabularySectionState extends State<BossVocabularySection> with Boss
       });
     } else {
       final passed = _correctCount >= widget.passScore;
-      widget.onCompleted(passed);
+      final score = getScore();
+      widget.onCompleted(passed, score);
     }
   }
 

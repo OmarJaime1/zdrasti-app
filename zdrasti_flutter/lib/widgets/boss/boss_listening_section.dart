@@ -5,7 +5,7 @@ import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
 
 class BossListeningSection extends StatefulWidget {
   final List<ListeningPrompt> prompts;
-  final void Function(bool passed) onCompleted;
+  final void Function(bool passed, double score) onCompleted;
 
   const BossListeningSection({
     super.key,
@@ -125,7 +125,7 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
 
           Center(
             child: ElevatedButton(
-              onPressed: _submitted ? () => widget.onCompleted(_passed) : _handleSubmit,
+              onPressed: _submitted ? () => widget.onCompleted(_passed, getScore()) : _handleSubmit,
               child: Text(_submitted ? 'Next' : 'Submit All'),
             ),
           )

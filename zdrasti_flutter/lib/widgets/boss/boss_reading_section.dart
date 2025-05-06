@@ -6,7 +6,7 @@ class BossReadingSection extends StatefulWidget {
   final String paragraph;
   final List<ReadingQuestion> questions;
   final int passScore;
-  final void Function(bool passed) onCompleted;
+  final void Function(bool passed, double score) onCompleted;
 
   const BossReadingSection({
     super.key,
@@ -132,7 +132,7 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
           const SizedBox(height: 12),
           Center(
             child: ElevatedButton(
-              onPressed: _submitted ? () => widget.onCompleted(_passed) : _handleSubmit,
+              onPressed: _submitted ? () => widget.onCompleted(_passed, getScore()) : _handleSubmit,
               child: Text(_submitted ? 'Next' : 'Submit Answers'),
             ),
           ),

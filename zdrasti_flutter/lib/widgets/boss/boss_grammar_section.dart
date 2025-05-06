@@ -8,7 +8,7 @@ import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
 class BossGrammarSection extends StatefulWidget {
   final List<GrammarQuestion> questions;
   final int passScore;
-  final void Function(bool passed) onCompleted;
+  final void Function(bool passed, double score) onCompleted;
   final Map<String, String>? scenario; 
 
   const BossGrammarSection({
@@ -61,7 +61,8 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
       });
     } else {
       final passed = _correctCount >= widget.passScore;
-      widget.onCompleted(passed);
+      final score = getScore();
+      widget.onCompleted(passed, score);
     }
   }
 

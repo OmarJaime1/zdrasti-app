@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/models/user.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
@@ -68,7 +69,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
     });
   }
 
-  void _onSectionCompleted(bool passed) async {
+  void _onSectionCompleted(bool passed, double score) async {
     final section = widget.boss.sections[_sectionIndex];
     _sectionResults[section.id] = passed;
     _updateWritingUnlocked();
@@ -97,7 +98,12 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
   void _goToResults() {
     final writingSection = widget.boss.sections.firstWhere(
       (s) => s.type == 'text_input',
-      orElse: () => KukerSection(id: '', title: '', kukerScript: '', type: ''),
+      orElse: () => KukerSection(
+        id: '',
+        title: {'en': ''},
+        kukerScript: {'en': ''},
+        type: '',
+      ),
     );
 
     final passedCount = _sectionResults.values.where((v) => v).length;
@@ -130,7 +136,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
               final result = await BossWritingService.evaluate(userText);
               await UserService.updateWritingAttemptTime(widget.user.id);
               _gptExplanation = result.explanation;
-              _onSectionCompleted(result.passed);
+              _onSectionCompleted(result.passed, result.passed ? 100.0 : 0.0);
             }
           : null,
       vocabOverride: _cachedVocab,
@@ -157,7 +163,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
           transitionBuilder: (child, anim) => FadeTransition(opacity: anim, child: child),
           child: LessonScaffold(
             key: ValueKey(_sectionIndex),
-            title: section.title,
+            title: LocalizationService.getLocalizedText(section.title),
             child: Column(
               children: [
                 if (!_writingUnlocked && _writingBlockedByCooldown)
@@ -174,7 +180,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
                   child: Column(
                     children: [
                       TranslationBubble(
-                        bulgarian: section.kukerScript,
+                        bulgarian: LocalizationService.getLocalizedText(section.kukerScript),
                         nativeLanguage: '',
                         showTail: true,
                       ),

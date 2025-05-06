@@ -7,7 +7,7 @@ import 'package:zdrasti_flutter/widgets/translation_bubble.dart';
 class BossFitrSection extends StatefulWidget {
   final FitrVariant variant;
   final int passScorePercent;
-  final void Function(bool passed) onCompleted;
+  final void Function(bool passed, double score) onCompleted;
   final Map<String, String>? scenario;
 
   const BossFitrSection({
@@ -27,6 +27,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
   final List<bool> _results = [];
   bool _submitted = false;
   bool _passed = false;
+  double _scorePercent = 0.0;
   int _totalBuiltBlanks = 0;
 
   @override
@@ -38,7 +39,12 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
   }
 
   void _handleSubmit() {
+    debugPrint('🌟 Starting handleSubmit');
     _results.clear();
+
+    for (int i = 0; i < _totalBuiltBlanks; i++) {
+      debugPrint('🌟 Controller $i text: "${_controllers[i]?.text}"');
+    }
 
     bool anyEmpty = false;
     for (int i = 0; i < _totalBuiltBlanks; i++) {
@@ -48,6 +54,8 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
         break;
       }
     }
+
+    debugPrint('🌟 anyEmpty result: $anyEmpty');
 
     if (anyEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -60,23 +68,28 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
       final accepted = widget.variant.answers[i].correct.map((s) => s.toLowerCase().trim()).toList();
       final actual = _controllers[i]!.text.toLowerCase().trim();
       final isCorrect = accepted.contains(actual);
+      debugPrint('🌟 Checking: "$actual" in $accepted => $isCorrect');
       _results.add(isCorrect);
     }
 
     final correct = _results.where((r) => r).length;
-    final scorePercent = (correct / _totalBuiltBlanks) * 100;
+    _scorePercent = (correct / _totalBuiltBlanks) * 100;
+
+    debugPrint('🌟 Correct answers: $correct / $_totalBuiltBlanks => $_scorePercent%');
 
     setState(() {
       _submitted = true;
-      _passed = scorePercent >= widget.passScorePercent;
+      _passed = _scorePercent >= widget.passScorePercent;
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('🌟 Building FITR Section');
+    debugPrint('🌟 Variant dialogueWithBlanks: ${widget.variant.dialogueWithBlanks.length} lines');
     _totalBuiltBlanks = 0;
 
-    final scenarioText = widget.scenario?['en'] ?? widget.scenario?.values.first ?? '';
+    final scenarioText = widget.scenario != null ? LocalizationService.getLocalizedText(widget.scenario!) : '';
     final lines = widget.variant.dialogueWithBlanks;
     int blankIndex = 0;
 
@@ -120,6 +133,8 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
                             if (!_controllers.containsKey(index)) {
                               _controllers[index] = TextEditingController();
                             }
+                            debugPrint('🌟 Building TextField at blankIndex $index');
+                            debugPrint('🌟 Current controller linked: ${_controllers[index]?.text}');
                             final showAnswer = _submitted;
                             final correctAnswers = widget.variant.answers[index].correct;
                             final isCorrect = _results.length > index && _results[index];
@@ -182,7 +197,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
 
           Center(
             child: ElevatedButton(
-              onPressed: _submitted ? () => widget.onCompleted(_passed) : _handleSubmit,
+              onPressed: _submitted ? () => widget.onCompleted(_passed, _scorePercent) : _handleSubmit,
               child: Text(_submitted ? 'Next' : 'Submit Roleplay'),
             ),
           )

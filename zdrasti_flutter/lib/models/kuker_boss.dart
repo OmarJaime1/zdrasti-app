@@ -42,8 +42,8 @@ class KukerBoss {
 
 class KukerSection {
   final String id;
-  final String title;
-  final String kukerScript;
+  final Map<String, String> title;
+  final Map<String, String> kukerScript;
   final String type;
 
   // Shared fields
@@ -113,8 +113,8 @@ class KukerSection {
 
     return KukerSection(
       id: json['id'],
-      title: json['title'],
-      kukerScript: json['kuker_script'],
+      title: Map<String, String>.from(json['title']),
+      kukerScript: Map<String, String>.from(json['kuker_script']),
       type: type,
       instructions: json['instructions'],
       passScore: json['pass_score'],

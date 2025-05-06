@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/models/user.dart';
 import 'package:zdrasti_flutter/widgets/translation_bubble.dart';
@@ -170,7 +171,7 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
         const SizedBox(height: 8),
         for (final section in sections)
           _buildScoreTile(
-            section.title,
+            LocalizationService.getLocalizedText(section.title!),
             section.type == 'text_input'
                 ? (widget.writingAttempted
                     ? (widget.passed ? '✅ Passed' : '❌ Failed')
