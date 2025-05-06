@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' show AuthException;
 import 'package:zdrasti_flutter/backend/service/auth_service.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/backend/service/user_service.dart';
 import 'package:zdrasti_flutter/models/user.dart' as local;
 import 'package:zdrasti_flutter/screens/zdrasti_shell.dart';
@@ -50,7 +51,7 @@ class _LoginDialogState extends State<LoginDialog> {
     } on AuthException catch (e) {
       final msg = e.message.toLowerCase();
       if (msg.contains('invalid login credentials')) {
-       setState(() => _error =  'Oops! That email or password is incorrect.');
+        setState(() => _error = 'Oops! That email or password is incorrect.');
       } else if (msg.contains('email not confirmed')) {
         setState(() => _error = 'Please check your email and confirm your account before logging in.');
       } else {
@@ -66,19 +67,23 @@ class _LoginDialogState extends State<LoginDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Log In'),
+      title: Text(LocalizationService.getStaticText('login.title')),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           TextField(
             controller: _emailController,
-            decoration: const InputDecoration(labelText: 'Email'),
+            decoration: InputDecoration(
+              labelText: LocalizationService.getStaticText('login.email'),
+            ),
           ),
           const SizedBox(height: 8),
           TextField(
             controller: _passwordController,
             obscureText: true,
-            decoration: const InputDecoration(labelText: 'Password'),
+            decoration: InputDecoration(
+              labelText: LocalizationService.getStaticText('login.password'),
+            ),
           ),
           if (_error != null)
             Padding(
@@ -93,7 +98,7 @@ class _LoginDialogState extends State<LoginDialog> {
       actions: [
         TextButton(
           onPressed: _loading ? null : () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
+          child: Text(LocalizationService.getStaticText('common.cancel')),
         ),
         ElevatedButton(
           onPressed: _loading ? null : _attemptLogin,
@@ -103,7 +108,7 @@ class _LoginDialogState extends State<LoginDialog> {
                   width: 18,
                   child: CircularProgressIndicator(strokeWidth: 2),
                 )
-              : const Text('Log In'),
+              : Text(LocalizationService.getStaticText('login.button')),
         ),
       ],
     );

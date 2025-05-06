@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/backend/service/user_service.dart';
 import 'package:zdrasti_flutter/backend/service/lesson_service.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
@@ -75,14 +76,17 @@ class _LessonResultScreenState extends State<LessonResultScreen> {
   @override
   Widget build(BuildContext context) {
     final resultText = _passed
-        ? _alreadyCompleted
-            ? 'You’ve completed this before — great review!'
-            : 'Awesome! You completed this lesson for the first time.'
-        : 'You can review and try again — you’re almost there!';
+      ? _alreadyCompleted
+          ? LocalizationService.getStaticText('lesson.resultRepeat')
+          : LocalizationService.getStaticText('lesson.resultFirstTime')
+      : LocalizationService.getStaticText('lesson.resultTryAgain');
 
     return Scaffold(
       backgroundColor: const Color(0xFFF5F2EE),
-      appBar: AppBar(title: const Text('Lesson Complete')),
+      appBar: AppBar(
+        title: Text(LocalizationService.getStaticText('lesson.resultTitle')),
+      ),
+
       body: _loading
           ? const Center(child: CircularProgressIndicator())
           : SafeArea(
@@ -119,7 +123,9 @@ class _LessonResultScreenState extends State<LessonResultScreen> {
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            _passed ? '✅ You passed!' : '❌ Not quite!',
+                            _passed
+                              ? LocalizationService.getStaticText('lesson.resultPassed')
+                              : LocalizationService.getStaticText('lesson.resultFailed'),
                             style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
@@ -130,7 +136,7 @@ class _LessonResultScreenState extends State<LessonResultScreen> {
                           const SizedBox(height: 10),
                           if (_xpEarned > 0)
                             Text(
-                              '+$_xpEarned XP earned!',
+                              '+$_xpEarned ${LocalizationService.getStaticText('lesson.xpEarned')}',
                               style: const TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
@@ -157,8 +163,8 @@ class _LessonResultScreenState extends State<LessonResultScreen> {
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                               ),
-                              child: const Text(
-                                'Back to Dashboard',
+                              child: Text(
+                                LocalizationService.getStaticText('lesson.backToDashboard'),
                                 style: TextStyle(fontSize: 16, color: Colors.white),
                               ),
                             ),

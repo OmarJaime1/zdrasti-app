@@ -64,7 +64,7 @@ class _LessonRoleplayScreenState extends State<LessonRoleplayScreen> {
     int answerIndex = 0;
 
     return LessonScaffold(
-      title: 'Roleplay Practice',
+      title: LocalizationService.getStaticText('lesson.roleplayTitle'),
       onNext: _submitted
           ? () {
               Navigator.push(
@@ -122,7 +122,7 @@ class _LessonRoleplayScreenState extends State<LessonRoleplayScreen> {
                               controller: controller,
                               enabled: !_submitted,
                               decoration: InputDecoration(
-                                hintText: 'Type your response...',
+                                hintText: LocalizationService.getStaticText('lesson.roleplayHint'),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(8),
                                 ),
@@ -169,7 +169,7 @@ class _LessonRoleplayScreenState extends State<LessonRoleplayScreen> {
                       _handleSubmit();
                     } else {
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Please fill in all blanks')),
+                        SnackBar(content: Text(LocalizationService.getStaticText('snackbar.fillAllBlanks'))),
                       );
                     }
                   },
@@ -194,7 +194,9 @@ class _LessonRoleplayScreenState extends State<LessonRoleplayScreen> {
                 children: [
                   Center(
                     child: Text(
-                      'You got $_correct of $total correct.',
+                      LocalizationService.getStaticText('lesson.roleplayScore')
+                        .replaceAll('{correct}', '$_correct')
+                        .replaceAll('{total}', '$total'),
                       style: TextStyle(
                         fontSize: 16,
                         color: _passed ? Colors.green : Colors.red,
@@ -204,9 +206,9 @@ class _LessonRoleplayScreenState extends State<LessonRoleplayScreen> {
                     ),
                   ),
                   const SizedBox(height: 6),
-                  const Center(
+                  Center(
                     child: Text(
-                      '🎉 Great job! You completed the dialogue.',
+                      LocalizationService.getStaticText('lesson.roleplayComplete'),
                       textAlign: TextAlign.center,
                     ),
                   ),

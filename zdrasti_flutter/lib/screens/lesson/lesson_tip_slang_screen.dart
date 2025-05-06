@@ -37,10 +37,10 @@ class LessonTipSlangScreen extends StatelessWidget {
 
     final String slangRegion = hasSlang && lesson.slang!['region'] != null
         ? lesson.slang!['region']
-        : 'Common';
+        : LocalizationService.getStaticText('lesson.slangRegionCommon');
 
     return LessonScaffold(
-      title: 'Cultural Tip & Slang',
+      title: LocalizationService.getStaticText('lesson.tipSlangTitle'),
       onNext: () {
         Navigator.push(
           context,
@@ -67,7 +67,8 @@ class LessonTipSlangScreen extends StatelessWidget {
 
           if (hasSlang) ...[
             Text(
-              '$slangRegion Bulgarian Slang:',
+              LocalizationService.getStaticText('lesson.slangLabel')
+                .replaceAll('{region}', slangRegion),
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
             const SizedBox(height: 10),

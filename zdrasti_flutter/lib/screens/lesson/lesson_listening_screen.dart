@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
 import 'package:zdrasti_flutter/models/user.dart';
 import 'package:zdrasti_flutter/widgets/lesson_scaffold.dart';
@@ -42,7 +43,7 @@ class _LessonListeningScreenState extends State<LessonListeningScreen> {
     final questions = widget.lesson.listening.questions;
 
     return LessonScaffold(
-      title: 'Listening',
+      title: LocalizationService.getStaticText('lesson.listeningTitle'),
       onNext: _completed
           ? () {
               Navigator.push(
@@ -68,14 +69,14 @@ class _LessonListeningScreenState extends State<LessonListeningScreen> {
                 children: [
                   Row(
                     children: [
-                      const Text(
-                        'Script:',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      Text(
+                        LocalizationService.getStaticText('lesson.scriptLabel'),
+                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(width: 8),
                       IconButton(
                         icon: const Icon(Icons.volume_up, color: Colors.deepPurple),
-                        tooltip: 'Play audio',
+                        tooltip: LocalizationService.getStaticText('tooltip.playAudio'),
                         onPressed: () => AudioService.speak(script),
                       ),
                     ],

@@ -61,9 +61,9 @@ class LessonAlphabetScreen extends StatelessWidget {
           const SizedBox(height: 20),
 
           // 📚 Alphabet Table
-          const Text(
-            'Alphabet Table',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          Text(
+            LocalizationService.getStaticText('lesson.alphabetTitle'),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
 
@@ -86,7 +86,9 @@ class LessonAlphabetScreen extends StatelessWidget {
                     const SizedBox(height: 4),
                     if (example.isNotEmpty)
                       Text(
-                        'Example: $example → $translation',
+                        LocalizationService.getStaticText('lesson.exampleFormat')
+                          .replaceAll('{example}', example)
+                          .replaceAll('{translation}', translation),
                         style: const TextStyle(fontSize: 14),
                       ),
                   ],
@@ -117,7 +119,7 @@ class LessonAlphabetScreen extends StatelessWidget {
                   );
                 } catch (e) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Failed to mark lesson complete.')),
+                    SnackBar(content: Text(LocalizationService.getStaticText('lesson.errorMarkingComplete'))),
                   );
                 }
               },
@@ -128,7 +130,10 @@ class LessonAlphabetScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              child: const Text('Done', style: TextStyle(fontSize: 16, color: Colors.white)),
+              child: Text(
+                LocalizationService.getStaticText('lesson.done'),
+                style: const TextStyle(fontSize: 16, color: Colors.white),
+              ),
             ),
           ),
         ],

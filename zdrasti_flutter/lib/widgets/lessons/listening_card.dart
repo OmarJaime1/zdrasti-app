@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
 import 'package:zdrasti_flutter/widgets/lessons/quiz_question_card.dart';
 
@@ -78,7 +79,7 @@ class _ListeningCardState extends State<ListeningCard> {
               ),
               IconButton(
                 icon: const Icon(Icons.volume_up),
-                tooltip: 'Play Script',
+                tooltip: LocalizationService.getStaticText('tooltip.playScript'),
                 onPressed: _playScript,
               ),
             ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
 import 'package:zdrasti_flutter/models/user.dart';
 import 'package:zdrasti_flutter/widgets/lesson_scaffold.dart';
@@ -61,14 +62,16 @@ class _LessonQuizScreenState extends State<LessonQuizScreen> {
     final passed = (_correct / total) >= 0.8;
 
     return LessonScaffold(
-      title: 'Lesson Quiz',
+      title: LocalizationService.getStaticText('lesson.quizTitle'),
       onNext: _quizFinished ? _handleFinish : null,
       child: Column(
         children: [
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: Text(
-              'Question ${_currentPage + 1} of $total',
+              LocalizationService.getStaticText('lesson.questionProgress')
+                .replaceAll('{current}', '${_currentPage + 1}')
+                .replaceAll('{total}', '$total'),
               style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ),
@@ -114,7 +117,9 @@ class _LessonQuizScreenState extends State<LessonQuizScreen> {
                     key: const ValueKey('result'),
                     children: [
                       Text(
-                        'You scored $_correct out of $total',
+                        LocalizationService.getStaticText('lesson.quizScore')
+                          .replaceAll('{correct}', '$_correct')
+                          .replaceAll('{total}', '$total'),
                         style: TextStyle(
                           fontSize: 16,
                           color: passed ? Colors.green : Colors.red,
@@ -124,15 +129,15 @@ class _LessonQuizScreenState extends State<LessonQuizScreen> {
                       const SizedBox(height: 8),
                       Text(
                         passed
-                            ? 'Great job! You understood the material.'
-                            : 'Nice effort! You can review and try again.',
+                            ? LocalizationService.getStaticText('lesson.quizPassed')
+                            : LocalizationService.getStaticText('lesson.quizFailed'),
                         style: const TextStyle(fontSize: 14),
                         textAlign: TextAlign.center,
                       ),
                     ],
                   )
-                : const Text(
-                    'Answer each question to continue.',
+                : Text(
+                    LocalizationService.getStaticText('lesson.quizPrompt'),
                     key: ValueKey('prompt'),
                     style: TextStyle(color: Colors.grey),
                   ),

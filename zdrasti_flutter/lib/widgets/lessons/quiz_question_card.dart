@@ -120,7 +120,7 @@ class _QuizQuestionCardState extends State<QuizQuestionCard> {
                   });
                   widget.onAnswered(correct);
                 },
-                child: const Text('Submit'),
+                child: Text(LocalizationService.getStaticText('button.submit')),
               )
             else
               Column(
@@ -128,7 +128,9 @@ class _QuizQuestionCardState extends State<QuizQuestionCard> {
                 children: [
                   const SizedBox(height: 12),
                   Text(
-                    _wasCorrect ? '✅ Correct!' : '❌ Incorrect',
+                    _wasCorrect 
+                      ? LocalizationService.getStaticText('feedback.correct')
+                      : LocalizationService.getStaticText('feedback.incorrect'),
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

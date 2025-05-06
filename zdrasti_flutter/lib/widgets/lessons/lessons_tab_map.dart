@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart';
 import 'package:zdrasti_flutter/backend/boss_loader.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
 import 'package:zdrasti_flutter/models/lesson_node.dart';
@@ -152,9 +153,9 @@ class _LessonMapPageState extends State<LessonMapPage> with TickerProviderStateM
   @override
 Widget build(BuildContext context) {
   if (widget.nodesForMap.isEmpty) {
-    return const Center(
+    return Center(
       child: Text(
-        'No lessons found for this map.',
+        LocalizationService.getStaticText('lesson.map.noLessons'),
         style: TextStyle(color: Colors.white, fontSize: 16),
       ),
     );
@@ -266,8 +267,10 @@ Widget build(BuildContext context) {
                         defeated: false,
                         isCooldown: cooldownActive,
                         tooltipMessage: cooldownActive
-                            ? "Boss is recovering... Available in $cooldownRemaining"
-                            : "Challenge the ${boss.name}",
+                          ? LocalizationService.getStaticText('banner.practiceMode')
+                              .replaceAll('{cooldown}', cooldownRemaining)
+                          : LocalizationService.getStaticText('boss.challengePrompt')
+                              .replaceAll('{boss}', boss.name),
                         onTap: () {
                           Navigator.push(
                             context,
@@ -339,7 +342,9 @@ Widget build(BuildContext context) {
           bottom: 20,
           left: 0,
           right: 0,
-          child: Center(child: buildFloatingTooltip("Following path...")),
+          child: Center(child: buildFloatingTooltip(
+            LocalizationService.getStaticText('lesson.map.followingPath'),
+          )),
         ),
 
       PhaseProgressBar(

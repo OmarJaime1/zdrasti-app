@@ -25,7 +25,7 @@ class LessonGrammarScreen extends StatelessWidget {
         : null;
 
     return LessonScaffold(
-      title: 'Grammar',
+      title: LocalizationService.getStaticText('lesson.grammarTitle'),
       onNext: () {
         Navigator.push(
           context,
@@ -58,9 +58,9 @@ class LessonGrammarScreen extends StatelessWidget {
 
             // ✍️ Grammar Examples
             if (grammar.examples != null && grammar.examples!.isNotEmpty) ...[
-              const Text(
-                'Examples:',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              Text(
+                LocalizationService.getStaticText('lesson.examplesLabel'),
+                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 12),
               ...grammar.examples!.map((example) {

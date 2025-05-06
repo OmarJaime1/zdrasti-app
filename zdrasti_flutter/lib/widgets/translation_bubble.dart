@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 
 class TranslationBubble extends StatefulWidget {
   final String bulgarian;
@@ -31,7 +32,6 @@ class _TranslationBubbleState extends State<TranslationBubble> {
     return Stack(
       alignment: Alignment.topCenter,
       children: [
-        // Main bubble content
         Container(
           margin: widget.showTail
               ? const EdgeInsets.only(bottom: 10)
@@ -70,7 +70,11 @@ class _TranslationBubbleState extends State<TranslationBubble> {
                   onPressed: () =>
                       setState(() => showTranslation = !showTranslation),
                   child: Text(
-                    showTranslation ? 'Hide translation' : 'Show translation',
+                    LocalizationService.getStaticText(
+                      showTranslation
+                          ? 'translation.hide'
+                          : 'translation.show',
+                    ),
                     style: const TextStyle(
                       fontSize: 12,
                       color: Colors.deepPurple,
@@ -81,17 +85,15 @@ class _TranslationBubbleState extends State<TranslationBubble> {
             ],
           ),
         ),
-
-        // Optional tail
         if (widget.showTail)
           Positioned(
             bottom: 0,
             child: CustomPaint(
               painter: _BubbleTailPainter(color: Colors.white),
-                child: const SizedBox(
-                  height: 12,
-                  width: 64,
-                ),
+              child: const SizedBox(
+                height: 12,
+                width: 64,
+              ),
             ),
           ),
       ],
@@ -108,7 +110,7 @@ class _BubbleTailPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..style = PaintingStyle.fill; // No stroke or outline
+      ..style = PaintingStyle.fill;
 
     final path = Path();
     path.moveTo(size.width / 2 - 6, 0);
@@ -116,9 +118,7 @@ class _BubbleTailPainter extends CustomPainter {
     path.lineTo(size.width / 2 + 6, 0);
     path.close();
 
-     // Draw shadow
     canvas.drawShadow(path, Colors.black.withOpacity(0.2), 3, false);
-
     canvas.drawPath(path, paint);
   }
 

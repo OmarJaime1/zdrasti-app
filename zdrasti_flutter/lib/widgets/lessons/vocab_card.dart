@@ -95,7 +95,7 @@ class _VocabCardState extends State<VocabCard>
                       ),
                       IconButton(
                         icon: const Icon(Icons.volume_up),
-                        tooltip: 'Play pronunciation',
+                        tooltip: LocalizationService.getStaticText('tooltip.playPronunciation'),
                         splashRadius: 24,
                         onPressed: _speakBulgarian,
                         color: Colors.grey.shade700,

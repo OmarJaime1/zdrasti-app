@@ -20,7 +20,7 @@ class LessonVocabScreen extends StatelessWidget {
     final title = LocalizationService.getLocalizedText(lesson.title);
 
     return LessonScaffold(
-      title: '$title • Vocabulary',
+      title: '$title • ${LocalizationService.getStaticText('lesson.vocabTitle')}',
       onNext: () {
         Navigator.push(
           context,

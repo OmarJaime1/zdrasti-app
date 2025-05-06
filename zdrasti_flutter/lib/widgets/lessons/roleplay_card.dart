@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 
 class RoleplayCard extends StatefulWidget {
   final List<String> linesWithBlanks;
@@ -44,7 +45,7 @@ class _RoleplayCardState extends State<RoleplayCard> {
     final allFilled = userAnswers.every((answer) => answer.isNotEmpty);
     if (!allFilled) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Please fill in all the blanks before submitting.")),
+        SnackBar(content: Text(LocalizationService.getStaticText('snackbar.fillAllBlanks'))),
       );
       return;
     }
@@ -138,7 +139,7 @@ class _RoleplayCardState extends State<RoleplayCard> {
         if (!_submitted)
           ElevatedButton(
             onPressed: _handleSubmit,
-            child: const Text('Submit Answers'),
+            child: Text(LocalizationService.getStaticText('button.submitAnswers')),
           ),
       ],
     );
