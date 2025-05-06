@@ -101,21 +101,17 @@ class _BossGrammarSectionState extends State<BossGrammarSection> with BossSectio
           BossSectionHelpers.inputField(
             controller: _controller,
             enabled: !_submitted,
-            hint: 'Type your answer...',
+            hint: LocalizationService.getStaticText('input.answerHint')
           ),
 
           const SizedBox(height: 12),
 
           if (!_submitted)
             Center(
-              child: ValueListenableBuilder<String>(
-                valueListenable: _inputText,
-                builder: (context, text, _) {
-                  return ElevatedButton(
-                    onPressed: text.trim().isEmpty ? null : _handleSubmit,
-                    child: const Text('Submit'),
-                  );
-                },
+              child: BossSectionHelpers.confirmableSubmitButton(
+                notifier: _inputText,
+                onPressed: _handleSubmit,
+                label: 'button.submit',
               ),
             )
           else ...[

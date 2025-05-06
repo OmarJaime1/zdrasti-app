@@ -1,20 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 
 class BossSectionHelpers {
-  static Widget sectionTracker({required int index, required int total}) {
+
+    static Widget sectionTracker({required int index, required int total}) {
+    final label = LocalizationService.getStaticText('boss.sectionTracker')
+      .replaceAll('{current}', '${index + 1}')
+      .replaceAll('{total}', '$total');
+
     return Text(
-      'Section ${index + 1} of $total',
+      label,
       style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
     );
   }
 
   static Widget practiceModeBanner(String cooldownRemaining) {
+    final bannerText = LocalizationService.getStaticText('banner.practiceMode')
+        .replaceAll('{cooldown}', cooldownRemaining);
+
     return Container(
       padding: const EdgeInsets.all(12),
       color: Colors.orangeAccent.withOpacity(0.2),
       margin: const EdgeInsets.only(bottom: 8),
       child: Text(
-        'Practice Mode: Writing locked.\nAvailable in $cooldownRemaining',
+        bannerText,
         style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold),
         textAlign: TextAlign.center,
       ),
@@ -40,7 +49,9 @@ class BossSectionHelpers {
   }) {
     final color = isCorrect ? Colors.green.shade100 : Colors.red.shade100;
     final textColor = isCorrect ? Colors.green.shade800 : Colors.red.shade800;
-    final prefix = isCorrect ? '✅ Correct' : '❌ Correct answer';
+    final prefix = isCorrect
+      ? LocalizationService.getStaticText('feedback.correct')
+      : LocalizationService.getStaticText('feedback.incorrect');
 
     return Container(
       width: double.infinity,
@@ -91,7 +102,7 @@ class BossSectionHelpers {
       builder: (context, text, _) {
         return ElevatedButton(
           onPressed: text.trim().isEmpty ? null : onPressed,
-          child: Text(label),
+          child: Text(LocalizationService.getStaticText(label)),
         );
       },
     );
@@ -101,12 +112,12 @@ class BossSectionHelpers {
     required bool submitted,
     VoidCallback? onSubmit,
     required VoidCallback onNext,
-    String submitLabel = 'Submit',
-    String nextLabel = 'Next',
+    String submitLabel = 'button.submit',
+    String nextLabel = 'button.next',
   }) {
     return ElevatedButton(
       onPressed: submitted ? onNext : (onSubmit ?? () {}),
-      child: Text(submitted ? nextLabel : submitLabel),
+      child: Text(LocalizationService.getStaticText(submitted ? nextLabel : submitLabel)),
     );
   } 
 }

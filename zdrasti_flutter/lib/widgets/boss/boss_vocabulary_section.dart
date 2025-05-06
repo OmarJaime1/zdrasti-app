@@ -99,26 +99,22 @@ class _BossVocabularySectionState extends State<BossVocabularySection> with Boss
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Translate this word into your language:'),
+              Text(LocalizationService.getStaticText('instruction.vocabTranslate')),
               const SizedBox(height: 8),
               BossSectionHelpers.inputField(
                 controller: _controller,
                 enabled: !_submitted,
-                hint: 'Type your translation...',
+                hint: LocalizationService.getStaticText('input.translationHint'),
               ),
               const SizedBox(height: 12),
               if (!_submitted)
-                ValueListenableBuilder<String>(
-                valueListenable: _inputText,
-                builder: (context, text, _) {
-                  return Center(
-                    child: ElevatedButton(
-                      onPressed: text.trim().isEmpty ? null : _handleSubmit,
-                      child: const Text('Submit'),
-                    ),
-                  );
-                },
-              )
+                Center(
+                  child: BossSectionHelpers.confirmableSubmitButton(
+                    notifier: _inputText,
+                    onPressed: _handleSubmit,
+                    label: 'button.submit',
+                  ),
+                )
               else ...[
                 BossSectionHelpers.answerFeedbackBox(
                   isCorrect: _wasCorrect,

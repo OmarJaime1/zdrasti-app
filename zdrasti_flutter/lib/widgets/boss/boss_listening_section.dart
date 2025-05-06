@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/backend/service/audio/audio_service.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_helpers.dart';
@@ -49,7 +50,9 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
 
     if (anyEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please fill in all answers before submitting.')),
+        SnackBar(
+          content: Text(LocalizationService.getStaticText('snackbar.fillAllAnswers')),
+        ),
       );
       return;
     }
@@ -90,7 +93,7 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
                       Text('Prompt ${i + 1}', style: const TextStyle(fontWeight: FontWeight.bold)),
                       IconButton(
                         icon: const Icon(Icons.volume_up),
-                        tooltip: 'Play audio',
+                        tooltip: LocalizationService.getStaticText('tooltip.playAudio'),
                         onPressed: () => _playAudio(widget.prompts[i].text),
                       ),
                     ],
@@ -98,7 +101,7 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
                   BossSectionHelpers.inputField(
                     controller: _controllers[i]!,
                     enabled: !_submitted,
-                    hint: 'Type exactly what you hear...',
+                    hint: LocalizationService.getStaticText('input.transcriptionHint'),
                   ),
                   if (_submitted)
                     BossSectionHelpers.answerFeedbackBox(
@@ -116,8 +119,8 @@ class _BossListeningSectionState extends State<BossListeningSection> with BossSe
               submitted: _submitted,
               onSubmit: _handleSubmit,
               onNext: () => widget.onCompleted(_passed, getScore()),
-              submitLabel: 'Submit All',
-            ),
+              submitLabel: 'button.submitAll',
+            )
           )
         ],
       ),

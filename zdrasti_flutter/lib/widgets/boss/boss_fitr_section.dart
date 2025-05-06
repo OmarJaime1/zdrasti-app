@@ -53,7 +53,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
 
     if (anyEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please fill in all blanks before submitting.')),
+        SnackBar( content: Text(LocalizationService.getStaticText('snackbar.fillAllBlanks')),)
       );
       return;
     }
@@ -135,7 +135,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
                                   child: BossSectionHelpers.inputField(
                                     controller: _controllers[index]!,
                                     enabled: !_submitted,
-                                    hint: '...',
+                                    hint: LocalizationService.getStaticText('input.blank'),
                                     margin: EdgeInsets.zero,
                                   ),
                                 ),
@@ -164,7 +164,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
               submitted: _submitted,
               onSubmit: _handleSubmit,
               onNext: () => widget.onCompleted(_passed, _scorePercent),
-              submitLabel: 'Submit Roleplay',
+              submitLabel: 'boss.submitRoleplay',
             ),
           )
         ],

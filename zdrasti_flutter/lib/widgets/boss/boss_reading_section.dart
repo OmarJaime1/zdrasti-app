@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_helpers.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_section_logic.dart';
@@ -48,7 +49,7 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
 
     if (anyEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please answer all questions before submitting.')),
+        SnackBar( content: Text(LocalizationService.getStaticText('snackbar.fillAllAnswers')),)
       );
       return;
     }
@@ -75,7 +76,7 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
 
-          const Text('Read this paragraph:', style: TextStyle(fontWeight: FontWeight.bold)),
+          Text(LocalizationService.getStaticText('instruction.readParagraph'), style: TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
 
           Container(
@@ -98,12 +99,12 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Q${i + 1}: ${widget.questions[i].question}'),
+                      Text('${LocalizationService.getStaticText('label.question')} ${i + 1}: ${widget.questions[i].question}'),
                       const SizedBox(height: 6),
                       BossSectionHelpers.inputField(
                         controller: _controllers[i]!,
                         enabled: !_submitted,
-                        hint: 'Your answer...',
+                        hint: LocalizationService.getStaticText('input.answerHint')
                       ),
                       if (_submitted)
                         BossSectionHelpers.answerFeedbackBox(
@@ -123,7 +124,7 @@ class _BossReadingSectionState extends State<BossReadingSection> with BossSectio
               submitted: _submitted,
               onSubmit: _handleSubmit,
               onNext: () => widget.onCompleted(_passed, getScore()),
-              submitLabel: 'Submit Answers',
+              submitLabel: 'button.submitAnswers',
             ),
           ),
         ],
