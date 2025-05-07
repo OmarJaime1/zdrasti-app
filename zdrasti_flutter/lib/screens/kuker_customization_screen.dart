@@ -1,12 +1,7 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:zdrasti_flutter/backend/service/kuker_item_repository_service.dart';
-import 'package:zdrasti_flutter/backend/service/kuker_repository_service.dart';
-import 'package:zdrasti_flutter/models/kuker_items.dart';
+import 'package:zdrasti_flutter/backend/controllers/kuker_customization_controller.dart';
 import 'package:zdrasti_flutter/widgets/customize_kuker/customization_category_tab.dart';
-import '../models/kuker_data.dart';
-import '../widgets/customize_kuker/static_kuker_renderer.dart';
+import 'package:zdrasti_flutter/widgets/customize_kuker/static_kuker_renderer.dart';
 
 class KukerCustomizationScreen extends StatefulWidget {
   const KukerCustomizationScreen({super.key});
@@ -16,73 +11,22 @@ class KukerCustomizationScreen extends StatefulWidget {
 }
 
 class _KukerCustomizationScreenState extends State<KukerCustomizationScreen> with TickerProviderStateMixin {
-  late KukerData _currentKuker;
   late TabController _tabController;
-  late KukerRepository _kukerRepo;
-  List<String> _unlockedItems = [];
-  bool _isLoading = true;
-  bool _isOnline = true;
-  late final KukerItemRepository _itemRepo;
-  Map<String, List<KukerItem>> _itemsByCategory = {};
-  List<String> get categories => _itemsByCategory.keys.toList();
+  final controller = KukerCustomizationController();
 
   @override
   void initState() {
     super.initState();
-    _kukerRepo = KukerRepository();
-    _itemRepo = KukerItemRepository();
-    _loadKukerData();
-    _checkOnlineStatus();
-  }
-
-  Future<void> _loadKukerData() async {
-    final saved = await _kukerRepo.loadKuker();
-    final unlocked = await _kukerRepo.getUnlockedItems();
-    _itemsByCategory = await _itemRepo.loadGroupedByCategory();
-
-    setState(() {
-      _currentKuker = saved ?? KukerData.defaultKuker();
-      _unlockedItems = unlocked;
-      _isLoading = false;
-    });
-  }
-
-  Future<void> _checkOnlineStatus() async {
-    final isOnline = await KukerItemRepository.isOnline();
-    setState(() {
-      _isOnline = isOnline;
-    });
-  }
-
-
-  void _updateKuker(String category, String itemId) {
-    setState(() {
-      switch (category) {
-        case 'Mask':
-          _currentKuker = _currentKuker.copyWith(mask: itemId);
-          break;
-        case 'Horns':
-          _currentKuker = _currentKuker.copyWith(horns: itemId);
-          break;
-        case 'Costume':
-          _currentKuker = _currentKuker.copyWith(costume: itemId);
-          break;
-        case 'Accessory':
-          _currentKuker = _currentKuker.copyWith(accessory: itemId);
-          break;
-        case 'Expression':
-          _currentKuker = _currentKuker.copyWith(expression: itemId);
-          break;
-        case 'Shoes':
-          _currentKuker = _currentKuker.copyWith(shoes: itemId);
-          break;
-      }
+    controller.initialize().then((_) {
+      _tabController = TabController(length: controller.categories.length, vsync: this);
+      setState(() {}); // triggers rebuild once tabs are ready
     });
   }
 
   @override
   void dispose() {
     _tabController.dispose();
+    controller.dispose();
     super.dispose();
   }
 
@@ -90,68 +34,75 @@ class _KukerCustomizationScreenState extends State<KukerCustomizationScreen> wit
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Customize Your Kuker')),
-      body: _isLoading
-      ? const Center(child: CircularProgressIndicator())
-      : Column(
-          children: [
-            if (!_isOnline)
-              Container(
-                width: double.infinity,
-                color: Colors.red.withOpacity(0.85),
-                padding: const EdgeInsets.all(8),
-                child: const Text(
-                  'Offline – Customization changes will not be saved',
-                  style: TextStyle(color: Colors.white),
-                  textAlign: TextAlign.center,
+      body: AnimatedBuilder(
+        animation: controller,
+        builder: (_, __) {
+          if (controller.isLoading || controller.categories.isEmpty) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          return Column(
+            children: [
+              if (!controller.isOnline)
+                Container(
+                  width: double.infinity,
+                  color: Colors.red.withOpacity(0.85),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
+                    'Offline – Customization changes will not be saved',
+                    style: TextStyle(color: Colors.white),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              const SizedBox(height: 12),
+              StaticKukerRenderer(kuker: controller.currentKuker),
+              const SizedBox(height: 8),
+              TabBar(
+                controller: _tabController,
+                isScrollable: true,
+                tabs: controller.categories.map((c) => Tab(text: c)).toList(),
+              ),
+              Expanded(
+                child: TabBarView(
+                  controller: _tabController,
+                  children: controller.categories.map((category) {
+                    final items = controller.itemsByCategory[category] ?? [];
+                    final selected = controller.currentKuker.toMap()[category.toLowerCase()]!;
+                    return CustomizationCategoryTab(
+                      category: category,
+                      items: items.map((item) => item.id).toList(),
+                      selectedItemId: selected,
+                      unlockedItems: controller.unlockedItems,
+                      onItemSelected: (itemId) => controller.updatePart(category, itemId),
+                    );
+                  }).toList(),
                 ),
               ),
-            const SizedBox(height: 12),
-            StaticKukerRenderer(kuker: _currentKuker),
-            const SizedBox(height: 8),
-            TabBar(
-              controller: _tabController,
-              isScrollable: true,
-              tabs: categories.map((c) => Tab(text: c)).toList(),
-            ),
-            Expanded(
-              child: TabBarView(
-                controller: _tabController,
-                children: categories.map((category) {
-                  final items = _itemsByCategory[category] ?? [];
-                  final selected = _currentKuker.toMap()[category.toLowerCase()]!;
-                  return CustomizationCategoryTab(
-                    category: category,
-                    items: items.map((item) => item.id).toList(),
-                    selectedItemId: selected,
-                    unlockedItems: _unlockedItems,
-                    onItemSelected: (itemId) => _updateKuker(category, itemId),
-                  );
-                }).toList(),
-              )
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                TextButton(
-                  onPressed: () => setState(() => _currentKuker = KukerData.defaultKuker()),
-                  child: const Text('Reset'),
-                ),
-                ElevatedButton(
-                  onPressed: _isOnline
-                      ? () async {
-                          await _kukerRepo.saveKuker(_currentKuker);
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Kuker saved!')),
-                          );
-                        }
-                      : null,
-                  child: const Text('Save Kuker'),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-          ],
-        ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  TextButton(
+                    onPressed: controller.reset,
+                    child: const Text('Reset'),
+                  ),
+                  ElevatedButton(
+                    onPressed: controller.isOnline
+                        ? () async {
+                            await controller.save();
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(content: Text('Kuker saved!')),
+                            );
+                          }
+                        : null,
+                    child: const Text('Save Kuker'),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+            ],
+          );
+        },
+      ),
     );
   }
 }

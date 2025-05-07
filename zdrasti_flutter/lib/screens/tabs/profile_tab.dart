@@ -1,41 +1,39 @@
 import 'package:flutter/material.dart';
-import 'package:zdrasti_flutter/backend/service/kuker_item_repository_service.dart';
-import 'package:zdrasti_flutter/backend/service/kuker_provider.dart';
+import 'package:zdrasti_flutter/backend/controllers/kuker_customization_controller.dart';
+import 'package:zdrasti_flutter/models/kuker_data.dart';
 import 'package:zdrasti_flutter/models/user.dart' as local;
 import 'package:zdrasti_flutter/screens/settings_screen.dart';
 import 'package:zdrasti_flutter/screens/kuker_customization_screen.dart';
 import 'package:zdrasti_flutter/screens/welcome_screen.dart';
 import 'package:zdrasti_flutter/backend/service/auth_service.dart';
-import 'package:provider/provider.dart';
+import 'package:zdrasti_flutter/backend/service/kuker_item_repository_service.dart';
 import 'package:zdrasti_flutter/widgets/customize_kuker/static_kuker_renderer.dart';
-
-
 
 class ProfileTab extends StatelessWidget {
   final local.User user;
-
   const ProfileTab({super.key, required this.user});
-
-  void _resetPassword(BuildContext context) async {
-    await AuthService.sendPasswordReset(user.email);
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Password reset link sent to your email.')),
-    );
-  }
-
-  void _logout(BuildContext context) async {
-    await AuthService.signOut();
-    Navigator.pushAndRemoveUntil(
-      context,
-      MaterialPageRoute(builder: (_) => const WelcomeScreen()),
-      (route) => false,
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
+    final controller = KukerCustomizationController();
+
+    return FutureBuilder(
+      future: controller.initialize(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState != ConnectionState.done) {
+          return const Scaffold(
+            body: Center(child: CircularProgressIndicator()),
+          );
+        }
+
+        final kuker = controller.currentKuker;
+        return _buildProfileScreen(context, kuker);
+      },
+    );
+  }
+
+  Widget _buildProfileScreen(BuildContext context, KukerData kuker) {
     final String firstName = user.name.split(' ').first;
-    final kuker = context.watch<KukerProvider>().kuker;
 
     return Scaffold(
       backgroundColor: const Color(0xFFF5F2EE),
@@ -67,7 +65,6 @@ class ProfileTab extends StatelessWidget {
                   MaterialPageRoute(builder: (_) => const KukerCustomizationScreen()),
                 );
               },
-
               child: StaticKukerRenderer(kuker: kuker, size: 100),
             ),
             const SizedBox(height: 12),
@@ -146,6 +143,22 @@ class ProfileTab extends StatelessWidget {
           Text(value),
         ],
       ),
+    );
+  }
+
+  void _resetPassword(BuildContext context) async {
+    await AuthService.sendPasswordReset(user.email);
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Password reset link sent to your email.')),
+    );
+  }
+
+  void _logout(BuildContext context) async {
+    await AuthService.signOut();
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (_) => const WelcomeScreen()),
+      (route) => false,
     );
   }
 }

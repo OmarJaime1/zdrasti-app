@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart';
-import 'package:zdrasti_flutter/backend/boss_loader.dart';
+import 'package:zdrasti_flutter/backend/loader/boss_loader.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
