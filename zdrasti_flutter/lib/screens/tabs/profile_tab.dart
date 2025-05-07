@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/service/kuker_item_repository_service.dart';
+import 'package:zdrasti_flutter/backend/service/kuker_provider.dart';
 import 'package:zdrasti_flutter/models/user.dart' as local;
 import 'package:zdrasti_flutter/screens/settings_screen.dart';
 import 'package:zdrasti_flutter/screens/kuker_customization_screen.dart';
 import 'package:zdrasti_flutter/screens/welcome_screen.dart';
 import 'package:zdrasti_flutter/backend/service/auth_service.dart';
+import 'package:provider/provider.dart';
+import 'package:zdrasti_flutter/widgets/customize_kuker/static_kuker_renderer.dart';
+
+
 
 class ProfileTab extends StatelessWidget {
   final local.User user;
@@ -29,6 +35,7 @@ class ProfileTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String firstName = user.name.split(' ').first;
+    final kuker = context.watch<KukerProvider>().kuker;
 
     return Scaffold(
       backgroundColor: const Color(0xFFF5F2EE),
@@ -44,16 +51,24 @@ class ProfileTab extends StatelessWidget {
           children: [
             // Kuker Avatar (Tappable)
             GestureDetector(
-              onTap: () {
+              onTap: () async {
+                final isOnline = await KukerItemRepository.isOnline();
+                if (!isOnline) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('You need internet to customize your Kuker.'),
+                    ),
+                  );
+                  return;
+                }
+
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => const KukerCustomizationScreen()),
                 );
               },
-              child: Image.asset(
-                'assets/images/kuker/kuker_helper.png',
-                height: 100,
-              ),
+
+              child: StaticKukerRenderer(kuker: kuker, size: 100),
             ),
             const SizedBox(height: 12),
             Text(

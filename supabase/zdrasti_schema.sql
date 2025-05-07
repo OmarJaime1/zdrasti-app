@@ -85,3 +85,31 @@ CREATE TABLE boss_results (
   xp_awarded BOOLEAN NOT NULL DEFAULT false,
   PRIMARY KEY (user_id, boss_id)
 );
+
+create table kuker_customization (
+  user_id uuid primary key references auth.users(id),
+  mask text not null,
+  horns text not null,
+  costume text not null,
+  accessory text not null,
+  expression text not null,
+  shoes text not null,
+  updated_at timestamptz default now()
+);
+
+create table unlocked_items (
+  user_id uuid references auth.users(id),
+  item_id text not null, -- e.g. 'mask_01', 'horns_03'
+  unlocked_at timestamptz default now(),
+  primary key (user_id, item_id)
+);
+
+create table kuker_items (
+  id text primary key,             -- 'mask_01'
+  category text not null,          -- 'Mask'
+  asset_path text not null,        -- 'mask/mask_01.png'
+  xp_required int default 0,
+  rarity text default 'common',    -- 'common', 'rare', etc.
+  source text default 'base',      -- 'base', 'event', 'donation'
+  created_at timestamptz default now()
+);

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:zdrasti_flutter/backend/service/kuker_provider.dart';
 import 'package:zdrasti_flutter/backend/supabase_client.dart';
 import 'package:zdrasti_flutter/backend/service/user_service.dart';
 import 'package:zdrasti_flutter/screens/welcome_screen.dart';
@@ -16,7 +18,13 @@ void main() async {
     debugPrintStack(stackTrace: details.stack);
   };
 
-  runApp(const ZdrastiApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => KukerProvider()..load(),
+      child: const ZdrastiApp(),
+    ),
+  );
+
 }
 
 class ZdrastiApp extends StatefulWidget {
