@@ -72,6 +72,12 @@ flutter:
     - assets/images/vocab/
     - assets/images/maps/
     - assets/images/kuker/
+    - assets/images/kuker_parts/accessory/
+    - assets/images/kuker_parts/costume/
+    - assets/images/kuker_parts/expressions/
+    - assets/images/kuker_parts/horns/
+    - assets/images/kuker_parts/mask/
+    - assets/images/kuker_parts/shoes/
     - assets/images/flags/
     - assets/lessons/
     - assets/sounds/

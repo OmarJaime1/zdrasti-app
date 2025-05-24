@@ -11,7 +11,7 @@ import 'package:zdrasti_flutter/screens/boss/kuker_boss_screen.dart';
 import 'package:zdrasti_flutter/widgets/boss/boss_icon.dart';
 import 'lessons_tab_circles.dart';
 import 'lessons_tab_utils.dart';
-import 'phase_progress_bar.dart';
+import '../lessons/phase_progress_bar.dart';
 
 class LessonMapPage extends StatefulWidget {
   final List<LessonNode> nodesForMap;

@@ -1,13 +1,15 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:zdrasti_flutter/backend/loader/lesson_loader.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
 import 'package:zdrasti_flutter/models/lesson_node.dart';
 import 'package:zdrasti_flutter/models/user.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/backend/service/audio/audio_service.dart';
+import 'package:zdrasti_flutter/screens/lesson/lesson_session_screen.dart';
 import 'package:zdrasti_flutter/screens/lesson/lesson_vocab_screen.dart';
 import 'package:zdrasti_flutter/screens/lesson/lesson_alphabet_screen.dart';
-import 'package:zdrasti_flutter/widgets/lessons/lessons_circles_sparkle_effect.dart';
+import 'package:zdrasti_flutter/widgets/map/lessons_circles_sparkle_effect.dart';
 import 'lessons_tab_utils.dart';
 
 class LessonCircleButton extends StatefulWidget {
@@ -66,10 +68,14 @@ class _LessonCircleButtonState extends State<LessonCircleButton> {
                   ),
                 );
               } else {
+                final sections = LessonLoader.buildLessonSections(widget.lesson);
+
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => LessonVocabScreen(
+                    builder: (_) => LessonSessionScreen(
+                      lessonId: widget.lesson.lessonId,
+                      sections: sections,
                       lesson: widget.lesson,
                       user: widget.user,
                     ),

@@ -67,15 +67,15 @@ class _LessonRoleplayScreenState extends State<LessonRoleplayScreen> {
       title: LocalizationService.getStaticText('lesson.roleplayTitle'),
       onNext: _submitted
           ? () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => LessonResultScreen(
-                    lesson: widget.lesson,
-                    user: widget.user,
-                  ),
-                ),
-              );
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //     builder: (_) => LessonResultScreen(
+              //       lesson: widget.lesson,
+              //       user: widget.user,
+              //     ),
+              //   ),
+              // );
             }
           : null,
       child: Column(

@@ -19,9 +19,9 @@ class KukerData {
     mask: 'mask_01',
     horns: 'horns_01',
     costume: 'costume_01',
-    accessory: 'none',
-    expression: 'neutral',
-    shoes: 'none',
+    accessory: 'accessory_01',
+    expression: 'expression_01',
+    shoes: 'shoes_01',
   );
 
   Map<String, String> toMap() => {

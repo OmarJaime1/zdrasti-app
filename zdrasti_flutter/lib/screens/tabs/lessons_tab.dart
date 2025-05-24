@@ -5,8 +5,8 @@ import 'package:zdrasti_flutter/models/lesson_node.dart';
 import 'package:zdrasti_flutter/backend/loader/lesson_loader.dart';
 import 'package:zdrasti_flutter/backend/service/lesson_service.dart';
 import 'package:zdrasti_flutter/backend/loader/lesson_map_loader.dart';
-import '../../widgets/lessons/lessons_tab_map.dart';
-import '../../widgets/lessons/lessons_tab_utils.dart';
+import '../../widgets/map/lessons_tab_map.dart';
+import '../../widgets/map/lessons_tab_utils.dart';
 import 'package:collection/collection.dart'; // needed for firstWhereOrNull
 
 enum ScrollEdge { left, right }

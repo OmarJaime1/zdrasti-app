@@ -248,7 +248,6 @@ const Map<String, Map<String, String>> staticStrings = {
     'es': '🎉 ¡Buen trabajo! Completaste el diálogo.',
     'tr': '🎉 Aferin! Diyaloğu tamamladınız.',
   },
-
   'lesson.tipSlangTitle': {
     'en': 'Cultural Tip & Slang',
     'es': 'Consejo cultural y jerga',
@@ -330,5 +329,10 @@ const Map<String, Map<String, String>> staticStrings = {
     'en': 'Hide translation',
     'es': 'Ocultar traducción',
     'tr': 'Çeviriyi gizle',
+  },
+  'banner.offlineXpPending': {
+    'en': "You're offline – XP will sync when you're back online",
+    'es': "Estás desconectado. Los XP se sincronizarán cuando vuelvas a estar en línea",
+    'tr': "Çevrimdışısınız – XP bağlantı yeniden kurulduğunda senkronize edilecek",
   },
 };
