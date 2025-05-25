@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
 import 'package:zdrasti_flutter/widgets/lesson_scaffold.dart';
@@ -23,6 +24,7 @@ class _LessonRoleplaySectionState extends State<LessonRoleplaySection> {
   late final FitrRoleplay fitr;
   late final List<TextEditingController> _controllers;
   late final List<bool> _isCorrect;
+  late double _score;
   bool _submitted = false;
   bool _passed = false;
 
@@ -54,8 +56,8 @@ class _LessonRoleplaySectionState extends State<LessonRoleplaySection> {
       if (_isCorrect[i]) correct++;
     }
 
-    final score = correct / correctAnswers.length;
-    _passed = score >= fitr.passScorePercent;
+    _score = correct / correctAnswers.length;
+    _passed = _score >= fitr.passScorePercent;
 
     setState(() {
       _submitted = true;
@@ -65,12 +67,11 @@ class _LessonRoleplaySectionState extends State<LessonRoleplaySection> {
   @override
   Widget build(BuildContext context) {
     final scenario = LocalizationService.getLocalizedText(fitr.scenario);
-
     int blankCounter = 0;
 
     return LessonScaffold(
       title: LocalizationService.getStaticText('lesson.roleplayTitle'),
-      onNext: _submitted ? () => widget.onCompleted(_passed, _passed ? 1.0 : 0.0) : null,
+      onNext: _submitted ? () => widget.onCompleted(_passed, _score) : null,
       child: Column(
         children: [
           Padding(

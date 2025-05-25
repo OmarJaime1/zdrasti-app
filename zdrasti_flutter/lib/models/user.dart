@@ -8,6 +8,7 @@ class User {
   String current_level;
   int xp_total;
   int streak;
+  DateTime? last_activity_date;
   String? donation_status;
   String? last_certificate_link;
   DateTime? last_writing_attempt;
@@ -22,6 +23,7 @@ class User {
     required this.current_level,
     this.xp_total = 0,
     this.streak = 0,
+    this.last_activity_date,
     this.donation_status,
     this.last_certificate_link,
     this.last_writing_attempt,
@@ -38,6 +40,7 @@ class User {
       'current_level': current_level,
       'xp_total': xp_total,
       'streak': streak,
+      'last_activity_date': last_activity_date?.toIso8601String(),
       'donation_status': donation_status,
       'last_certificate_link': last_certificate_link,
       'last_writing_attempt': last_writing_attempt?.toIso8601String(),
@@ -56,6 +59,9 @@ class User {
       current_level: map['current_level'] ?? 'A1',
       xp_total: map['xp_total'] ?? 0,
       streak: map['streak'] ?? 0,
+      last_activity_date: map['last_activity_date'] != null
+        ? DateTime.tryParse(map['last_activity_date'])
+        : null,
       donation_status: map['donation_status'],
       last_certificate_link: map['last_certificate_link'],
       last_writing_attempt: map['last_writing_attempt'] != null

@@ -7,7 +7,6 @@ import 'package:zdrasti_flutter/models/user.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/backend/service/audio/audio_service.dart';
 import 'package:zdrasti_flutter/screens/lesson/lesson_session_screen.dart';
-import 'package:zdrasti_flutter/screens/lesson/lesson_vocab_screen.dart';
 import 'package:zdrasti_flutter/screens/lesson/lesson_alphabet_screen.dart';
 import 'package:zdrasti_flutter/widgets/map/lessons_circles_sparkle_effect.dart';
 import 'lessons_tab_utils.dart';

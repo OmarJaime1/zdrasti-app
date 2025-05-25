@@ -223,6 +223,29 @@ const Map<String, Map<String, String>> staticStrings = {
     'es': 'XP ganados!',
     'tr': 'XP kazanıldı!',
   },
+    'xp.base': {
+    'en': 'Base:',
+    'es': 'Base:',
+    'tr': 'Temel:',
+  },
+
+  'xp.repeatBonus': {
+    'en': 'Repeat Bonus:',
+    'es': 'Extra por repetir:',
+    'tr': 'Tekrar Bonusu:',
+  },
+
+  'xp.streakBonus': {
+    'en': 'Streak Bonus:',
+    'es': 'Extra por racha:',
+    'tr': 'Seri Bonusu:',
+  },
+
+  'xp.sectionScores': {
+    'en': 'Your Section Scores:',
+    'es': 'Tus puntos por sección:',
+    'tr': 'Bölüm Puanların:',
+  },
   'lesson.backToDashboard': {
     'en': 'Back to Dashboard',
     'es': 'Regresar al panel',

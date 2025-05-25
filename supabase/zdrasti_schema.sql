@@ -9,6 +9,7 @@ create table if not exists users (
     current_level text, -- CEFR level: A1, A2, ..., C2
     xp_total int default 0,
     streak int default 0,
+	last_activity_date date;
     donation_status text,
     last_certificate_link text,
     last_writing_attempt timestamptz, 
@@ -112,4 +113,11 @@ create table kuker_items (
   rarity text default 'common',    -- 'common', 'rare', etc.
   source text default 'base',      -- 'base', 'event', 'donation'
   created_at timestamptz default now()
+);
+
+create table if not exists user_xp_monthly (
+  user_id uuid references users(id) on delete cascade,
+  month_year text not null, -- format: '2025-05'
+  xp_by_day jsonb default '{}', -- example: {"24": {"base": 50, "streak": 10}}
+  primary key (user_id, month_year)
 );
