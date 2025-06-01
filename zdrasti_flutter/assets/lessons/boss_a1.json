@@ -68,18 +68,18 @@
       "audio_prompts": [
         {
           "id": "a1_listen_01",
-          "text": "Казвам се Мария.",
-          "answer": "Казвам се Мария."
+          "text": "Казвам се Мария",
+          "answer": "Казвам се Мария"
         },
         {
           "id": "a1_listen_02",
-          "text": "Днес вали и е студено.",
-          "answer": "Днес вали и е студено."
+          "text": "Днес вали и е студено",
+          "answer": "Днес вали и е студено"
         },
         {
           "id": "a1_listen_03",
-          "text": "Отивам на работа в осем часа.",
-          "answer": "Отивам на работа в осем часа."
+          "text": "Отивам на работа в осем часа",
+          "answer": "Отивам на работа в осем часа"
         }
       ]
     },
@@ -238,7 +238,7 @@
       "es": "Las palabras también moldean ciudades. Muestra a Sofía tus pensamientos por escrito.",
       "tr": "Kelimeler de şehirleri şekillendirir. Düşüncelerini yazıyla Sofya’ya göster."
     },
-	  "type": "text_input",
+	  "type": "writting_chatgpt",
 	  "chatGPT_prompt_file": "boss_a1_chatgpt_writing_evaluation.txt",
 	  "user_prompt": {
 		"en": "Write at least 3 sentences in Bulgarian to introduce yourself and describe your daily routine. Use vocabulary and grammar from the lessons you've completed.",

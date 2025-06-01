@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
+import 'package:zdrasti_flutter/models/sessions.dart';
 import 'package:zdrasti_flutter/models/user.dart';
 import 'package:zdrasti_flutter/models/lesson.dart';
 import 'package:zdrasti_flutter/backend/loader/boss_loader.dart';
@@ -41,6 +42,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
   bool _showResultOverlay = false;
   bool _lastSectionPassed = false;
   late String _kukerImagePath;
+  final BossSession _session = BossSession();
 
   @override
   void initState() {
@@ -72,8 +74,15 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
 
   void _onSectionCompleted(bool passed, double score) async {
     final section = widget.boss.sections[_sectionIndex];
+
     _sectionResults[section.id] = passed;
     _sectionScores[section.id] = score;
+    _session.recordSection(
+      sectionId: section.id,
+      correct: (score * 100).round(),
+      total: 100,
+    );
+
     _updateWritingUnlocked();
 
     setState(() {
@@ -94,18 +103,13 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
 
   bool _isNextSectionWriting() {
     if (_sectionIndex + 1 >= widget.boss.sections.length) return false;
-    return widget.boss.sections[_sectionIndex + 1].type == 'text_input';
+    return widget.boss.sections[_sectionIndex + 1].type == 'writting_chatgpt';
   }
 
   void _goToResults() {
     final writingSection = widget.boss.sections.firstWhere(
-      (s) => s.type == 'text_input',
-      orElse: () => KukerSection(
-        id: '',
-        title: {'en': ''},
-        kukerScript: {'en': ''},
-        type: '',
-      ),
+      (s) => s.type == 'writting_chatgpt',
+      orElse: () => KukerSection(id: '', title: {'en': ''}, kukerScript: {'en': ''}, type: ''),
     );
 
     final passedCount = _sectionResults.values.where((v) => v).length;
@@ -123,6 +127,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
           gptExplanation: _gptExplanation,
           sectionScores: _sectionScores,
           sectionPasses: _sectionResults,
+          score: _session.score, 
         ),
       ),
     );
@@ -135,7 +140,7 @@ class _KukerBossScreenState extends State<KukerBossScreen> {
       section: section,
       bossLevel: widget.boss.level,
       onCompleted: _onSectionCompleted,
-      onWritingSubmitted: section.type == 'text_input'
+      onWritingSubmitted: section.type == 'writting_chatgpt'
           ? (userText) async {
               final result = await BossWritingService.evaluate(userText);
               await UserService.updateWritingAttemptTime(widget.user.id);

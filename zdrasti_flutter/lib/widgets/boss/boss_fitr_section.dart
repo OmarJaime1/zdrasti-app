@@ -163,7 +163,7 @@ class _BossFitrSectionState extends State<BossFitrSection> with BossSectionLogic
             child: BossSectionHelpers.nextOrSubmitButton(
               submitted: _submitted,
               onSubmit: _handleSubmit,
-              onNext: () => widget.onCompleted(_passed, _scorePercent),
+              onNext: () => widget.onCompleted(_passed, _scorePercent / 100),
               submitLabel: 'boss.submitRoleplay',
             ),
           )

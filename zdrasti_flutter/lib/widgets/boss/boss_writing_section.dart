@@ -47,26 +47,40 @@ class _BossWritingSectionState extends State<BossWritingSection> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('Writing Prompt:', style: TextStyle(fontWeight: FontWeight.bold)),
-          const SizedBox(height: 8),
           Text(widget.prompt),
           const SizedBox(height: 20),
-          TextField(
-            controller: _controller,
-            maxLines: 8,
-            enabled: !_submitting,
-            decoration: InputDecoration(
-              hintText: 'Type your Bulgarian response here...',
-              filled: true,
-              fillColor: Colors.grey.shade100,
-              border: const OutlineInputBorder(),
+
+          // Fixed-height TextField with internal scroll
+          Container(
+            height: 180,
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: Colors.grey.shade100,
+              border: Border.all(color: Colors.grey),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Scrollbar(
+              child: TextField(
+                controller: _controller,
+                maxLines: null,
+                expands: true,
+                enabled: !_submitting,
+                keyboardType: TextInputType.multiline,
+                decoration: const InputDecoration.collapsed(
+                  hintText: 'Type your Bulgarian response here...',
+                ),
+                onChanged: (_) {
+                  setState(() {}); // Triggers button enable/disable
+                },
+              ),
             ),
           ),
+
           const SizedBox(height: 20),
           if (!_submitting)
             Center(

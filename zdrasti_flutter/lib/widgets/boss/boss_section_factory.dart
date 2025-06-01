@@ -65,7 +65,7 @@ class BossSectionFactory {
                   onCompleted: onCompleted,
                 );
 
-      case 'text_input':
+      case 'writting_chatgpt':
         final prompt = section.userPrompt != null
             ? LocalizationService.getLocalizedText(section.userPrompt!)
             : '';

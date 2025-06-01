@@ -1,12 +1,16 @@
+// ✅ Fully updated KukerBossResultScreen
+
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:confetti/confetti.dart';
 import 'package:zdrasti_flutter/backend/service/localization_service.dart';
+import 'package:zdrasti_flutter/backend/service/user_service.dart';
+import 'package:zdrasti_flutter/backend/service/xp_service.dart';
 import 'package:zdrasti_flutter/models/kuker_boss.dart';
 import 'package:zdrasti_flutter/models/user.dart';
+import 'package:zdrasti_flutter/models/xp_breakdown.dart';
 import 'package:zdrasti_flutter/screens/zdrasti_shell.dart';
 import 'package:zdrasti_flutter/widgets/translation_bubble.dart';
-import 'package:zdrasti_flutter/backend/service/user_service.dart';
-import 'package:confetti/confetti.dart';
 
 class KukerBossResultScreen extends StatefulWidget {
   final KukerBoss boss;
@@ -16,6 +20,7 @@ class KukerBossResultScreen extends StatefulWidget {
   final String? gptExplanation;
   final Map<String, double> sectionScores;
   final Map<String, bool> sectionPasses;
+  final int score;
 
   const KukerBossResultScreen({
     super.key,
@@ -26,6 +31,7 @@ class KukerBossResultScreen extends StatefulWidget {
     this.gptExplanation,
     required this.sectionScores,
     required this.sectionPasses,
+    required this.score,
   });
 
   @override
@@ -34,12 +40,12 @@ class KukerBossResultScreen extends StatefulWidget {
 
 class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
   late final ConfettiController _confetti;
+  XpBreakdown? xpBreakdown;
 
   @override
   void initState() {
     super.initState();
     _confetti = ConfettiController(duration: const Duration(seconds: 4));
-
     _handleXpAndProgress();
     _startAutoRedirect();
 
@@ -49,22 +55,35 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
   }
 
   Future<void> _handleXpAndProgress() async {
-    final hasAlreadyPassed =
-        await UserService.hasPassedBoss(widget.user.id, widget.boss.bossId);
+    final hasAlreadyPassed = await UserService.hasPassedBoss(
+      widget.user.id,
+      widget.boss.bossId,
+    );
 
-    if (!hasAlreadyPassed && widget.passed) {
-      await UserService.addXp(widget.user.id, amount: 75);
-      await UserService.saveBossPassStatus(
-        userId: widget.user.id,
-        bossId: widget.boss.bossId,
-        passed: true,
-        xpAwarded: true,
+    if (widget.passed) {
+      final breakdown = await XpService().awardXpForActivity(
+        user: widget.user,
+        activityId: widget.boss.bossId,
+        score: widget.score,
+        type: ActivityType.boss,
       );
+      setState(() {
+        xpBreakdown = breakdown;
+      });
+
+      if (!hasAlreadyPassed) {
+        await UserService.saveBossPassStatus(
+          userId: widget.user.id,
+          bossId: widget.boss.bossId,
+          passed: true,
+          xpAwarded: true,
+        );
+      }
     } else {
       await UserService.saveBossPassStatus(
         userId: widget.user.id,
         bossId: widget.boss.bossId,
-        passed: widget.passed,
+        passed: false,
         xpAwarded: hasAlreadyPassed,
       );
     }
@@ -73,12 +92,9 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
   void _startAutoRedirect() {
     Future.delayed(const Duration(seconds: 10), () {
       if (!mounted) return;
-
       Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(
-          builder: (_) => ZdrastiShell(user: widget.user),
-        ),
+        MaterialPageRoute(builder: (_) => ZdrastiShell(user: widget.user)),
         (route) => false,
       );
     });
@@ -92,7 +108,6 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // 🧠 Determine which script to show
     final script = widget.passed
         ? widget.boss.finalScript.pass
         : widget.writingAttempted
@@ -120,19 +135,17 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
                     ),
                     const SizedBox(height: 12),
                     Image.asset(kukerImagePath, height: 160),
-
                     const SizedBox(height: 16),
-                    _buildScoreSummary(),
-
-                    // GPT Feedback (if writing failed)
+                    if (!widget.passed) _buildScoreSummary(),
+                    if (widget.passed && xpBreakdown != null) _buildXpBreakdown(),
                     if (!widget.passed && widget.writingAttempted && widget.gptExplanation != null)
                       Padding(
                         padding: const EdgeInsets.only(top: 20),
                         child: Column(
                           children: [
-                            const Text(
+                            Text(
                               'Why your writing didn’t pass:',
-                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                             const SizedBox(height: 8),
                             Text(
@@ -148,8 +161,6 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
               ),
             ),
           ),
-
-          // Confetti on pass
           if (widget.passed)
             Align(
               alignment: Alignment.topCenter,
@@ -170,19 +181,18 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
 
   Widget _buildScoreSummary() {
     final sections = widget.boss.sections;
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
-          'Your performance:',
-          style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+        Text(
+          LocalizationService.getStaticText('xp.sectionScores'),
+          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 8),
         for (final section in sections)
           _buildScoreTile(
             LocalizationService.getLocalizedText(section.title),
-            section.type == 'text_input'
+            section.type == 'writting_chatgpt'
                 ? (widget.writingAttempted
                     ? (widget.passed ? '✅ Passed' : '❌ Failed')
                     : '—')
@@ -195,7 +205,6 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
   String _formatScore(KukerSection section) {
     final score = widget.sectionScores[section.id];
     final passed = widget.sectionPasses[section.id];
-
     if (score == null) return '—';
     final percent = (score * 100).round();
     final emoji = passed == true ? '✅' : '❌';
@@ -211,6 +220,24 @@ class _KukerBossResultScreenState extends State<KukerBossResultScreen> {
           Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
         ],
       ),
+    );
+  }
+
+  Widget _buildXpBreakdown() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          LocalizationService.getStaticText('lesson.xpEarned'),
+          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 8),
+        Text("+${xpBreakdown!.baseXp} ${LocalizationService.getStaticText('xp.base')}"),
+        if (xpBreakdown!.repeatXp > 0)
+          Text("+${xpBreakdown!.repeatXp} ${LocalizationService.getStaticText('xp.repeatBonus')}"),
+        if (xpBreakdown!.streakXp > 0)
+          Text("+${xpBreakdown!.streakXp} ${LocalizationService.getStaticText('xp.streakBonus')}"),
+      ],
     );
   }
 }

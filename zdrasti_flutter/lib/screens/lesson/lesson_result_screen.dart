@@ -93,112 +93,121 @@ class _LessonResultScreenState extends State<LessonResultScreen> {
         title: Text(LocalizationService.getStaticText("lesson.resultTitle")),
       ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator())
-          : Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                const OfflineBanner(staticTextKey: 'banner.offlineXpPending'),
-                const SizedBox(height: 32),
-                if (_alreadyCompleted)
-                  Text(LocalizationService.getStaticText("lesson.resultRepeat"),
-                      style: const TextStyle(fontSize: 18, color: Colors.orange)),
-                if (!_alreadyCompleted)
-                  Text(
-                    _passed
-                        ? LocalizationService.getStaticText("lesson.resultPassed")
-                        : LocalizationService.getStaticText("lesson.resultFailed"),
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: _passed ? Colors.green : Colors.red,
-                    ),
-                  ),
-                const SizedBox(height: 24),
-                if (!_alreadyCompleted && _xpBreakdown.total > 0)
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        '${LocalizationService.getStaticText("lesson.xpEarned")} +${_xpBreakdown.total} XP',
-                        style: const TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.deepPurple,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        '${LocalizationService.getStaticText("xp.base")} ${_xpBreakdown.baseXp}',
-                        textAlign: TextAlign.center,
-                      ),
-                      if (_xpBreakdown.repeatXp > 0)
-                        Text(
-                          '${LocalizationService.getStaticText("xp.repeatBonus")} ${_xpBreakdown.repeatXp}',
-                          textAlign: TextAlign.center,
-                        ),
-                      if (_xpBreakdown.streakXp > 0)
-                        Text(
-                          '${LocalizationService.getStaticText("xp.streakBonus")} ${_xpBreakdown.streakXp}',
-                          textAlign: TextAlign.center,
-                        ),
-                    ],
-                  ),
-                  
-                if (!_passed && widget.session.sectionStats.isNotEmpty) ...[
+        ? const Center(child: CircularProgressIndicator())
+        : Center(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const OfflineBanner(staticTextKey: 'banner.offlineXpPending'),
                   const SizedBox(height: 32),
-                  Text(
-                    LocalizationService.getStaticText("xp.sectionScores"),
-                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 12),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: widget.session.sectionStats.entries.map((entry) {
-                      final sectionLabel = _getSectionTitle(entry.key);
-                      final scoreText = '${entry.value.correct.toString().padLeft(3)} /${entry.value.total}';
+                  if (_alreadyCompleted)
+                    Text(
+                      LocalizationService.getStaticText("lesson.resultRepeat"),
+                      style: const TextStyle(fontSize: 18, color: Colors.orange),
+                    ),
+                  if (!_alreadyCompleted)
+                    Text(
+                      _passed
+                          ? LocalizationService.getStaticText("lesson.resultPassed")
+                          : LocalizationService.getStaticText("lesson.resultFailed"),
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: _passed ? Colors.green : Colors.red,
+                      ),
+                    ),
+                  const SizedBox(height: 24),
+                  if (!_alreadyCompleted && _xpBreakdown.total > 0)
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          '${LocalizationService.getStaticText("lesson.xpEarned")} +${_xpBreakdown.total} XP',
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.deepPurple,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        const SizedBox(height: 6),
+                        if (_xpBreakdown.repeatXp > 0)
+                          Text(
+                            '${LocalizationService.getStaticText("xp.repeatBonus")} ${_xpBreakdown.repeatXp}',
+                            textAlign: TextAlign.center,
+                          )
+                        else
+                          Text(
+                            '${LocalizationService.getStaticText("xp.base")} ${_xpBreakdown.baseXp}',
+                            textAlign: TextAlign.center,
+                          ),
+                        if (_xpBreakdown.streakXp > 0)
+                          Text(
+                            '${LocalizationService.getStaticText("xp.streakBonus")} ${_xpBreakdown.streakXp}',
+                            textAlign: TextAlign.center,
+                          ),
+                      ],
+                    ),
+                  if (!_passed && widget.session.sectionStats.isNotEmpty) ...[
+                    const SizedBox(height: 32),
+                    Text(
+                      LocalizationService.getStaticText("xp.sectionScores"),
+                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: 12),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: widget.session.sectionStats.entries.map((entry) {
+                        final sectionLabel = _getSectionTitle(entry.key);
+                        final scoreText =
+                            '${entry.value.correct.toString().padLeft(3)} /${entry.value.total}';
 
-                      return Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 4),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            SizedBox(
-                              width: 140,
-                              child: Text(
-                                sectionLabel,
-                                textAlign: TextAlign.right,
-                                style: const TextStyle(fontSize: 16),
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              SizedBox(
+                                width: 140,
+                                child: Text(
+                                  sectionLabel,
+                                  textAlign: TextAlign.right,
+                                  style: const TextStyle(fontSize: 16),
+                                ),
                               ),
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              scoreText,
-                              style: const TextStyle(
-                                fontSize: 16,
-                                fontFeatures: [FontFeature.tabularFigures()],
-                                fontFamily: 'Roboto',
+                              const SizedBox(width: 8),
+                              Text(
+                                scoreText,
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontFeatures: [FontFeature.tabularFigures()],
+                                  fontFamily: 'Roboto',
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
+                        );
+                      }).toList(),
+                    )
+                  ],
+                  const SizedBox(height: 40),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (_) => ZdrastiShell(user: widget.user),
                         ),
                       );
-                    }).toList(),
-                  )
+                    },
+                    child: Text(
+                      LocalizationService.getStaticText("lesson.backToDashboard"),
+                    ),
+                  ),
                 ],
-                const SizedBox(height: 40),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                          builder: (_) =>
-                              ZdrastiShell(user: widget.user)),
-                    );
-                  },
-                  child: Text(LocalizationService.getStaticText("lesson.backToDashboard")),
-                ),
-              ],
+              ),
             ),
+          ),
     );
   }
 }
